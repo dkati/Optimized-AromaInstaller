@@ -34,8 +34,9 @@ if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "1" then
 	delete_recursive("/data/app");
 	ui_print("Formatting /data/media");
 	delete_recursive("/data/media");
-	ui_print("Cleaning Alucard profiles...");
+	ui_print("Cleaning Alucard profiles and Synapse files...");
 	delete_recursive("/data/.alucard");
+	delete_recursive("/data/.Synapse");
 endif;
 	
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "2" then
