@@ -32,18 +32,35 @@ if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "1" then
 	run_program("/tmp/wipe.sh");
 	ui_print("Formatting /data/app");
 	delete_recursive("/data/app");
-	ui_print("Formatting /data/media");
-	delete_recursive("/data/media");
+	ui_print("Won't wipe internal storage");
 	ui_print("Cleaning Alucard profiles and Synapse files...");
 	delete_recursive("/data/.alucard");
 	delete_recursive("/data/.Synapse");
 endif;
 	
-if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "2" then
+#Upgrade, Dirty Flash
+if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "3" then
 	ui_print("Dirty Flashing...");
 	ui_print("");
 endif;	
 	
+#Extreme wipe
+if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "2" then
+	ui_print("Fully Wiping...");
+	ui_print("");
+	package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
+	package_extract_file("jdc/bash", "/tmp/bash");
+	set_perm(0, 0, 0777, "/tmp/wipe.sh");
+	set_perm(0, 0, 0777, "/tmp/bash");
+	run_program("/tmp/wipe.sh");
+	ui_print("Formatting /data/app");
+	delete_recursive("/data/app");
+	ui_print("Formatting Internal storage");
+	delete_recursive("/data/media");
+	ui_print("Cleaning Alucard profiles and Synapse files...");
+	delete_recursive("/data/.alucard");
+	delete_recursive("/data/.Synapse");
+endif;
 
 ui_print("Installing...");
 ui_print("***********************");

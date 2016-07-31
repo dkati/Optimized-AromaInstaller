@@ -217,8 +217,10 @@ selectbox(
 	  #----------------------------------[ Select box With Groups ]----------------------------------#
 	  # TITLE                         |             SUBTITLE                                | Initial Value #
 	  #---------------------------------+-----------------------------------------------------------+---------------#
-	"Clean Install",			"Full Wipe.All Data/Stweaks profiles will be Deleted",					1,
-	"Upgrade, Dirty Flash",		"Use This if You Are Fixing Your Rom Or Upgrading",				0
+	"Full Wipe",			"Full Wipe.All Data/Stweaks profiles will be Deleted.Internal will remain unaffected",	1,
+	"Upgrade, Dirty Flash",		"Use This if You Are Fixing Your Rom Or Upgrading",				0,
+	"<b><#f00>\n____________\n\nExtreme wipe\n____________\n</#></b>",              "Full Wipe option+Internal storage wipe",0
+	
 
 );
 
