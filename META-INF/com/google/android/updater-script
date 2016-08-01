@@ -2,7 +2,7 @@ assert(getprop("ro.product.device") == "jflte" || getprop("ro.build.product") ==
 ui_print("JDCTeam AROMA Installer v.2");
 ui_print("Optimized CyanogenMod 13");
 ui_print(" ");
-set_progress(0.1);	
+set_progress(0.1);
 run_program("/sbin/mount", "-t", "auto", "/system");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p19", "/cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
@@ -21,92 +21,92 @@ unmount("/system");
 show_progress(0.750000, 0);
 
 #Full Wipe
-	mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "1" then
-	ui_print("Fully Wiping...");
-	ui_print("");
-	package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
-	package_extract_file("jdc/bash", "/tmp/bash");
-	set_perm(0, 0, 0777, "/tmp/wipe.sh");
-	set_perm(0, 0, 0777, "/tmp/bash");
-	run_program("/tmp/wipe.sh");
-	ui_print("Formatting /data/app");
-	delete_recursive("/data/app");
-	ui_print("Won't wipe internal storage");
-	ui_print("Cleaning Alucard profiles and Synapse files...");
-	delete_recursive("/data/.alucard");
-	delete_recursive("/data/.Synapse");
+ui_print("Fully Wiping...");
+ui_print("");
+package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
+package_extract_file("jdc/bash", "/tmp/bash");
+set_perm(0, 0, 0777, "/tmp/wipe.sh");
+set_perm(0, 0, 0777, "/tmp/bash");
+run_program("/tmp/wipe.sh");
+ui_print("Formatting /data/app");
+delete_recursive("/data/app");
+ui_print("Won't wipe internal storage");
+ui_print("Cleaning Alucard profiles and Synapse files...");
+delete_recursive("/data/.alucard");
+delete_recursive("/data/.Synapse");
 endif;
-	
+
 #Upgrade, Dirty Flash
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "2" then
-	ui_print("Dirty Flashing...");
-	ui_print("Only Cache and system will be deleted");
-endif;	
-	
+ui_print("Dirty Flashing...");
+ui_print("Only Cache and system will be deleted");
+endif;
+
 #Extreme wipe
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "3" then
-	ui_print("EXTREME Wiping...");
-	ui_print("");
-	package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
-	package_extract_file("jdc/bash", "/tmp/bash");
-	set_perm(0, 0, 0777, "/tmp/wipe.sh");
-	set_perm(0, 0, 0777, "/tmp/bash");
-	run_program("/tmp/wipe.sh");
-	ui_print("Formatting /data/app");
-	delete_recursive("/data/app");
-	ui_print("Formatting Internal storage");
-	delete_recursive("/data/media");
-	ui_print("Cleaning Alucard profiles and Synapse files...");
-	delete_recursive("/data/.alucard");
-	delete_recursive("/data/.Synapse");
+ui_print("EXTREME Wiping...");
+ui_print("");
+package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
+package_extract_file("jdc/bash", "/tmp/bash");
+set_perm(0, 0, 0777, "/tmp/wipe.sh");
+set_perm(0, 0, 0777, "/tmp/bash");
+run_program("/tmp/wipe.sh");
+ui_print("Formatting /data/app");
+delete_recursive("/data/app");
+ui_print("Formatting Internal storage");
+delete_recursive("/data/media");
+ui_print("Cleaning Alucard profiles and Synapse files...");
+delete_recursive("/data/.alucard");
+delete_recursive("/data/.Synapse");
 endif;
 
 ui_print("Installing...");
 ui_print("***********************");
 
 set_progress(0.2);
-    show_progress(0.4, "-70000");
-		run_program("/sbin/busybox", "mount", "/system");
-		package_extract_dir("system", "/system");
+show_progress(0.4, "-70000");
+run_program("/sbin/busybox", "mount", "/system");
+package_extract_dir("system", "/system");
 ui_print("Installing Selected Files...");
 
 # Sound Mode
 if
-  file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
-  ui_print("Installing Nova Launcher");
-  package_extract_dir("jdc/launcher/nova/system", "/system");
-  delete_recursive("/system/priv-app/Trebuchet");
+ui_print("Installing Nova Launcher");
+package_extract_dir("jdc/launcher/nova/system", "/system");
+delete_recursive("/system/priv-app/Trebuchet");
 endif;
 if
-  file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
 ui_print("Installing Stock Launcher");
 # package_extract_dir("jdc/launcher/stock/system", "/system");
 endif;
 # Audio
 if
-  file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
 then
 ui_print("Installing Viper Audio");
 package_extract_dir("jdc/audio/viper/system", "/system");
-  delete_recursive("/system/priv-app/AudioFX");
+delete_recursive("/system/priv-app/AudioFX");
 
 endif;
 if
-  file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
 then
 ui_print("Installing AudioFX");
 # package_extract_dir("jdc/audio/audiofx/system", "/system");
 endif;
 #Kernel Tweaks
 if
-  file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
 then
-  ui_print("Installing Kernel Tweaks");
-  package_extract_dir("jdc/rootapps", "/system");
-	ui_print("");
+ui_print("Installing Kernel Tweaks");
+package_extract_dir("jdc/rootapps", "/system");
+ui_print("");
 
 endif;
 ifelse(is_substring("I337", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/gsm/* /system/"));
@@ -148,7 +148,7 @@ symlink("/firmware/image/tzapps.b02", "/system/etc/firmware/tzapps.b02");
 symlink("/firmware/image/tzapps.b03", "/system/etc/firmware/tzapps.b03");
 symlink("/firmware/image/tzapps.mdt", "/system/etc/firmware/tzapps.mdt");
 symlink("/system/bin/toybox", "/system/xbin/ls",
-				"/system/xbin/ps");
+"/system/xbin/ps");
 symlink("/system/lib/libbluetooth_jni.so", "/system/app/Bluetooth/lib/arm/libbluetooth_jni.so");
 symlink("/system/lib/libdefcontainer_jni.so", "/system/priv-app/DefaultContainerService/lib/arm/libdefcontainer_jni.so");
 symlink("/system/lib/libjni_eglfence.so", "/system/app/Gallery2/lib/arm/libjni_eglfence.so");
@@ -167,76 +167,76 @@ symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
 symlink("app_process32", "/system/bin/app_process");
 symlink("dalvikvm32", "/system/bin/dalvikvm");
 symlink("grep", "/system/bin/egrep",
-				"/system/bin/fgrep");
+"/system/bin/fgrep");
 symlink("libGLESv2.so", "/system/lib/libGLESv3.so");
 symlink("logpersist.start", "/system/bin/logpersist.cat",
-				"/system/bin/logpersist.stop");
+"/system/bin/logpersist.stop");
 symlink("pigz", "/system/xbin/gunzip", "/system/xbin/gzip",
-				"/system/xbin/unpigz",
-				"/system/xbin/zcat");
+"/system/xbin/unpigz",
+"/system/xbin/zcat");
 symlink("toolbox", "/system/bin/dd", "/system/bin/getevent",
-				"/system/bin/iftop", "/system/bin/ioctl", "/system/bin/log",
-				"/system/bin/ls", "/system/bin/nandread", "/system/bin/newfs_msdos",
-				"/system/bin/prlimit", "/system/bin/ps", "/system/bin/restart",
-				"/system/bin/sendevent", "/system/bin/start", "/system/bin/stop",
-				"/system/bin/top");
+"/system/bin/iftop", "/system/bin/ioctl", "/system/bin/log",
+"/system/bin/ls", "/system/bin/nandread", "/system/bin/newfs_msdos",
+"/system/bin/prlimit", "/system/bin/ps", "/system/bin/restart",
+"/system/bin/sendevent", "/system/bin/start", "/system/bin/stop",
+"/system/bin/top");
 symlink("toybox", "/system/bin/acpi", "/system/bin/arp",
-				"/system/bin/base64", "/system/bin/basename", "/system/bin/blockdev",
-				"/system/bin/bzcat", "/system/bin/cal", "/system/bin/cat",
-				"/system/bin/chattr", "/system/bin/chcon", "/system/bin/chgrp",
-				"/system/bin/chmod", "/system/bin/chown", "/system/bin/chroot",
-				"/system/bin/cksum", "/system/bin/clear", "/system/bin/cmp",
-				"/system/bin/comm", "/system/bin/cp", "/system/bin/cpio",
-				"/system/bin/cut", "/system/bin/date", "/system/bin/df",
-				"/system/bin/diff", "/system/bin/dirname", "/system/bin/dmesg",
-				"/system/bin/dos2unix", "/system/bin/du", "/system/bin/echo",
-				"/system/bin/env", "/system/bin/expand", "/system/bin/expr",
-				"/system/bin/fallocate", "/system/bin/false", "/system/bin/fdisk",
-				"/system/bin/file", "/system/bin/find", "/system/bin/flock",
-				"/system/bin/free", "/system/bin/freeramdisk", "/system/bin/fsfreeze",
-				"/system/bin/fstype", "/system/bin/ftpget", "/system/bin/ftpput",
-				"/system/bin/getenforce", "/system/bin/getprop", "/system/bin/grep",
-				"/system/bin/groups", "/system/bin/head", "/system/bin/help",
-				"/system/bin/host", "/system/bin/hostname", "/system/bin/hwclock",
-				"/system/bin/id", "/system/bin/ifconfig", "/system/bin/inotifyd",
-				"/system/bin/insmod", "/system/bin/install", "/system/bin/ionice",
-				"/system/bin/iorenice", "/system/bin/iotop", "/system/bin/kill",
-				"/system/bin/killall", "/system/bin/ln", "/system/bin/load_policy",
-				"/system/bin/logname", "/system/bin/losetup", "/system/bin/lsattr",
-				"/system/bin/lsmod", "/system/bin/lsof", "/system/bin/lspci",
-				"/system/bin/lsusb", "/system/bin/makedevs", "/system/bin/md5sum",
-				"/system/bin/mkdir", "/system/bin/mkfifo", "/system/bin/mknod",
-				"/system/bin/mkswap", "/system/bin/mktemp", "/system/bin/modinfo",
-				"/system/bin/more", "/system/bin/mount", "/system/bin/mountpoint",
-				"/system/bin/mv", "/system/bin/nbd-client", "/system/bin/nc",
-				"/system/bin/netcat", "/system/bin/netstat", "/system/bin/nice",
-				"/system/bin/nl", "/system/bin/nohup", "/system/bin/nproc",
-				"/system/bin/od", "/system/bin/partprobe", "/system/bin/paste",
-				"/system/bin/patch", "/system/bin/pgrep", "/system/bin/pidof",
-				"/system/bin/pivot_root", "/system/bin/pkill", "/system/bin/pmap",
-				"/system/bin/printenv", "/system/bin/printf", "/system/bin/pwd",
-				"/system/bin/pwdx", "/system/bin/readahead", "/system/bin/readlink",
-				"/system/bin/realpath", "/system/bin/renice", "/system/bin/reset",
-				"/system/bin/resize", "/system/bin/restorecon", "/system/bin/rev",
-				"/system/bin/rfkill", "/system/bin/rm", "/system/bin/rmdir",
-				"/system/bin/rmmod", "/system/bin/route", "/system/bin/runcon",
-				"/system/bin/sed", "/system/bin/seq", "/system/bin/setenforce",
-				"/system/bin/setprop", "/system/bin/setsid", "/system/bin/sha1sum",
-				"/system/bin/sleep", "/system/bin/sort", "/system/bin/split",
-				"/system/bin/stat", "/system/bin/strings", "/system/bin/swapoff",
-				"/system/bin/swapon", "/system/bin/sync", "/system/bin/sysctl",
-				"/system/bin/tac", "/system/bin/tail", "/system/bin/tar",
-				"/system/bin/taskset", "/system/bin/tee", "/system/bin/telnet",
-				"/system/bin/test", "/system/bin/time", "/system/bin/timeout",
-				"/system/bin/touch", "/system/bin/tr", "/system/bin/traceroute",
-				"/system/bin/true", "/system/bin/truncate", "/system/bin/tty",
-				"/system/bin/ulimit", "/system/bin/umount", "/system/bin/uname",
-				"/system/bin/uniq", "/system/bin/unix2dos", "/system/bin/uptime",
-				"/system/bin/usleep", "/system/bin/vconfig", "/system/bin/vmstat",
-				"/system/bin/watch", "/system/bin/wc", "/system/bin/which",
-				"/system/bin/whoami", "/system/bin/xargs", "/system/bin/xxd",
-				"/system/bin/xzcat",
-				"/system/bin/yes");
+"/system/bin/base64", "/system/bin/basename", "/system/bin/blockdev",
+"/system/bin/bzcat", "/system/bin/cal", "/system/bin/cat",
+"/system/bin/chattr", "/system/bin/chcon", "/system/bin/chgrp",
+"/system/bin/chmod", "/system/bin/chown", "/system/bin/chroot",
+"/system/bin/cksum", "/system/bin/clear", "/system/bin/cmp",
+"/system/bin/comm", "/system/bin/cp", "/system/bin/cpio",
+"/system/bin/cut", "/system/bin/date", "/system/bin/df",
+"/system/bin/diff", "/system/bin/dirname", "/system/bin/dmesg",
+"/system/bin/dos2unix", "/system/bin/du", "/system/bin/echo",
+"/system/bin/env", "/system/bin/expand", "/system/bin/expr",
+"/system/bin/fallocate", "/system/bin/false", "/system/bin/fdisk",
+"/system/bin/file", "/system/bin/find", "/system/bin/flock",
+"/system/bin/free", "/system/bin/freeramdisk", "/system/bin/fsfreeze",
+"/system/bin/fstype", "/system/bin/ftpget", "/system/bin/ftpput",
+"/system/bin/getenforce", "/system/bin/getprop", "/system/bin/grep",
+"/system/bin/groups", "/system/bin/head", "/system/bin/help",
+"/system/bin/host", "/system/bin/hostname", "/system/bin/hwclock",
+"/system/bin/id", "/system/bin/ifconfig", "/system/bin/inotifyd",
+"/system/bin/insmod", "/system/bin/install", "/system/bin/ionice",
+"/system/bin/iorenice", "/system/bin/iotop", "/system/bin/kill",
+"/system/bin/killall", "/system/bin/ln", "/system/bin/load_policy",
+"/system/bin/logname", "/system/bin/losetup", "/system/bin/lsattr",
+"/system/bin/lsmod", "/system/bin/lsof", "/system/bin/lspci",
+"/system/bin/lsusb", "/system/bin/makedevs", "/system/bin/md5sum",
+"/system/bin/mkdir", "/system/bin/mkfifo", "/system/bin/mknod",
+"/system/bin/mkswap", "/system/bin/mktemp", "/system/bin/modinfo",
+"/system/bin/more", "/system/bin/mount", "/system/bin/mountpoint",
+"/system/bin/mv", "/system/bin/nbd-client", "/system/bin/nc",
+"/system/bin/netcat", "/system/bin/netstat", "/system/bin/nice",
+"/system/bin/nl", "/system/bin/nohup", "/system/bin/nproc",
+"/system/bin/od", "/system/bin/partprobe", "/system/bin/paste",
+"/system/bin/patch", "/system/bin/pgrep", "/system/bin/pidof",
+"/system/bin/pivot_root", "/system/bin/pkill", "/system/bin/pmap",
+"/system/bin/printenv", "/system/bin/printf", "/system/bin/pwd",
+"/system/bin/pwdx", "/system/bin/readahead", "/system/bin/readlink",
+"/system/bin/realpath", "/system/bin/renice", "/system/bin/reset",
+"/system/bin/resize", "/system/bin/restorecon", "/system/bin/rev",
+"/system/bin/rfkill", "/system/bin/rm", "/system/bin/rmdir",
+"/system/bin/rmmod", "/system/bin/route", "/system/bin/runcon",
+"/system/bin/sed", "/system/bin/seq", "/system/bin/setenforce",
+"/system/bin/setprop", "/system/bin/setsid", "/system/bin/sha1sum",
+"/system/bin/sleep", "/system/bin/sort", "/system/bin/split",
+"/system/bin/stat", "/system/bin/strings", "/system/bin/swapoff",
+"/system/bin/swapon", "/system/bin/sync", "/system/bin/sysctl",
+"/system/bin/tac", "/system/bin/tail", "/system/bin/tar",
+"/system/bin/taskset", "/system/bin/tee", "/system/bin/telnet",
+"/system/bin/test", "/system/bin/time", "/system/bin/timeout",
+"/system/bin/touch", "/system/bin/tr", "/system/bin/traceroute",
+"/system/bin/true", "/system/bin/truncate", "/system/bin/tty",
+"/system/bin/ulimit", "/system/bin/umount", "/system/bin/uname",
+"/system/bin/uniq", "/system/bin/unix2dos", "/system/bin/uptime",
+"/system/bin/usleep", "/system/bin/vconfig", "/system/bin/vmstat",
+"/system/bin/watch", "/system/bin/wc", "/system/bin/which",
+"/system/bin/whoami", "/system/bin/xargs", "/system/bin/xxd",
+"/system/bin/xzcat",
+"/system/bin/yes");
 ui_print("Setting permissions...");
 set_metadata_recursive("/system", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", "0x0", "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/bin", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0755, "capabilities", "0x0", "selabel", "u:object_r:system_file:s0");
@@ -328,22 +328,34 @@ set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabiliti
 run_program("/tmp/install/bin/backuptool.sh", "restore");
 # KERNEL SELECTION AROMA BEGINS
 if
-  file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "1"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "1"
 then
-  ui_print("");
-  ui_print("Installing Alucard Kernel");
-	package_extract_file("boot.img", "/tmp/boot.img");
-	assert(run_program("/sbin/sh", "/system/etc/loki.sh") == 0);
-	ui_print("");
+ui_print("");
+ui_print("Installing Alucard Kernel");
+package_extract_dir("jdc/kfix", "/tmp");
+package_extract_file("jdc/kernel/alucard/boot.img", "/tmp/boot.img");
+set_perm(0, 0, 0777, "/tmp/loki_bootloaders");
+set_perm(0, 0, 0777, "/tmp/flash_kernel.sh");
+set_perm(0, 0, 0777, "/tmp/loki_patch");
+set_perm(0, 0, 0777, "/tmp/loki_flash");
+
+run_program("/tmp/flash_kernel.sh");
+ui_print("");
 
 endif;
 if
-  file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
 then
-	ui_print("");
-	ui_print("Installing Stock CM Kernel");
-	package_extract_file("jdc/kernel/stock/boot.img", "/tmp/boot.img");
-	assert(run_program("/sbin/sh", "/system/etc/loki.sh") == 0);
+ui_print("");
+ui_print("Installing Stock CM Kernel");
+package_extract_dir("jdc/kfix", "/tmp");
+package_extract_file("jdc/kernel/stock/boot.img", "/tmp/boot.img");
+set_perm(0, 0, 0777, "/tmp/loki_bootloaders");
+set_perm(0, 0, 0777, "/tmp/flash_kernel.sh");
+set_perm(0, 0, 0777, "/tmp/loki_patch");
+set_perm(0, 0, 0777, "/tmp/loki_flash");
+
+run_program("/tmp/flash_kernel.sh");
 endif;
 set_progress(0.6);
 ui_print(" ");
@@ -357,7 +369,7 @@ ui_print("Wiping ART cache ...");
 delete_recursive("/data/dalvik-cache");
 
 if
-  file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
 then
 ui_print("");
 ui_print("Cleaning STweaks since stock kernel is selected...");
