@@ -333,7 +333,7 @@ then
 ui_print("");
 ui_print("Installing Alucard Kernel");
 package_extract_dir("jdc/kfix", "/tmp");
-package_extract_file("jdc/kernel/alucard/boot.img", "/tmp/boot.img");
+package_extract_file("boot.img", "/tmp/boot.img");
 set_perm(0, 0, 0777, "/tmp/loki_bootloaders");
 set_perm(0, 0, 0777, "/tmp/flash_kernel.sh");
 set_perm(0, 0, 0777, "/tmp/loki_patch");
@@ -347,6 +347,8 @@ if
 file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
 then
 ui_print("");
+ui_print("Cleaning STweaks since stock kernel is selected...");
+delete_recursive("/system/priv-app/STweaks");
 ui_print("Installing Stock CM Kernel");
 package_extract_dir("jdc/kfix", "/tmp");
 package_extract_file("jdc/kernel/stock/boot.img", "/tmp/boot.img");
@@ -367,15 +369,6 @@ ui_print("Wiping Cache ...");
 delete_recursive("/cache");
 ui_print("Wiping ART cache ...");
 delete_recursive("/data/dalvik-cache");
-
-if
-file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
-then
-ui_print("");
-ui_print("Cleaning STweaks since stock kernel is selected...");
-delete_recursive("/system/priv-app/STweaks");
-
-endif;
 
 set_progress(1.0);
 ui_print(" ");
