@@ -1,0 +1,16 @@
+Changes since Stable-1 update
+-----------------------------
+-AROMA installer with advanced wipe options and JDCTeam theme
+-Allow dirty installations
+-Increase VoIP app's mic volume
+-Back to 0.75 transitions
+-ROM is now odexed
+-Clean on 'About Phone' Section
+-Add test team as contributors
+-Change boost time according to CAF
+-Kernel general fixes
+-Ramdisk general fixes
+-Fix STweaks typo
+-upstream merge until 20160730
+-Truly fix lockscreen wallpaper
+-Update graphic drivers and blobs 
