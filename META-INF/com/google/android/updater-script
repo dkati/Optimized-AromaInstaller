@@ -44,8 +44,14 @@ ui_print("Dirty Flashing...");
 ui_print("Only Cache and system will be deleted");
 endif;
 
-#Extreme wipe
+#Do nothing
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "3" then
+ui_print("Only Cache and system will be deleted");
+endif;
+
+
+#Extreme wipe
+if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "4" then
 ui_print("EXTREME Wiping...");
 ui_print("");
 package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
