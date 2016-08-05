@@ -74,7 +74,7 @@ ini_set("rom_name",             "Optimized CyanogenMod 13");
 ini_set("rom_version",          "Stable 2");
 ini_set("rom_author",           "JDC Team");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
-ini_set("rom_date",             "XX JULY 2016");
+ini_set("rom_date",             "August 2016");
 
 ###################################################################################################################
 #

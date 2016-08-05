@@ -11,6 +11,7 @@ Changes since Stable-1 update
 -Kernel general fixes
 -Ramdisk general fixes
 -Fix STweaks typo
--upstream merge until 20160730
+-upstream merge until 20160805
 -Truly fix lockscreen wallpaper
 -Update graphic drivers and blobs 
+-Update to R61 Android
