@@ -284,7 +284,7 @@ selectbox(
 	    "AudioFx (Stock)",	   	  "",           				  1,     #-- selected.2 = 2
 
       "Kernel Tweaks & Tools",               "",                                      2,  #-- Group 4. key = "selected.4"
-	    "Install Tools", 	 "Like Kernel Auditor,Lspeed,FxExplorer...",      0,     #-- selected.4 = 1
+	    "Install Tools", 	 "Kernel Adiutor,Lspeed,FxExplorer...",      0,     #-- selected.4 = 1
 	    "No Need", 	  		 "I Don't Know How To Use Them Or Don't Want to...",	  1     #-- selected.4 = 2
 
 
