@@ -46,7 +46,7 @@ endif;
 
 #Do nothing
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "3" then
-ui_print("Only Cache and system will be deleted");
+ui_print("Will not delete anything...");
 endif;
 
 
@@ -369,12 +369,15 @@ set_progress(0.6);
 ui_print(" ");
 set_progress(0.9);
 
+#Wipe cache only if option NOTHING is not selected
+if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") != "3" then
 mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/cache", "/cache");
 mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/userdata", "/data");
 ui_print("Wiping Cache ...");
 delete_recursive("/cache");
 ui_print("Wiping ART cache ...");
 delete_recursive("/data/dalvik-cache");
+endif;
 
 set_progress(1.0);
 ui_print(" ");
