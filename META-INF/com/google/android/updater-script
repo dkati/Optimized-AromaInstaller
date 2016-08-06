@@ -77,7 +77,7 @@ run_program("/sbin/busybox", "mount", "/system");
 package_extract_dir("system", "/system");
 ui_print("Installing Selected Files...");
 
-# Sound Mode
+
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
@@ -89,8 +89,8 @@ if
 file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
 ui_print("Installing Stock Launcher");
-# package_extract_dir("jdc/launcher/stock/system", "/system");
 endif;
+
 # Audio
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
@@ -104,17 +104,17 @@ if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
 then
 ui_print("Installing AudioFX");
-# package_extract_dir("jdc/audio/audiofx/system", "/system");
 endif;
+
 #Kernel Tweaks
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
 then
 ui_print("Installing Kernel Tweaks");
-package_extract_dir("jdc/rootapps", "/system");
+package_extract_dir("jdc/rootapps/system", "/system");
 ui_print("");
-
 endif;
+
 ifelse(is_substring("I337", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/gsm/* /system/"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/vzw/* /system/"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox sed -i 's/ro.com.google.clientidbase=android-google/ro.com.google.clientidbase=android-verizon/g' /system/build.prop"));
