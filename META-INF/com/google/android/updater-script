@@ -78,19 +78,6 @@ package_extract_dir("system", "/system");
 ui_print("Installing Selected Files...");
 
 
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
-then
-ui_print("Installing Nova Launcher");
-package_extract_dir("jdc/launcher/nova/system", "/system");
-delete_recursive("/system/priv-app/Trebuchet");
-endif;
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
-then
-ui_print("Installing Stock Launcher");
-endif;
-
 # Audio
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
@@ -378,6 +365,21 @@ delete_recursive("/cache");
 ui_print("Wiping ART cache ...");
 delete_recursive("/data/dalvik-cache");
 endif;
+
+#STweaks installation
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
+then
+ui_print("Removing STweaks");
+delete_recursive("/system/priv-app/STweaks");
+delete_recursive("data/.alucard");
+endif;
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
+then
+ui_print("STweaks will be installed");
+endif;
+
 
 set_progress(1.0);
 ui_print(" ");

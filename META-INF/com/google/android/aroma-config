@@ -274,9 +274,9 @@ selectbox(
 	  # TITLE            |  SUBTITLE                                                 | Initial Value #
 	  #------------------+-----------------------------------------------------------+---------------#
 
-      "Default Launcher",              			     "",                              2,  #-- Group 1. key = "selected.1"
-		"Nova Launcher",       "",      0,     #-- selected.1 = 1
-	    "Trebuchet (Stock)",       "",     	  1,     #-- selected.1 = 2
+      "STweaks installation",              			     "",                              2,  #-- Group 1. key = "selected.1"
+		"Use STweaks!",       "",      1,     #-- selected.1 = 1
+	    "No need of STweaks",       "",     	  0,     #-- selected.1 = 2
 
 
       "Audio Mods",          		       		 "",                                      2,  #-- Group 2. key = "selected.2"
