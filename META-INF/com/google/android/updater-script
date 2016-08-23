@@ -143,6 +143,7 @@ symlink("/firmware/image/tzapps.mdt", "/system/etc/firmware/tzapps.mdt");
 symlink("/system/bin/toybox", "/system/xbin/ls",
 "/system/xbin/ps");
 symlink("/system/lib/libbluetooth_jni.so", "/system/app/Bluetooth/lib/arm/libbluetooth_jni.so");
+symlink("/system/lib/libcmaudio_jni.so", "/system/priv-app/CMAudioService/lib/arm/libcmaudio_jni.so");
 symlink("/system/lib/libdefcontainer_jni.so", "/system/priv-app/DefaultContainerService/lib/arm/libdefcontainer_jni.so");
 symlink("/system/lib/libjni_eglfence.so", "/system/app/Gallery2/lib/arm/libjni_eglfence.so");
 symlink("/system/lib/libjni_filtershow_filters.so", "/system/app/Gallery2/lib/arm/libjni_filtershow_filters.so");
