@@ -1,17 +1,18 @@
-Changes since Stable-1 update
+Changes since Stable-2 update
 -----------------------------
--AROMA installer with advanced wipe options and JDCTeam theme
--Allow dirty installations
--Increase VoIP app's mic volume
--Back to 0.75 transitions
--ROM is now odexed
--Clean on 'About Phone' Section
--Add test team as contributors
--Change boost time according to CAF
--Kernel general fixes
--Ramdisk general fixes
--Fix STweaks typo
--upstream merge until 20160806
--Truly fix lockscreen wallpaper
--Update graphic drivers and blobs 
--Update to R61 Android
+-Bring themes back
+-Updated manifest
+-Upstream merge since 0824
+-Updated kernel to latest Linux changes and general fixes
+-Kernel now got CRON services(Check out the CRON tab at STweaks)
+-Updated toolchains
+-Ramdisk updates and changes
+-Updated webview
+-GPS doesnt affect cpu/battery/heat as before
+-Edited dexopt screen while booting
+--------------------------------aroma updates--------------------------------
+Updated stock kernel
+remove launcher selection
+Add option to remove STweaks
+
+
