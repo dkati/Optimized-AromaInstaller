@@ -2,7 +2,7 @@ Changes since Stable-2 update
 -----------------------------
 -Bring themes back
 -Updated manifest
--Upstream merge since 0824
+-Upstream merge since 0828
 -Updated kernel to latest Linux changes and general fixes
 -Kernel now got CRON services(Check out the CRON tab at STweaks)
 -Updated toolchains
@@ -10,9 +10,13 @@ Changes since Stable-2 update
 -Updated webview
 -GPS doesnt affect cpu/battery/heat as before
 -Edited dexopt screen while booting
---------------------------------aroma updates--------------------------------
+-Changed wallpaper
+-Back to old camera version
+--aroma updates--
 Updated stock kernel
 remove launcher selection
 Add option to remove STweaks
+Add a warning message before return to recovery
+
 
 

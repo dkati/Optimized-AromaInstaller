@@ -353,7 +353,7 @@ checkviewbox(
     "Post Installation",
 
   #-- Text
-    "Installation Finished. Going back to Main Menu",
+    "Installation Finished. Going back to Main Menu\n\n<b><#f00>In case you flash gapps: \nPlease flash GApps BEFORE rebooting ROM \nand leaving the recovery.</#></b>\n\n\n",
 
   #-- Icon
     "@welcome",
