@@ -12,6 +12,7 @@ Changes since Stable-2 update
 -Edited dexopt screen while booting
 -Changed wallpaper
 -Back to old camera version
+-Build CLANG with -O3 flag
 --aroma updates--
 Updated stock kernel
 remove launcher selection
