@@ -12,12 +12,17 @@ Changes since Stable-2 update
 -Edited dexopt screen while booting
 -Changed wallpaper
 -Back to old camera version
--Build CLANG with -O3 flag
+-Build CLANG with -O3 flag[testing]
+-Reduce CPU frequency while on call
+-Prevent a logcat spam caused by a wifi event
 --aroma updates--
 Updated stock kernel
 remove launcher selection
 Add option to remove STweaks
 Add a warning message before return to recovery
+Option to add both aosp and snap camera
+
+
 
 
 
