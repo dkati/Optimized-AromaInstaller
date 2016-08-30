@@ -102,6 +102,15 @@ package_extract_dir("jdc/rootapps/system", "/system");
 ui_print("");
 endif;
 
+#Camera chooser
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
+then
+ui_print("Installing both AOSP and Snap Camera");
+package_extract_dir("jdc/camera/Snap","/system/app");
+ui_print("");
+endif;
+
 ifelse(is_substring("I337", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/gsm/* /system/"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/vzw/* /system/"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox sed -i 's/ro.com.google.clientidbase=android-google/ro.com.google.clientidbase=android-verizon/g' /system/build.prop"));
