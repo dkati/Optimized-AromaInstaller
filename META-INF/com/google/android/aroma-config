@@ -74,7 +74,7 @@ ini_set("rom_name",             "Optimized CyanogenMod 13");
 ini_set("rom_version",          "Stable 3");
 ini_set("rom_author",           "JDC Team");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
-ini_set("rom_date",             "August 2016");
+ini_set("rom_date",             "September 2016");
 
 ###################################################################################################################
 #
@@ -292,8 +292,8 @@ selectbox(
 	"AOSP AND Snap camera",  "",0,     #-- selected.4= 2
 	
 	"Root Corner",                       "",2,#-- Group 5. key = "selected.5"
-	"Use Privacy Guard (Stock)",                  "",1, #-- selected.5 = 1
-	"Use SuperSU app",  "",0     #-- selected.5= 2
+	"Use Privacy Guard(Used in nightlies)",                  "",0, #-- selected.5 = 1
+	"Use SuperSU app(Seems to work better)",  "",1     #-- selected.5= 2
 
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
@@ -361,7 +361,7 @@ checkviewbox(
     "Post Installation",
 
   #-- Text
-    "Installation Finished. Going back to Main Menu\n\n<b><#f00>In case you flash gapps: \nPlease flash GApps BEFORE rebooting ROM \nand leaving the recovery.</#></b>\n\n\n",
+    "Installation Finished. Going back to Main Menu\n\n<b><#f00>In case you flash gapps: \nPlease flash GApps BEFORE rebooting ROM \nand leaving the recovery.</#></b>\n\n\nIF SUPERSU APP IS SELECTED KEEP IN MIND THAT DEVICE WILL REBOOT TWICE ON FIRST BOOT.ITS DUE TO SU SCRIPTS.DONT WORRY",
 
   #-- Icon
     "@welcome",
