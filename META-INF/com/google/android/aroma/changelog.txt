@@ -15,7 +15,6 @@ Changes since Stable-2 update
 -Build CLANG with -O3 flag[testing]
 -Reduce CPU frequency while on call
 -Prevent a logcat spam caused by a wifi event
--Disable logcat by default to avoid battery drain
 -Add an EXPERIMENTAL feature about Google Service drain
 -QMUXD edits(Affects gps)
 -Removed some ugly wallpapers
