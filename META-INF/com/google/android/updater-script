@@ -107,7 +107,7 @@ if
 file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
 then
 ui_print("Installing both AOSP and Snap Camera");
-package_extract_dir("jdc/camera/Snap","/system/app");
+package_extract_dir("jdc/camera/Snap","/system/app/Snap");
 ui_print("");
 endif;
 
