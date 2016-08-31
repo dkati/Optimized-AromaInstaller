@@ -361,7 +361,7 @@ checkviewbox(
     "Post Installation",
 
   #-- Text
-    "Installation Finished. Going back to Main Menu\n\n<b><#f00>In case you flash gapps: \nPlease flash GApps BEFORE rebooting ROM \nand leaving the recovery.</#></b>\n\n\nIF SUPERSU APP IS SELECTED KEEP IN MIND THAT DEVICE WILL REBOOT TWICE ON FIRST BOOT.ITS DUE TO SU SCRIPTS.DONT WORRY",
+    "Installation Finished. Going back to Main Menu\n\n<#0f0>In case you flash gapps: \nPlease flash GApps BEFORE rebooting ROM \nand leaving the recovery.</#>\n\n\n<b><#f00>IF SUPERSU APP IS SELECTED KEEP IN MIND THAT DEVICE WILL REBOOT TWICE ON FIRST BOOT.ITS DUE TO SU SCRIPTS.DONT WORRY</#></b>",
 
   #-- Icon
     "@welcome",
