@@ -17,13 +17,16 @@ Changes since Stable-2 update
 -Prevent a logcat spam caused by a wifi event
 -Disable logcat by default to avoid battery drain
 -Add an EXPERIMENTAL feature about Google Service drain
+-QMUXD edits(Affects gps)
+-Removed some ugly wallpapers
+-General fixes and define some defaults
 --aroma updates--
 Updated stock kernel
 remove launcher selection
 Add option to remove STweaks
 Add a warning message before return to recovery
 Option to add both aosp and snap camera
-
+Add aroma option for SuperSU
 
 
 
