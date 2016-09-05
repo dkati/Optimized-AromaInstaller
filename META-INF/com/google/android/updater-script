@@ -78,21 +78,6 @@ package_extract_dir("system", "/system");
 ui_print("Installing Selected Files...");
 
 
-# Audio
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
-then
-ui_print("Installing Viper Audio");
-package_extract_dir("jdc/audio/viper/system", "/system");
-delete_recursive("/system/priv-app/AudioFX");
-
-endif;
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
-then
-ui_print("Installing AudioFX");
-endif;
-
 #Kernel Tweaks
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
@@ -408,6 +393,25 @@ if
 file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "1"
 then
 ui_print("Privacy guard will be installed");
+endif;
+
+# Add viper to build
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
+then
+ui_print("Installing Viper Audio");
+package_extract_dir("system/viper" , "/tmp/viper");
+run_program("/sbin/busybox", "unzip", "/tmp/viper/V4A_CM13.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/viper");
+run_program("/sbin/busybox", "sh", "/tmp/viper/META-INF/com/google/android/update-binary", "null", "1", "/tmp/viper/V4A_CM13.zip");
+ui_print("Viper package installed successfully");
+delete_recursive("/system/priv-app/AudioFX");
+endif;
+
+#Install AudioFX if selected
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
+then
+ui_print("Installing AudioFX");
 endif;
 
 set_progress(1.0);
