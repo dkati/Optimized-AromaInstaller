@@ -280,8 +280,8 @@ selectbox(
 
 
         "Audio Mods", 	      "", 2,  #-- Group 2. key = "selected.2"
-        "Viper Audio", 	      "", 0,     #-- selected.2 = 1
-	"AudioFx (Stock)",  "", 1,     #-- selected.2 = 2
+        "Viper Audio", 	      "", 1,     #-- selected.2 = 1
+	"AudioFx (Stock)",  "", 0,     #-- selected.2 = 2
 
         "Kernel Tweaks & Tools",   ""                                                   ,      2,  #-- Group 3. key = "selected.3"
 	"Install Tools"               , "Kernel Adiutor,Lspeed,FxExplorer...",      0,     #-- selected.3 = 1
