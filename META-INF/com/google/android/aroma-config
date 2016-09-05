@@ -94,7 +94,7 @@ ini_set("rom_date",             "September 2016");
 #
 anisplash(
   #-- Number of Loop
-    3,
+    1,
 
   #-- Frame 1 [ Image, duration in millisecond ]. <AROMA Resource Dir>/splash/a[0..23].png
 	"splash/a0", 1,
