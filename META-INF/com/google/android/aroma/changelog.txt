@@ -1,32 +1,17 @@
-Changes since Stable-2 update
+Changes since Stable-3 update
 -----------------------------
--Bring themes back
--Updated manifest
--Upstream merge since 0831
--Updated kernel to latest Linux changes and general fixes
--Kernel now got CRON services(Check out the CRON tab at STweaks)
--Updated toolchains
--Ramdisk updates and changes
--Updated webview
--GPS doesnt affect cpu/battery/heat as before
--Edited dexopt screen while booting
--Changed wallpaper
--Back to old camera version
--Build CLANG with -O3 flag[testing]
--Reduce CPU frequency while on call
--Prevent a logcat spam caused by a wifi event
--Add an EXPERIMENTAL feature about Google Service drain
--QMUXD edits(Affects gps)
--Removed some ugly wallpapers
--General fixes and define some defaults
---aroma updates--
-Updated stock kernel
-remove launcher selection
-Add option to remove STweaks
-Add a warning message before return to recovery
-Option to add both aosp and snap camera
-Add aroma option for SuperSU
-
-
-
-
+-Bring live wallpapers back
+-Upstream merge until 0906
+-Ramdisk updates/edits
+-Fix dexopt welcome fonts
+-Updated kernel
+-Update stock kernel to the latest one
+-UI speed boost
+-new sdcard driver
+-Edits on sound
+-qmuxd edits
+-Fix Viper4android installation
+-reworked camera
+------------aroma edits------------
+-edit the license.
+-speedup the boot of aroma
