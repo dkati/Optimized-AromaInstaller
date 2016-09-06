@@ -1,7 +1,6 @@
 Changes since Stable-3 update
 -----------------------------
 -Bring live wallpapers back
--Fix SIM issue for some cdma variants
 -Upstream merge until 0906
 -Ramdisk updates/edits
 -Fix dexopt welcome fonts
