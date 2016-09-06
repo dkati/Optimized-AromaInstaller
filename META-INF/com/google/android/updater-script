@@ -340,7 +340,7 @@ run_program("/tmp/flash_kernel.sh");
 endif;
 set_progress(0.6);
 ui_print(" ");
-set_progress(0.9);
+
 
 #Wipe cache only if option NOTHING is not selected
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") != "3" then
@@ -366,16 +366,29 @@ then
 ui_print("STweaks will be installed");
 endif;
 
+set_progress(0.9);
 
 # Add viper to build
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
 then
+
+ui_print("Deleting AudioFX ...");
+delete_recursive("/system/priv-app/AudioFX");
+ui_print("Deleting DSP Manager ...");
+delete_recursive("/system/app/DSPManager");
+ui_print("Deleting MusicFX ...");
+delete_recursive("/system/priv-app/MusicFX");
+
 ui_print("Installing Viper Audio");
-package_extract_dir("system/viper" , "/tmp/viper");
-run_program("/sbin/busybox", "unzip", "/tmp/viper/v4a.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/viper");
-run_program("/sbin/busybox", "sh", "/tmp/viper/META-INF/com/google/android/update-binary", "null", "1", "/tmp/viper/v4a.zip");
-ui_print("Viper package installed successfully");
+package_extract_dir("jdc/audio/viper/system", "/system"); 
+package_extract_dir("jdc/audio/viper/viperTemp", "/viperTemp");
+set_perm(0, 0, 0777, "/viperTemp/vipertweaks.sh");
+ui_print("");
+run_program("/viperTemp/vipertweaks.sh", "mytweak");
+ui_print("");
+delete_recursive("/viperTemp");
+
 endif;
 
 #Install AudioFX if selected
