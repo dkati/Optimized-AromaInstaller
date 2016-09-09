@@ -288,8 +288,8 @@ selectbox(
 	"No Need", "I Don't Know How To Use Them Or Don't Want to...",	 1,     #-- selected.3= 2
 	    
 	"Camera Corner",                       "",2,#-- Group 4. key = "selected.4"
-	"AOSP camera",                  "",1, #-- selected.4 = 1
-	"AOSP AND Snap camera",  "",0,     #-- selected.4= 2
+	"Old CM camera",                  "",1, #-- selected.4 = 1
+	"Old CM AND Snap camera",  "",0,     #-- selected.4= 2
 	
 	"Root Corner",                       "",2,#-- Group 5. key = "selected.5"
 	"Use Privacy Guard(Used in nightlies)",                  "",0, #-- selected.5 = 1
