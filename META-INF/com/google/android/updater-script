@@ -411,13 +411,16 @@ endif;
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "2"
 then
-ui_print("Installing SuperSU...");
-package_extract_dir("system/supersu", "/tmp/supersu");
-run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/supersu");
-run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "null", "1", "/tmp/supersu/supersu.zip");
-delete_recursive("/tmp/supersu");
-delete_recursive("/system/supersu");
-ui_print("SuperSU installed successfully");
+	#if dirty install NOT selected(that means clean install) then install supersu.or else it will be overwrited if user update it from playstore or so.
+	if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") != "2" then
+		ui_print("Installing SuperSU...");
+		package_extract_dir("system/supersu", "/tmp/supersu");
+		run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/supersu");
+		run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "null", "1", "/tmp/supersu/supersu.zip");
+		delete_recursive("/tmp/supersu");
+		delete_recursive("/system/supersu");
+		ui_print("SuperSU installed successfully");
+	endif;
 endif;
 
 #Privacy Guard
