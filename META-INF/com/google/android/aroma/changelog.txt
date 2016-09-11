@@ -2,17 +2,20 @@ Changes since Stable-3 update
 -----------------------------
 -Bring live wallpapers back
 -Fix SIM issue for some cdma variants
--Upstream merge until 0906
+-Upstream merge
 -Ramdisk updates/edits
 -Fix dexopt welcome fonts
 -Updated kernel
 -Update stock kernel to the latest one
 -UI speed boost
--new sdcard driver
 -Edits on sound
 -qmuxd edits
--Fix Viper4android installation
+-Fix Viper4android installation(requires your busybox!)
 -reworked camera
+-Update to r66 android revision
+-remove google play killer
+-airplane mode - sim card issue fixed by CM upstream
+-edit recents menu(add tweaks to optcm settings section)
 ------------aroma edits------------
 -edit the license.
 -speedup the boot of aroma
