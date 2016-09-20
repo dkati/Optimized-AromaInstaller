@@ -8,14 +8,17 @@ Changes since Stable-3 update
 -Updated kernel
 -Update stock kernel to the latest one
 -UI speed boost
--Edits on sound
+-Edits on sound(Distortion and stability)
 -qmuxd edits
--Fix Viper4android installation(requires your busybox!)
--reworked camera
+-Fix Viper4android installation(requires your OWN busybox!)
+-reworked camera(still crashes)
 -Update to r66 android revision
 -remove google play killer
 -airplane mode - sim card issue fixed by CM upstream
 -edit recents menu(add tweaks to optcm settings section)
+-add some android N notifications flavor
+-changed wallpaper again (3D mandelbrot)
+-Force fast charge by default
 ------------aroma edits------------
 -edit the license.
 -speedup the boot of aroma
