@@ -71,10 +71,10 @@
 # Initializing Rom Information
 #
 ini_set("rom_name",             "Optimized CyanogenMod 13");
-ini_set("rom_version",          "Stable 4");
+ini_set("rom_version",          "Stable 5");
 ini_set("rom_author",           "JDC Team");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
-ini_set("rom_date",             "September 2016");
+ini_set("rom_date",             "Octomber 2016");
 
 ###################################################################################################################
 #

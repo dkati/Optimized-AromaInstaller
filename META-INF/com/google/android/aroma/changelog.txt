@@ -1,24 +1,8 @@
-Changes since Stable-3 update
+Changes since Stable-4 update
 -----------------------------
--Bring live wallpapers back
--Fix SIM issue for some cdma variants
--Upstream merge
--Ramdisk updates/edits
--Fix dexopt welcome fonts
--Updated kernel
--Update stock kernel to the latest one
--UI speed boost
--Edits on sound(Distortion and stability)
+-Many changes on kernel
+-Many changes on Ramdisk
+-Edits on sound
+-Changed wallpaper/bootanimation
+-Updated stock kernel to aroma
 -qmuxd edits
--Fix Viper4android installation(requires your OWN busybox!)
--reworked camera(still crashes)
--Update to r66 android revision
--remove google play killer
--airplane mode - sim card issue fixed by CM upstream
--edit recents menu(add tweaks to optcm settings section)
--add some android N notifications flavor
--changed wallpaper again (3D mandelbrot)
--Force fast charge by default
-------------aroma edits------------
--edit the license.
--speedup the boot of aroma
