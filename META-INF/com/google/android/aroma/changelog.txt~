@@ -1,17 +1,9 @@
-Changes since Stable-3 update
+Changes since Stable-4 update
 -----------------------------
--Bring live wallpapers back
--Upstream merge until 0906
--Ramdisk updates/edits
--Fix dexopt welcome fonts
--Updated kernel
--Update stock kernel to the latest one
--UI speed boost
--new sdcard driver
--Edits on sound
+-Many changes on kernel
+-Many changes on Ramdisk
+-Edits on sound (affects voip and calls)
+-Changed wallpaper/bootanimation
+-Updated stock kernel to aroma
 -qmuxd edits
--Fix Viper4android installation
--reworked camera
-------------aroma edits------------
--edit the license.
--speedup the boot of aroma
+-Edits on sound that affects gaming sound
