@@ -278,7 +278,7 @@ selectbox(
 	"Use STweaks!"              ,"",1,     #-- selected.1 = 1
 	"No need of STweaks"     ,"",0,     #-- selected.1 = 2
 	    
-	"Camera Corner",                       "",2,#-- Group 2. key = "selected.3"
+	"Camera Corner",                       "",2,#-- Group 2. key = "selected.2"
 	"Old CM camera",                  "",1, #-- selected.2 = 1
 	"Old CM AND Snap camera",  "",0,     #-- selected.2= 2
 	
