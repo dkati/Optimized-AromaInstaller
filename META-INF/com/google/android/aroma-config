@@ -277,23 +277,14 @@ selectbox(
 	"STweaks installation"    ,"",2,  #-- Group 1. key = "selected.1"
 	"Use STweaks!"              ,"",1,     #-- selected.1 = 1
 	"No need of STweaks"     ,"",0,     #-- selected.1 = 2
-
-
-        "Audio Mods", 	      "", 2,  #-- Group 2. key = "selected.2"
-        "Viper Audio", 	      "", 1,     #-- selected.2 = 1
-	"AudioFx (Stock)",  "", 0,     #-- selected.2 = 2
-
-        "Kernel Tweaks & Tools",   ""                                                   ,      2,  #-- Group 3. key = "selected.3"
-	"Install Tools"               , "Kernel Adiutor,Lspeed,FxExplorer...",      0,     #-- selected.3 = 1
-	"No Need", "I Don't Know How To Use Them Or Don't Want to...",	 1,     #-- selected.3= 2
 	    
-	"Camera Corner",                       "",2,#-- Group 4. key = "selected.4"
-	"Old CM camera",                  "",1, #-- selected.4 = 1
-	"Old CM AND Snap camera",  "",0,     #-- selected.4= 2
+	"Camera Corner",                       "",2,#-- Group 2. key = "selected.3"
+	"Old CM camera",                  "",1, #-- selected.2 = 1
+	"Old CM AND Snap camera",  "",0,     #-- selected.2= 2
 	
-	"Root Corner",                       "",2,#-- Group 5. key = "selected.5"
-	"Use Privacy Guard(Used in nightlies)",                  "",0, #-- selected.5 = 1
-	"Use SuperSU app(Seems to work better)",  "",1     #-- selected.5= 2
+	"Root Corner",                       "",2,#-- Group 3. key = "selected.3"
+	"Use Privacy Guard(Used in nightlies)",                  "",0, #-- selected.3 = 1
+	"Use SuperSU app(Seems to work better)",  "",1     #-- selected.3= 2
 
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#

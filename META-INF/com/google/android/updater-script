@@ -91,19 +91,9 @@ run_program("/sbin/busybox", "mount", "/system");
 package_extract_dir("system", "/system");
 ui_print("Installing Selected Files...");
 
-
-#Kernel Tweaks
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
-then
-ui_print("Installing Kernel Tweaks");
-package_extract_dir("jdc/rootapps/system", "/system");
-ui_print("");
-endif;
-
 #Camera chooser
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
 then
 ui_print("Installing both AOSP and Snap Camera");
 package_extract_dir("jdc/camera/Snap","/system/app/Snap");
@@ -346,9 +336,7 @@ set_perm(0, 0, 0777, "/tmp/loki_flash");
 set_perm(0, 0, 0777, "/tmp/loki.sh");
 
 assert(run_program("/sbin/sh", "/system/etc/loki.sh") == 0);
-ui_print("TSIPRAS1");
 assert(run_program("/sbin/sh", "/tmp/loki.sh")==0);
-ui_print("TSIPRAS2");
 #run_program("/tmp/flash_kernel.sh");
 ui_print("");
 
@@ -399,39 +387,9 @@ endif;
 
 set_progress(0.9);
 
-# Add viper to build
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
-then
-
-ui_print("Deleting AudioFX ...");
-delete_recursive("/system/priv-app/AudioFX");
-ui_print("Deleting DSP Manager ...");
-delete_recursive("/system/app/DSPManager");
-ui_print("Deleting MusicFX ...");
-delete_recursive("/system/priv-app/MusicFX");
-
-ui_print("Installing Viper Audio");
-package_extract_dir("jdc/audio/viper/system", "/system"); 
-package_extract_dir("jdc/audio/viper/viperTemp", "/viperTemp");
-set_perm(0, 0, 0777, "/viperTemp/vipertweaks.sh");
-ui_print("");
-run_program("/viperTemp/vipertweaks.sh", "mytweak");
-ui_print("");
-delete_recursive("/viperTemp");
-
-endif;
-
-#Install AudioFX if selected
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
-then
-ui_print("Installing AudioFX");
-endif;
-
 #SuperSU installation IF exist
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
 then
 	#if dirty install NOT selected(that means clean install) then install supersu.or else it will be overwrited if user update it from playstore or so.
 	if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") != "2" then
@@ -447,7 +405,7 @@ endif;
 
 #Privacy Guard
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
 then
 ui_print("Privacy guard will be installed");
 endif;
