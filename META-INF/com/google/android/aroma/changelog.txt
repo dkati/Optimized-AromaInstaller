@@ -9,4 +9,6 @@ Changes since Stable-4 update
 -Edits on sound that affects gaming sound
 -Remove some Aroma Root apps
 -Upstream merge
+-STweaks now works with systemless root
+-Update SuperSU to v2.78 SR1 
 
