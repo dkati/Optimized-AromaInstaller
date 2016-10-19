@@ -284,8 +284,11 @@ selectbox(
 	
 	"Root Corner",                       "",2,#-- Group 3. key = "selected.3"
 	"Use Privacy Guard(Used in nightlies)",                  "",0, #-- selected.3 = 1
-	"Use SuperSU app(Seems to work better)",  "",1     #-- selected.3= 2
+	"Use SuperSU app(Seems to work better)",  "",1,     #-- selected.3= 2
 
+	"Audio Corner",            "",2,#-- Group 4. key = "selected.4"
+	"Use ViPER4Arise",       "",1,#-- selected.4=1
+	"Use AudioFX",            "",0 #-- selected.4= 2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
