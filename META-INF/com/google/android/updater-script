@@ -20,9 +20,9 @@ set_progress(0.1);
 #run_program("/sbin/mount", "-t", "auto", "/system");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p19", "/cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
-delete_recursive("/system");
-delete_recursive("/cache");
-delete_recursive("/data/dalvik-cache");
+#delete_recursive("/system");
+#delete_recursive("/cache");
+#delete_recursive("/data/dalvik-cache");
 
 run_program("/sbin/mount", "-t", "auto", "/system");
 package_extract_file("install/bin/backuptool.sh", "/tmp/backuptool.sh");
@@ -46,6 +46,9 @@ set_perm(0, 0, 0777, "/tmp/bash");
 run_program("/tmp/wipe.sh");
 ui_print("Formatting /data/app");
 delete_recursive("/data/app");
+delete_recursive("/system");
+delete_recursive("/cache");
+delete_recursive("/data/dalvik-cache");
 ui_print("Won't wipe internal storage");
 ui_print("Cleaning Alucard profiles and Synapse files...");
 delete_recursive("/data/.alucard");
@@ -55,6 +58,8 @@ endif;
 #Upgrade, Dirty Flash
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "2" then
 ui_print("Dirty Flashing...");
+delete_recursive("/cache");
+delete_recursive("/data/dalvik-cache");
 ui_print("Only Cache and system will be deleted");
 endif;
 
@@ -80,6 +85,9 @@ delete_recursive("/data/media");
 ui_print("Cleaning Alucard profiles and Synapse files...");
 delete_recursive("/data/.alucard");
 delete_recursive("/data/.Synapse");
+ui_print("Cleaning cache...");
+delete_recursive("/cache");
+delete_recursive("/data/dalvik-cache");
 endif;
 
 ui_print("Installing...");
