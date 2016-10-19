@@ -422,10 +422,12 @@ if
 file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
 then
 ui_print("Installing BusyBox which is required for ViPER4Arise");
+package_extract_dir("system/busybox", "/tmp/busybox");
 run_program("/sbin/busybox", "unzip", "/tmp/busybox/bb.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/busybox");
 run_program("/sbin/busybox", "sh", "/tmp/busybox/META-INF/com/google/android/update-binary", "null", "1", "/tmp/busybox/bb.zip");
 
 ui_print("Installing ViPER4Arise");
+package_extract_dir("system/arise", "/tmp/arise");
 run_program("/sbin/busybox", "unzip", "/tmp/arise/arise.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/arise");
 run_program("/sbin/busybox", "sh", "/tmp/arise/META-INF/com/google/android/update-binary", "null", "1", "/tmp/arise/arise.zip");
 
