@@ -433,7 +433,7 @@ run_program("/sbin/busybox", "sh", "/tmp/arise/META-INF/com/google/android/updat
 
 ui_print("Cleaning temp files...");
 delete_recursive("/tmp/busybox");
-delete_recursive("/tmp/aries");
+delete_recursive("/tmp/arise");
 ui_print("ViPER4Arise installed successfully");
 ui_print("");
 endif;
