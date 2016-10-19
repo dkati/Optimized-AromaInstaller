@@ -46,7 +46,6 @@ set_perm(0, 0, 0777, "/tmp/bash");
 run_program("/tmp/wipe.sh");
 ui_print("Formatting /data/app");
 delete_recursive("/data/app");
-delete_recursive("/system");
 delete_recursive("/cache");
 delete_recursive("/data/dalvik-cache");
 ui_print("Won't wipe internal storage");
