@@ -100,7 +100,7 @@ ui_print("Installing Selected Files...");
 
 #Camera chooser
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
 ui_print("Installing both AOSP and Snap Camera");
 package_extract_dir("jdc/camera/Snap","/system/app/Snap");
@@ -378,25 +378,50 @@ ui_print("Wiping ART cache ...");
 delete_recursive("/data/dalvik-cache");
 endif;
 
-#STweaks installation
+#Kernel editor
+
+#1=stweaks
+#2=kernel adiutor
+#3=none
+#4=completely nothing
+
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "1"
+then
+ui_print("STweaks will be installed");
+endif;
+
+if
+file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "2"
+then
+ui_print("Kernel adiutor will be installed");
+package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
+ui_print("Removing STweaks");
+delete_recursive("/system/priv-app/STweaks");
+delete_recursive("data/.alucard");
+endif;
+
+if
+file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "3"
 then
 ui_print("Removing STweaks");
 delete_recursive("/system/priv-app/STweaks");
 delete_recursive("data/.alucard");
 endif;
+
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "4"
 then
-ui_print("STweaks will be installed");
+ui_print("Keeping the old kernel editor if exists.");
 endif;
+
+######################################end of kernel editor
 
 set_progress(0.9);
 
 #SuperSU installation IF exist
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
 then
 	#if dirty install NOT selected(that means clean install) then install supersu.or else it will be overwrited if user update it from playstore or so.
 	if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") != "2" then
@@ -412,14 +437,14 @@ endif;
 
 #Privacy Guard
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
 then
 ui_print("Privacy guard will be installed");
 endif;
 
 #Sound tweaks
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
 then
 ui_print("Installing BusyBox which is required for ViPER4Arise");
 package_extract_dir("system/busybox", "/tmp/busybox");
@@ -433,7 +458,7 @@ run_program("/sbin/busybox", "sh", "/tmp/arise/META-INF/com/google/android/updat
 
 ui_print("Cleaning temp files...");
 delete_recursive("/tmp/busybox");
-delete_recursive("/tmp/arise");
+delete_recursive("/tmp/aries");
 ui_print("ViPER4Arise installed successfully");
 ui_print("");
 endif;
