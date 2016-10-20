@@ -14,8 +14,8 @@ set_progress(0.1);
 mount("ext4", "EMMC", "/dev/block/mmcblk0p19", "/cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
 #delete_recursive("/system");
-#delete_recursive("/cache");
-#delete_recursive("/data/dalvik-cache");
+delete_recursive("/cache");
+delete_recursive("/data/dalvik-cache");
 
 
 package_extract_file("install/bin/backuptool.sh", "/tmp/backuptool.sh");
@@ -27,8 +27,9 @@ unmount("/system");
 
 show_progress(0.750000, 0);
 
-#Full Wipe
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
+
+#Full Wipe
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "1" then
 ui_print("Fully Wiping...");
 ui_print("");
@@ -39,8 +40,6 @@ set_perm(0, 0, 0777, "/tmp/bash");
 run_program("/tmp/wipe.sh");
 ui_print("Formatting /data/app");
 delete_recursive("/data/app");
-delete_recursive("/cache");
-delete_recursive("/data/dalvik-cache");
 ui_print("Won't wipe internal storage");
 ui_print("Cleaning Alucard profiles and Synapse files...");
 delete_recursive("/data/.alucard");
@@ -63,7 +62,7 @@ endif;
 
 #Extreme wipe
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "4" then
-ui_print("EXTREME Wiping...");
+ui_print("EXTREME wipe...");
 ui_print("");
 package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
 package_extract_file("jdc/bash", "/tmp/bash");
@@ -72,14 +71,11 @@ set_perm(0, 0, 0777, "/tmp/bash");
 run_program("/tmp/wipe.sh");
 ui_print("Formatting /data/app");
 delete_recursive("/data/app");
-ui_print("Formatting Internal storage");
-delete_recursive("/data/media");
 ui_print("Cleaning Alucard profiles and Synapse files...");
 delete_recursive("/data/.alucard");
 delete_recursive("/data/.Synapse");
-ui_print("Cleaning cache...");
-delete_recursive("/cache");
-delete_recursive("/data/dalvik-cache");
+ui_print("Formatting Internal storage");
+delete_recursive("/data/media/0");
 endif;
 
 ui_print("Installing...");
@@ -320,6 +316,7 @@ set_metadata("/system/xbin/procrank", "uid", 0, "gid", 0, "mode", 06755, "capabi
 set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:su_exec:s0");
 
 run_program("/tmp/install/bin/backuptool.sh", "restore");
+#################################################################
 # KERNEL SELECTION AROMA BEGINS
 if
 file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "1"
@@ -371,6 +368,7 @@ ui_print("Wiping ART cache ...");
 delete_recursive("/data/dalvik-cache");
 endif;
 
+####################################################################
 #Kernel editor
 
 #1=stweaks
