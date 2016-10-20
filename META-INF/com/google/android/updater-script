@@ -372,8 +372,9 @@ endif;
 
 #1=stweaks
 #2=kernel adiutor
-#3=none
-#4=completely nothing
+#3=both stweaks and kernel adiutor
+#4=none
+#5=dirty install, nothing
 
 if
 file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "1"
@@ -396,6 +397,13 @@ endif;
 if
 file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "3"
 then
+ui_print("STweaks and Kernel Adiutor will be installed");
+package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
+endif;
+
+if
+file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "4"
+then
 ui_print("Removing STweaks if exist");
 delete_recursive("/system/priv-app/STweaks");
 delete_recursive("/data/.alucard");
@@ -404,7 +412,7 @@ delete_recursive("/system/app/KernelAdiutor");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "4"
+file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "5"
 then
 ui_print("Keeping the old kernel editor if exists.");
 endif;
