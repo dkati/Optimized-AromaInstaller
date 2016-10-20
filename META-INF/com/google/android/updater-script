@@ -390,7 +390,7 @@ ui_print("Kernel adiutor will be installed");
 package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
 ui_print("Removing STweaks");
 delete_recursive("/system/priv-app/STweaks");
-delete_recursive("data/.alucard");
+delete_recursive("/data/.alucard");
 endif;
 
 if
@@ -398,7 +398,7 @@ file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "3"
 then
 ui_print("Removing STweaks if exist");
 delete_recursive("/system/priv-app/STweaks");
-delete_recursive("data/.alucard");
+delete_recursive("/data/.alucard");
 ui_print("Removing Kernel Adiutor if exist");
 delete_recursive("/system/app/KernelAdiutor");
 endif;
