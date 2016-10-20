@@ -14,8 +14,6 @@ set_progress(0.1);
 mount("ext4", "EMMC", "/dev/block/mmcblk0p19", "/cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
 #delete_recursive("/system");
-delete_recursive("/cache");
-delete_recursive("/data/dalvik-cache");
 
 
 package_extract_file("install/bin/backuptool.sh", "/tmp/backuptool.sh");
@@ -49,8 +47,6 @@ endif;
 #Upgrade, Dirty Flash
 if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "2" then
 ui_print("Dirty Flashing...");
-delete_recursive("/cache");
-delete_recursive("/data/dalvik-cache");
 ui_print("Only Cache and system will be deleted");
 endif;
 
@@ -82,19 +78,12 @@ ui_print("Installing...");
 ui_print("***********************");
 
 set_progress(0.2);
-show_progress(0.4, "-70000");
+#show_progress(0.4, "-70000");
 run_program("/sbin/busybox", "mount", "/system");
 package_extract_dir("system", "/system");
 ui_print("Installing Selected Files...");
 
-#Camera chooser
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
-then
-ui_print("Installing both AOSP and Snap Camera");
-package_extract_dir("jdc/camera/Snap","/system/app/Snap");
-ui_print("");
-endif;
+
 
 ifelse(is_substring("I337", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/gsm/* /system/ && busybox rm /system/lib/libcnefeatureconfig.so"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/vzw/* /system/"));
@@ -316,6 +305,16 @@ set_metadata("/system/xbin/procrank", "uid", 0, "gid", 0, "mode", 06755, "capabi
 set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:su_exec:s0");
 
 run_program("/tmp/install/bin/backuptool.sh", "restore");
+
+#Camera chooser
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
+then
+ui_print("Installing both AOSP and Snap Camera");
+package_extract_dir("jdc/camera/Snap","/system/app/Snap");
+ui_print("");
+endif;
+
 #################################################################
 # KERNEL SELECTION AROMA BEGINS
 if
@@ -336,8 +335,8 @@ assert(run_program("/sbin/sh", "/system/etc/loki.sh") == 0);
 assert(run_program("/sbin/sh", "/tmp/loki.sh")==0);
 #run_program("/tmp/flash_kernel.sh");
 ui_print("");
-
 endif;
+
 if
 file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
 then
@@ -380,6 +379,8 @@ if
 file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "1"
 then
 ui_print("STweaks will be installed");
+ui_print("Removing Kernel Adiutor if exist");
+delete_recursive("/system/app/KernelAdiutor");
 endif;
 
 if
@@ -395,9 +396,11 @@ endif;
 if
 file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "3"
 then
-ui_print("Removing STweaks");
+ui_print("Removing STweaks if exist");
 delete_recursive("/system/priv-app/STweaks");
 delete_recursive("data/.alucard");
+ui_print("Removing Kernel Adiutor if exist");
+delete_recursive("/system/app/KernelAdiutor");
 endif;
 
 if
