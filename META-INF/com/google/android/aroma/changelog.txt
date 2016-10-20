@@ -13,3 +13,4 @@ Changes since Stable-4 update
 -Update SuperSU to v2.78 SR1 
 -Replace viper4android with viper4arise
 -Busybox will be installed if you select viper4arise
+-Speaker Optimization (Broken Ringtone,Notification tone,etc.)
