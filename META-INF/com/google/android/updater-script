@@ -12,6 +12,7 @@ run_program("/tmp/install/bin/backuptool.sh", "backup");
 
 ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("Formatting /system...");
+delete_recursive("/system");
 run_program("/tmp/install/bin/format.sh");
 ui_print("Mounting /system...");
 run_program("/sbin/busybox", "mount", "/system");
