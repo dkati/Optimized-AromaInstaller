@@ -1,35 +1,25 @@
-About STweaks
------------------
-!!ONLY WORKING WITH ALUCARD KERNEL!!-Expert user only!
+STweaks - EXPERT USER ONLY!
+----------------------------------------------
+!! ONLY WORKS WITH ALUCARD KERNEL !!
+STweaks is a powerful tool which can boost or destroy your device if you are not sure what you are doing.
+Please select STweaks ONLY if you accept the possible risks.
+When installing STweaks, you can also install Kernel Adiutor from the Play Store.
+Although, in Kernel Adiutor you MUST disable *APPLY ON BOOT*.
+Kernel Adiutor overwrites the STweaks edits. That means any edit you make in STweaks will be deleted on next reboot if you have not disabled *APPLY ON BOOT* in Kernel Adiutor.
+For every change you make in Stweaks you MUST press the *APPLY SETTINGS TO GOV CORE* button from the tab CPU-TUNING and wait for the toast message, then press *LOAD ALL* from CPU tab and wait 10 seconds until STweaks auto-reboots.
+STweaks is applying the edits before init.d (androids main boot script).
+STweaks will occasionally be unable to show you the UI even if you give it SU privileges (this happens because something went wrong with your user edits).
+All you need to do is to press on top-right Settings > Theme chooser > change the theme to refresh the interface.
+STweaks can FULLY edit the Alucard Kernel and Kernel Adiutor cannot.
+ 
+Kernel Adiutor
+---------------------------------------------------
+Works on both kernels (Stock and Alucard). It is a universal tool that can edit the kernels.
+Keep in mind that your expert edits in STweaks will be better than those allowed by Kernel Adiutor.
+STweaks is a very powerful app.
+Kernel Adiutor is supposed to be more stable and more updated.
+ 
+DISCLAIMER:  I really don't trust either developer of STweaks or Kernel Adiutor.
+You are using these Apps with full knowledge of the potential problems that it may damage your device and you accept that you cannot hold the developer of the OptimizedCM13 ROM liable for any damages that may occur.
 
-STweaks is a powerful tool which can boost or destroy your device
-if you dont know what to do.
-Please select STweaks ONLY if you know what you are really doing
-When installing STweaks you can also install kernel adiutor from Play Store
-Although you have to NOT ENABLE THE OPTION *APPLY ON BOOT* from it.
-Kernel adiutor overwrites the STweaks edits.That means any STweaks 
-edit will be deleted on next reboot if you have enabled
-*APPLY ON BOOT* at kernel adiutor.
-
-For every change you do to Stweaks press the button *APPLY SETTINGS TO GOV CORE*
-from the tab CPU-TUNING and wait for the toast message.
-Then press *LOAD ALL* from CPU tab and wait 10 seconds until STweaks reboots
-
-STweaks is applying the edits before init.d
-Stweaks will rarely be unable to show the UI even if you gave SU previleges.
-(this happens because something went wrong due to bad user edits).
-All you got to do is to press on top right,Settings,Theme chooser and change theme
-just to refresh the interface.
-
-This editor can FULLY edit the alucard kernel.
-Kernel adiutor cannot.
-
-About Kernel Adiutor
-----------------------
-Works on both kernels.A universal tool that can edit the kernels.
-Keep in mind that the expert edits of alucard's kernel wont be able
-just like in STweaks.Supposed to be stabler and more updated.
-
-None.I trust the developer
----------------------------
-Use none of those editors.This is recommended for novice users.
+!! PLEASE BE CAREFULL AND DO NOT INSTALL STWEAKS OR KERNEL ADIUTOR UNLESS YOU ARE AN EXPERT !!
