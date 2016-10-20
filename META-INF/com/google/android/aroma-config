@@ -1,4 +1,4 @@
-﻿### INFO:
+### INFO:
 #
 # * AROMA Resource Dir  = META-INF/com/google/android/aroma
 #
@@ -256,7 +256,7 @@ selectbox(
 #
 agreebox(
   #-- Title
-    "Kernel editors notes",
+    "Kernel Editor Notes",
 
   #-- Subtitle / Description
     "Here are some notes which will guide you on kernel editor selection",
@@ -268,7 +268,7 @@ agreebox(
     resread("editor.txt"),
 
   #-- Checkbox Text
-    "Understood!I decided which editor i want.",
+    "I Understand!",
 
   #-- Unchecked Alert Message
     "Please confirm that everything was clear."
@@ -283,7 +283,7 @@ selectbox(
     "",
 
   #-- Sub Title
-    "Select your kernel editor",
+    "Select your Kernel Editor",
 
   #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
     "@install",
@@ -295,9 +295,10 @@ selectbox(
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
     "STweaks",            "",                      	0,
-    "Kernel Adiutor",    "",                    	1,
-	"None.I trust the developer","Dont use any of those apps.Default values will be used",0,
-	"Its a dirty install.Keep my edits","",0
+    "Kernel Adiutor",    "",                    	0,
+	"Both",            "Install both apps.",                      	0,
+	"Neither","Don't use either of those apps.",1,
+	"Its a dirty install.","Keep my edits.",0
 
 );
 
@@ -324,8 +325,8 @@ selectbox(
 	  #--------------------------+--------------------------------------------------  ------+-------------------#
 	    
 	"Camera Corner",                       "",2,#-- Group 1. key = "selected.2"
-	"Old CM camera",                  "",1, #-- selected.1 = 1
-	"Old CM AND Snap camera",  "",0,     #-- selected.1= 2
+	"Old CM camera",                  "",0, #-- selected.1 = 1
+	"Old CM AND Snap camera",  "",1,     #-- selected.1= 2
 	
 	"Root Corner",                       "",2,#-- Group 2. key = "selected.2"
 	"Use Privacy Guard(Used in nightlies)",                  "",0, #-- selected.2 = 1
