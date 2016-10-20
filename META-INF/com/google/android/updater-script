@@ -1,31 +1,23 @@
 assert(getprop("ro.product.device") == "jflte" || getprop("ro.build.product") == "jflte" || getprop("ro.product.device") == "jfltexx" || getprop("ro.build.product") == "jfltexx" || getprop("ro.product.device") == "i9505" || getprop("ro.build.product") == "i9505" || getprop("ro.product.device") == "GT-I9505" || getprop("ro.build.product") == "GT-I9505" || getprop("ro.product.device") == "jgedlte" || getprop("ro.build.product") == "jgedlte" || getprop("ro.product.device") == "i9505g" || getprop("ro.build.product") == "i9505g" || getprop("ro.product.device") == "GT-I9505G" || getprop("ro.build.product") == "GT-I9505G" || getprop("ro.product.device") == "jfltevzw" || getprop("ro.build.product") == "jfltevzw" || getprop("ro.product.device") == "jfltespr" || getprop("ro.build.product") == "jfltespr" || getprop("ro.product.device") == "jflterefreshspr" || getprop("ro.build.product") == "jflterefreshspr" || getprop("ro.product.device") == "jfltetmo" || getprop("ro.build.product") == "jfltetmo" || getprop("ro.product.device") == "jfltecri" || getprop("ro.build.product") == "jfltecri" || getprop("ro.product.device") == "jfltecsp" || getprop("ro.build.product") == "jfltecsp" || getprop("ro.product.device") == "jflteatt" || getprop("ro.build.product") == "jflteatt" || getprop("ro.product.device") == "jfltecan" || getprop("ro.build.product") == "jfltecan" || getprop("ro.product.device") == "jfltetfnatt" || getprop("ro.build.product") == "jfltetfnatt" || getprop("ro.product.device") == "jfltetfntmo" || getprop("ro.build.product") == "jfltetfntmo" || getprop("ro.product.device") == "jflteusc" || getprop("ro.build.product") == "jflteusc" || getprop("ro.product.device") == "jfltezm" || getprop("ro.build.product") == "jfltezm" || abort("This package is for device: jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505G,jfltevzw,jfltespr,jflterefreshspr,jfltetmo,jfltecri,jfltecsp,jflteatt,jfltecan,jfltetfnatt,jfltetfntmo,jflteusc,jfltezm; this device is " + getprop("ro.product.device") + "."););
-ui_print("JDCTeam AROMA Installer v.2");
-ui_print("Optimized CyanogenMod 13");
+ui_print("JDCTeam AROMA Installer v.3");
+ui_print("Optimized CyanogenMod 13.0");
 ui_print(" ");
 
 ifelse(is_mounted("/system"), unmount("/system"));
-package_extract_dir("install", "/tmp/install");
-set_metadata_recursive("/tmp/install", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
-set_metadata_recursive("/tmp/install/bin", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
-run_program("/sbin/busybox", "mount", "/system");
-run_program("/tmp/install/bin/backuptool.sh", "backup");
-
-ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("Formatting /system...");
-delete_recursive("/system");
 run_program("/tmp/install/bin/format.sh");
 ui_print("Mounting /system...");
-run_program("/sbin/busybox", "mount", "/system");
+run_program("/sbin/mount", "-t", "auto", "/system");
 
 set_progress(0.1);
-#run_program("/sbin/mount", "-t", "auto", "/system");
+
 mount("ext4", "EMMC", "/dev/block/mmcblk0p19", "/cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
 #delete_recursive("/system");
 #delete_recursive("/cache");
 #delete_recursive("/data/dalvik-cache");
 
-run_program("/sbin/mount", "-t", "auto", "/system");
+
 package_extract_file("install/bin/backuptool.sh", "/tmp/backuptool.sh");
 package_extract_file("install/bin/backuptool.functions", "/tmp/backuptool.functions");
 set_perm(0, 0, 0777, "/tmp/backuptool.sh");
