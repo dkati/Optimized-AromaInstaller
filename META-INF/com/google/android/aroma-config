@@ -150,7 +150,7 @@ viewbox(
     "You are about to Install <b>"+
 	  ini_get("rom_name")+
 	"</b> for <b>"+ini_get("rom_device")+"</b>.\n\n"+
-    "Rom information:\n\n"+
+    "Rom Information:\n\n"+
 	  "  Rom\t: <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
 	  "  Version\t: <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
       "  author\t: <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
@@ -217,10 +217,10 @@ selectbox(
 	  #----------------------------------[ Select box With Groups ]----------------------------------#
 	  # TITLE                         |             SUBTITLE                                | Initial Value #
 	  #---------------------------------+-----------------------------------------------------------+---------------#
-	"Full Wipe",			"Full Wipe.All Data/Stweaks profiles will be Deleted.Internal will remain unaffected",	1,
+	"Full Wipe",			"Full Wipe. All Data/Stweaks profiles will be Deleted. Internal will remain unaffected.",	1,
 	"Upgrade, Dirty Flash",		"Use This if You Are Fixing Your Rom Or Upgrading",				0,
-	"Do nothing",                     "Use this in case you have already wipe from TWRP",0,
-	"<b><#f00>\n____________\n\nExtreme wipe\n____________\n</#></b>",              "Full Wipe option+Internal storage wipe",0
+	"Do nothing",                     "Use this in case you have already wiped from TWRP",0,
+	"<b><#f00>\n____________\n\nExtreme wipe\n____________\n</#></b>",              "Full Wipe option + Internal storage wipe",0
 	
 
 );
@@ -246,8 +246,8 @@ selectbox(
   #-----------------------------[ Selectbox Without Group ]-------------------------#
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
-    "Alucard Kernel",           "Offers additional features and optimizations like Stweaks.",                      	1,
-  	"Stock Kernel",    "The official CM Nightly stock Kernel",                    	0
+    "Alucard Kernel",           "Offers additional features and optimizations like STweaks.",                      	1,
+  	"Stock Kernel",    "The official CM Nightly Stock Kernel",                    	0
 
 );
 ###################################################################################################################
@@ -329,8 +329,8 @@ selectbox(
 	"Old CM AND Snap camera",  "",1,     #-- selected.1= 2
 	
 	"Root Corner",                       "",2,#-- Group 2. key = "selected.2"
-	"Use Privacy Guard(Used in nightlies)",                  "",0, #-- selected.2 = 1
-	"Use SuperSU app(Seems to work better)",  "",1,     #-- selected.2= 2
+	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.2 = 1
+	"Use SuperSU App (Seems To Work Better)",  "",1,     #-- selected.2= 2
 
 	"Audio Corner",            "",2,#-- Group .3. key = "selected.3"
 	"Use ViPER4Arise",       "",1,#-- selected.3=1
