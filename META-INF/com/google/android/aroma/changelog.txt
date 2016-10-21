@@ -14,3 +14,4 @@ Changes since Stable-4 update
 -Replace viper4android with viper4arise
 -Busybox will be installed if you select viper4arise
 -Speaker Optimization (Broken Ringtone,Notification tone,etc.)
+-Camera edits
