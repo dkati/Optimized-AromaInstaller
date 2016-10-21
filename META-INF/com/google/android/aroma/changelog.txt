@@ -15,3 +15,4 @@ Changes since Stable-4 update
 -Busybox will be installed if you select viper4arise
 -Speaker Optimization (Broken Ringtone,Notification tone,etc.)
 -Camera edits
+-User can select kernel editor via Aroma
