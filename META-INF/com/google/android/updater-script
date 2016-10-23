@@ -13,8 +13,6 @@ set_progress(0.1);
 
 mount("ext4", "EMMC", "/dev/block/mmcblk0p19", "/cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
-#delete_recursive("/system");
-
 
 package_extract_file("install/bin/backuptool.sh", "/tmp/backuptool.sh");
 package_extract_file("install/bin/backuptool.functions", "/tmp/backuptool.functions");
@@ -26,53 +24,6 @@ unmount("/system");
 show_progress(0.750000, 0);
 
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/data");
-
-#Full Wipe
-if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "1" then
-ui_print("Fully Wiping...");
-ui_print("");
-package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
-package_extract_file("jdc/bash", "/tmp/bash");
-set_perm(0, 0, 0777, "/tmp/wipe.sh");
-set_perm(0, 0, 0777, "/tmp/bash");
-run_program("/tmp/wipe.sh");
-ui_print("Formatting /data/app");
-delete_recursive("/data/app");
-ui_print("Won't wipe internal storage");
-ui_print("Cleaning Alucard profiles and Synapse files...");
-delete_recursive("/data/.alucard");
-delete_recursive("/data/.Synapse");
-endif;
-
-#Upgrade, Dirty Flash
-if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "2" then
-ui_print("Dirty Flashing...");
-ui_print("Only Cache and system will be deleted");
-endif;
-
-#Do nothing
-if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "3" then
-ui_print("Will not delete anything...");
-endif;
-
-
-#Extreme wipe
-if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") == "4" then
-ui_print("EXTREME wipe...");
-ui_print("");
-package_extract_file("jdc/wipe.sh", "/tmp/wipe.sh");
-package_extract_file("jdc/bash", "/tmp/bash");
-set_perm(0, 0, 0777, "/tmp/wipe.sh");
-set_perm(0, 0, 0777, "/tmp/bash");
-run_program("/tmp/wipe.sh");
-ui_print("Formatting /data/app");
-delete_recursive("/data/app");
-ui_print("Cleaning Alucard profiles and Synapse files...");
-delete_recursive("/data/.alucard");
-delete_recursive("/data/.Synapse");
-ui_print("Formatting Internal storage");
-delete_recursive("/data/media/0");
-endif;
 
 ui_print("Installing...");
 ui_print("***********************");
@@ -355,17 +306,6 @@ run_program("/tmp/flash_kernel.sh");
 endif;
 set_progress(0.6);
 ui_print(" ");
-
-
-#Wipe cache only if option NOTHING is not selected
-if file_getprop("/tmp/aroma-data/wipe.prop","selected.0") != "3" then
-mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/cache", "/cache");
-mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/userdata", "/data");
-ui_print("Wiping Cache ...");
-delete_recursive("/cache");
-ui_print("Wiping ART cache ...");
-delete_recursive("/data/dalvik-cache");
-endif;
 
 ####################################################################
 #Kernel editor

@@ -16,3 +16,5 @@ Changes since Stable-4 update
 -Speaker Optimization (Broken Ringtone,Notification tone,etc.)
 -Camera edits
 -User can select kernel editor via Aroma
+-Huge updates on audio HAL sources
+-Remove Wipe options from aroma

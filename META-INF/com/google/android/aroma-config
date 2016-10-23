@@ -203,31 +203,10 @@ textbox(
     resread("changelog.txt")
 );
 
-###################################################################################################################
-#
-# STEP 1 - WIPE
-#
-
-selectbox(
-  "",
-  "Wipe Method - Please make your selection:",
-  "@alert",
-  "wipe.prop",
-
-	  #----------------------------------[ Select box With Groups ]----------------------------------#
-	  # TITLE                         |             SUBTITLE                                | Initial Value #
-	  #---------------------------------+-----------------------------------------------------------+---------------#
-	"Full Wipe",			"Full Wipe. All Data/Stweaks profiles will be Deleted. Internal will remain unaffected.",	1,
-	"Upgrade, Dirty Flash",		"Use This if You Are Fixing Your Rom Or Upgrading",				0,
-	"Do nothing",                     "Use this in case you have already wiped from TWRP",0,
-	"<b><#f00>\n____________\n\nExtreme wipe\n____________\n</#></b>",              "Full Wipe option + Internal storage wipe",0
-	
-
-);
 
 ###################################################################################################################
 #
-# STEP 2.5 - SELECT DEVICE
+# SELECT DEVICE
 #
 
 selectbox(
