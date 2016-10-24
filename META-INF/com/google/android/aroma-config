@@ -304,8 +304,8 @@ selectbox(
 	  #--------------------------+--------------------------------------------------  ------+-------------------#
 	    
 	"Camera Corner",                       "",2,#-- Group 1. key = "selected.2"
-	"Old CM camera",                  "",0, #-- selected.1 = 1
-	"Old CM AND Snap camera",  "",1,     #-- selected.1= 2
+	"Old CM camera",                  "",1, #-- selected.1 = 1
+	"Old CM AND Snap camera",  "",0,     #-- selected.1= 2
 	
 	"Root Corner",                       "",2,#-- Group 2. key = "selected.2"
 	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.2 = 1
