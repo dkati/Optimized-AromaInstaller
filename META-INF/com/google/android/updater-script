@@ -257,15 +257,6 @@ set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabiliti
 
 run_program("/tmp/install/bin/backuptool.sh", "restore");
 
-#Camera chooser
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
-then
-ui_print("Installing both AOSP and Snap Camera");
-package_extract_dir("jdc/camera/Snap","/system/app/Snap");
-ui_print("");
-endif;
-
 #################################################################
 # KERNEL SELECTION AROMA BEGINS
 if
@@ -317,7 +308,7 @@ ui_print(" ");
 #5=dirty install, nothing
 
 if
-file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
 then
 ui_print("STweaks will be installed");
 ui_print("Removing Kernel Adiutor if exist");
@@ -325,7 +316,7 @@ delete_recursive("/system/app/KernelAdiutor");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
 then
 ui_print("Kernel adiutor will be installed");
 package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
@@ -335,14 +326,14 @@ delete_recursive("/data/.alucard");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "3"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "3"
 then
 ui_print("STweaks and Kernel Adiutor will be installed");
 package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "4"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "4"
 then
 ui_print("Removing STweaks if exist");
 delete_recursive("/system/priv-app/STweaks");
@@ -352,7 +343,7 @@ delete_recursive("/system/app/KernelAdiutor");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/editor.prop","selected.0") == "5"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "5"
 then
 ui_print("Keeping the old kernel editor if exists.");
 endif;
@@ -363,7 +354,7 @@ set_progress(0.9);
 
 #SuperSU installation IF exist
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
 	ui_print("Installing SuperSU...");
 	package_extract_dir("system/supersu", "/tmp/supersu");
@@ -376,14 +367,14 @@ endif;
 
 #Privacy Guard
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
 ui_print("Privacy guard will be installed");
 endif;
 
 #Sound tweaks
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
 then
 ui_print("Installing BusyBox which is required for ViPER4Arise");
 package_extract_dir("system/busybox", "/tmp/busybox");

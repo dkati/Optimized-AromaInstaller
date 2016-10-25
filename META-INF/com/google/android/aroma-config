@@ -252,35 +252,6 @@ agreebox(
   #-- Unchecked Alert Message
     "Please confirm that everything was clear."
 );
-###################################################################################################################
-#
-# KERNEL EDITOR
-#
-
-selectbox(
-  #-- Title
-    "",
-
-  #-- Sub Title
-    "Select your Kernel Editor",
-
-  #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
-    "@install",
-
-  #-- Will be saved in /tmp/aroma/lang.prop
-    "editor.prop",
-
-  #-----------------------------[ Selectbox Without Group ]-------------------------#
-  # TITLE         			   |  SUBTITLE                          | Initial Value #
-  #----------------------------+------------------------------------+---------------#
-    "STweaks",            "",                      	0,
-    "Kernel Adiutor",    "",                    	0,
-	"Both",            "Install both apps.",                      	0,
-	"Neither","Don't use either of those apps.",1,
-	"Its a dirty install.","Keep my edits.",0
-
-);
-
 
 ###################################################################################################################
 # MODS
@@ -302,18 +273,21 @@ selectbox(
 	  #----------------------------------[ Select box With Groups ]----------------------------------#
 	  # TITLE                    |  SUBTITLE                                        | Initial Value #
 	  #--------------------------+--------------------------------------------------  ------+-------------------#
-	    
-	"Camera Corner",                       "",2,#-- Group 1. key = "selected.2"
-	"Old CM camera",                  "",1, #-- selected.1 = 1
-	"Old CM AND Snap camera",  "",0,     #-- selected.1= 2
 	
-	"Root Corner",                       "",2,#-- Group 2. key = "selected.2"
-	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.2 = 1
-	"Use SuperSU App (Seems To Work Better)",  "",1,     #-- selected.2= 2
+	"Root Corner",                       "",2,#-- Group 2. key = "selected.1"
+	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.1 = 1
+	"Use SuperSU App (Seems To Work Better)",  "",1,     #-- selected.1= 2
 
-	"Audio Corner",            "",2,#-- Group .3. key = "selected.3"
-	"Use ViPER4Arise",       "",1,#-- selected.3=1
-	"Use AudioFX",            "",0 #-- selected.3= 2
+	"Audio Corner",            "",2,#-- Group 2. key = "selected.2"
+	"Use ViPER4Arise",       "",1,#-- selected.2=1
+	"Use AudioFX",            "",0, #-- selected.2= 2
+	
+	"Kernel Corner",             "",2,#--Group 3.key = "selected.3"
+	 "STweaks",            "",                      	0,      #-- selected.3=1
+	"Kernel Adiutor",    "",                    	0,              #-- selected.3=2
+	"Both",            "Install both apps.",                 0,#-- selected.3=3
+	"Neither","Don't use either of those apps.",1,     #-- selected.3=4
+	"Its a dirty install.","Keep my edits.",0               #-- selected.3=5
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
