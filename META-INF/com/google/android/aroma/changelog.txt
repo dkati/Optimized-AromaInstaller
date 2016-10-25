@@ -18,3 +18,4 @@ Changes since Stable-4 update
 -User can select kernel editor via Aroma
 -Huge updates on audio HAL sources
 -Remove Wipe options from aroma
+-Upstream merge until 1022 date
