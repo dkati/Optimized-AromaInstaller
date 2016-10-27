@@ -97,12 +97,7 @@ anisplash(
     1,
 
   #-- Frame 1 [ Image, duration in millisecond ]. <AROMA Resource Dir>/splash/a[0..23].png
-	"splash/a0", 1,
-	"splash/a1", 1,
-	"splash/a2", 1,
-	"splash/a3", 1,
-	"splash/a4", 1,
-	"splash/a5", 1
+	"splash/a0", 1
 );
 
 #initialize theme from the beginning
