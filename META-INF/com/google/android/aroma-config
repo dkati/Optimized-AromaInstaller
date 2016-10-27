@@ -101,6 +101,8 @@ anisplash(
 	"splash/a1", 1,
 	"splash/a2", 1,
 	"splash/a3", 1,
+	"splash/a4", 1,
+	"splash/a5", 1
 );
 
 #initialize theme from the beginning
@@ -205,34 +207,10 @@ selectbox(
   #-----------------------------[ Selectbox Without Group ]-------------------------#
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
-    "Alucard Kernel",           "Offers additional features and optimizations like STweaks.",                      	1,
+    "Alucard Kernel",           "Offers additional features and optimizations like STweaks.",    	1,
   	"Stock Kernel",    "The official CM Nightly Stock Kernel",                    	0
 
 );
-###################################################################################################################
-#
-# KERNEL EDITOR DISCLAIMER
-#
-agreebox(
-  #-- Title
-    "Kernel Editor Notes",
-
-  #-- Subtitle / Description
-    "Here are some notes which will guide you on kernel editor selection",
-
-  #-- Icon
-    "@license",
-
-  #-- Text Content ( Read from <AROMA Resource Dir>/editor.txt )
-    resread("editor.txt"),
-
-  #-- Checkbox Text
-    "I Understand!",
-
-  #-- Unchecked Alert Message
-    "Please confirm that everything was clear."
-);
-
 ###################################################################################################################
 # MODS
 #
@@ -256,18 +234,7 @@ agreebox(
 	
 	"Root Corner",                       "",2,#-- Group 2. key = "selected.1"
 	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.1 = 1
-	"Use SuperSU App (Seems To Work Better)",  "",1,     #-- selected.1= 2
-
-	"Audio Corner",            "",2,#-- Group 2. key = "selected.2"
-	"Use ViPER4Arise",       "",1,#-- selected.2=1
-	"Use AudioFX",            "",0, #-- selected.2= 2
-	
-	"Kernel Corner",             "",2,#--Group 3.key = "selected.3"
-	 "STweaks",            "",                      	0,      #-- selected.3=1
-	"Kernel Adiutor",    "",                    	0,              #-- selected.3=2
-	"Both",            "Install both apps.",                 0,#-- selected.3=3
-	"Neither","Don't use either of those apps.",1,     #-- selected.3=4
-	"Its a dirty install.","Keep my edits.",0               #-- selected.3=5
+	"Use SuperSU App (Seems To Work Better)",  "",1    #-- selected.1= 2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
