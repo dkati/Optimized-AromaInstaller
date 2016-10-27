@@ -314,6 +314,15 @@ ui_print(" ");
 
 set_progress(0.9);
 
+set_progress(1.0);
+ui_print(" ");
+ui_print("Installation complete");
+ui_print("Unmounting partitions...");
+unmount("/data");
+unmount("/cache");
+unmount("/preload");
+unmount("/system");
+
 #SuperSU installation IF exist
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
@@ -333,16 +342,8 @@ file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
 ui_print("Privacy guard will be installed");
 endif;
-
-
-set_progress(1.0);
-ui_print(" ");
-ui_print("Installation complete");
-ui_print("Unmounting partitions...");
-unmount("/data");
-unmount("/cache");
-unmount("/preload");
 unmount("/system");
+
 ui_print("___________________________________________");
 ui_print("Done!");
 set_progress(1.0);
