@@ -70,8 +70,8 @@
 #
 # Initializing Rom Information
 #
-ini_set("rom_name",             "Optimized CyanogenMod 13.0");
-ini_set("rom_version",          "Stable 5-Final Side");
+ini_set("rom_name",             "Optimized CyanogenMod 14.1");
+ini_set("rom_version",          "Alpha");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
 ini_set("rom_date",             "Octomber 2016");
@@ -101,26 +101,6 @@ anisplash(
 	"splash/a1", 1,
 	"splash/a2", 1,
 	"splash/a3", 1,
-	"splash/a4", 1,
-	"splash/a5", 1,
-	"splash/a6", 1,
-	"splash/a7", 1,
-	"splash/a8", 1,
-	"splash/a9", 1,
-	"splash/a10", 1,
-	"splash/a11", 1,
-	"splash/a12", 1,
-	"splash/a13", 1,
-	"splash/a14", 1,
-	"splash/a15", 1,
-	"splash/a16", 1,
-	"splash/a17", 1,
-	"splash/a18", 1,
-	"splash/a19", 1,
-	"splash/a20", 1,
-	"splash/a21", 1,
-	"splash/a22", 1,
-	"splash/a23", 1
 );
 
 #initialize theme from the beginning
