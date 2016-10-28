@@ -352,26 +352,6 @@ endif;
 
 set_progress(0.9);
 
-#SuperSU installation IF exist
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
-then
-	ui_print("Installing SuperSU...");
-	package_extract_dir("system/supersu", "/tmp/supersu");
-	run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/supersu");
-	run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "null", "1", "/tmp/supersu/supersu.zip");
-	delete_recursive("/tmp/supersu");
-	delete_recursive("/system/supersu");
-	ui_print("SuperSU installed successfully");
-endif;
-
-#Privacy Guard
-if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
-then
-ui_print("Privacy guard will be installed");
-endif;
-
 #Sound tweaks
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
@@ -402,6 +382,27 @@ unmount("/data");
 unmount("/cache");
 unmount("/preload");
 unmount("/system");
+
+#SuperSU installation IF exist
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
+then
+	ui_print("Installing SuperSU...");
+	package_extract_dir("system/supersu", "/tmp/supersu");
+	run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/supersu");
+	run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "null", "1", "/tmp/supersu/supersu.zip");
+	delete_recursive("/tmp/supersu");
+	delete_recursive("/system/supersu");
+	ui_print("SuperSU installed successfully");
+endif;
+
+#Privacy Guard
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
+then
+ui_print("Privacy guard will be installed");
+endif;
+
 ui_print("___________________________________________");
 ui_print("Done!");
 set_progress(1.0);
