@@ -1,21 +1,4 @@
-Changes since Stable-4 update
+Changes since SideFINAL update
 -----------------------------
--Many changes on kernel
--Many changes on Ramdisk
--Edits on sound (affects voip and calls)
--Changed wallpaper/bootanimation
--Updated stock kernel to aroma
--qmuxd edits
--Edits on sound that affects gaming sound
--Remove some Aroma Root apps
--Upstream merge
--STweaks now works with systemless root
--Update SuperSU to v2.78 SR1 
--Replace viper4android with viper4arise
--Busybox will be installed if you select viper4arise
--Speaker Optimization (Broken Ringtone,Notification tone,etc.)
--Camera edits
--User can select kernel editor via Aroma
--Huge updates on audio HAL sources
--Remove Wipe options from aroma
--Upstream merge until 1022 date
+-Stock kernel added
+-Upstream merge until 10-28-2016
