@@ -1,4 +1,5 @@
 Changes since SideFINAL update
 -----------------------------
--Stock kernel added
--Upstream merge until 10-28-2016
+-Update Stock kernel to 10-28-2016
+-Upstream merge until 10-29-2016
+-Switch back to darkness governor for Alucard kernel
