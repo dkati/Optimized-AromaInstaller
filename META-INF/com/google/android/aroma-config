@@ -179,7 +179,7 @@ agreebox(
     resread("license.txt"),
 
   #-- Checkbox Text
-    "<~terms.check>",
+    "I Agree with these Terms and Conditions",
 
   #-- Unchecked Alert Message
     "<~terms.confirm>"
