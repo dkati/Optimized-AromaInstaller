@@ -1,6 +1,6 @@
-Changes since SideFINAL update
+Changes since Stable-5(FinalSide) update
 -----------------------------
--Update Stock kernel to 10-28-2016
+-Update Stock kernel to 02-nov-2016
 -Upstream merge until 02-nov-2016
 -Edits on STweaks profiles
 -Ramdisk changes
