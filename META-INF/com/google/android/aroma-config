@@ -275,8 +275,8 @@ agreebox(
 	  #--------------------------+--------------------------------------------------  ------+-------------------#
 	
 	"Root Corner",                       "",2,#-- Group 2. key = "selected.1"
-	"Use SuperSU App (Seems To Work Better)",  "",1,     #-- selected.1= 2
-	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.1 = 1
+	"Use SuperSU App (Seems To Work Better)",  "",1,     #-- selected.1= 1
+	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.1 = 2
 	
 	"Audio Corner",            "",2,#-- Group 2. key = "selected.2"
 	"Use ViPER4Arise",       "",1,#-- selected.2=1

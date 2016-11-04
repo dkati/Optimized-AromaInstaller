@@ -385,7 +385,7 @@ unmount("/system");
 
 #SuperSU installation IF exist
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
 	ui_print("Installing SuperSU...");
 	package_extract_dir("system/supersu", "/tmp/supersu");
@@ -398,7 +398,7 @@ endif;
 
 #Privacy Guard
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
 ui_print("Privacy guard will be installed");
 endif;
