@@ -5,3 +5,5 @@ Changes from OptimizedCM14.1-Alpha1
 -Alucard kernel updated
 -Ramdisk changes
 -Wallpaper changed
+-Add contributors to Settings/About phone
+-Remove CM updater
