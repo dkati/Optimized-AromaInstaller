@@ -13,3 +13,4 @@ Changes from OptimizedCM14.1-Alpha1
 -Disable captive portal by default 
 -Force fast UI experience
 -Remove useless CM's features
+-Add JDCTeam's custom scripts(eMMC Trim,LEDify)
