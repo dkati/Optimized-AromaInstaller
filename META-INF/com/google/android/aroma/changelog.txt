@@ -1,9 +1,15 @@
 Changes from OptimizedCM14.1-Alpha1
 ---------------------------------------------------
--Big upstream until
--Stock kernel updated kernel until
+-Big upstream until 13-nov-2016
+-Stock kernel updated kernel until 13-nov-2016
 -Alucard kernel updated
 -Ramdisk changes
 -Wallpaper changed
 -Add contributors to Settings/About phone
 -Remove CM updater
+-Add S7's UI touch/unlock/lock sounds
+-Battery save color is now light gray
+-Disable tap2wake by default(Not supported by kernel)
+-Disable captive portal by default 
+-Force fast UI experience
+-Remove useless CM's features
