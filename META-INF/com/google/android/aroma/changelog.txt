@@ -15,5 +15,8 @@ Changes from OptimizedCM14.1-Alpha1
 -Remove useless CM's features
 -Add JDCTeam's custom scripts(eMMC Trim,LEDify)
 -enable sdcard fs
--Add Samsung's stock notification/alarm sounds
+-Add Samsung's stock notification/alarm sounds from lollipop
 -Remove snap camera/use aosp one
+-Edits on camera.(Video recording is still crashed)
+-Edits on ramdisk that affects charging
+-Fix f2fs
