@@ -20,3 +20,4 @@ Changes from OptimizedCM14.1-Alpha1
 -Edits on camera.(Video recording is still crashed)
 -Edits on ramdisk that affects charging
 -Fix f2fs
+-Allow dirty installations(A custom script ensures /system wipe)
