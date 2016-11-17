@@ -1,7 +1,6 @@
-Changes since Stable-5(FinalSide) update
+Changes since Stable-6 update
 -----------------------------
--Update Stock kernel to 02-nov-2016
--Upstream merge until 02-nov-2016
--Edits on STweaks profiles
--Ramdisk changes
--Kernel changes
+-Update Stock kernel to 
+-Upstream merge until 
+-Ramdisk and kernel updates
+-Stable7 wallpaper
