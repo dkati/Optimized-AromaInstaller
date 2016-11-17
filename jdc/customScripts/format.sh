@@ -10,7 +10,7 @@
 # TODO: check again MultiROM recognition, it is not working.
 
 # Set this to true to clean kernel settings
-ALUCLEAN=false
+ALUCLEAN=true
 # Notification LED pattern through sysfs
 LED=/sys/class/sec/led/led_pattern
 # MultiROM recognition
@@ -21,7 +21,7 @@ CLEAN() {
     mount /data
     if [ "$ALUCLEAN" == "true" ]; then
 	echo "Cleaning kernel settings"
-	rm -rf /data/.alucard
+	rm -rf /data/.b--b
     fi
     echo "Cleaning ART cache"
     rm -rf /data/dalvik-cache
