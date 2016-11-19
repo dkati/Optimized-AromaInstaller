@@ -71,10 +71,9 @@
 # Initializing Rom Information
 #
 ini_set("rom_name",             "Optimized CyanogenMod 13.0");
-ini_set("rom_version",          "Stable 6");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
-ini_set("rom_date",             "November 2016");
+ini_set("rom_date",             "18 November 2016");
 
 ###################################################################################################################
 #
@@ -152,7 +151,7 @@ viewbox(
 	"</b> for <b>"+ini_get("rom_device")+"</b>.\n\n"+
     "Rom Information:\n\n"+
 	  "  Rom\t: <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
-	  "  Version\t: <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
+	  "  Version\t: <b><#selectbg_g>"+"</#></b>\n"+
       "  author\t: <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
       "  device\t: <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
       "  date\t: <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n"+
