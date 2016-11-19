@@ -6,7 +6,7 @@ ui_print(" ");
 ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("Formatting /system...");
 
-package_extract_file("install/bin/backuptool.sh", "/tmp/format.sh");
+package_extract_file("install/bin/format.sh", "/tmp/format.sh");
 set_perm(0, 0, 0777, "/tmp/format.sh");
 run_program("/tmp/format.sh");
 
