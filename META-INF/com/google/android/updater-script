@@ -5,7 +5,7 @@ ui_print(" ");
 
 ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("Formatting /system...");
-ui_print("A blue LED blink just happent....");
+ui_print("A blue LED blink just happened....");
 package_extract_file("install/bin/format.sh", "/tmp/format.sh");
 set_perm(0, 0, 0777, "/tmp/format.sh");
 run_program("/tmp/format.sh");
