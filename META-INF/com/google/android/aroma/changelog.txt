@@ -4,3 +4,5 @@ Changes since Stable-6 update
 -Upstream merge until 20-nov-2016
 -Ramdisk and kernel updates
 -Stable7 wallpaper
+-System partition will be wiped on every installation. 
+That provides dirty installation capability
