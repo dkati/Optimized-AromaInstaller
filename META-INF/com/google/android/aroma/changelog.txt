@@ -1,7 +1,7 @@
 Changes from OptimizedCM14.1-Alpha1
 ---------------------------------------------------
--Big upstream until 13-nov-2016
--Stock kernel updated kernel until 13-nov-2016
+-Big upstream until 20-nov-2016
+-Stock kernel updated kernel until 20-nov-2016
 -Alucard kernel updated
 -Ramdisk changes
 -Wallpaper changed
