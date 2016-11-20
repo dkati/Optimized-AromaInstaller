@@ -5,6 +5,7 @@ ui_print(" ");
 
 ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("Formatting /system...");
+ui_print("A blue LED will confirm the wipe");
 package_extract_file("install/bin/format.sh", "/tmp/format.sh");
 set_perm(0, 0, 0777, "/tmp/format.sh");
 run_program("/tmp/format.sh");
@@ -31,12 +32,9 @@ ui_print("Installing...");
 ui_print("***********************");
 
 set_progress(0.2);
-#show_progress(0.4, "-70000");
 run_program("/sbin/busybox", "mount", "/system");
 package_extract_dir("system", "/system");
 ui_print("Installing Selected Files...");
-
-
 
 ifelse(is_substring("I337", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/gsm/* /system/ && busybox rm /system/lib/libcnefeatureconfig.so"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/vzw/* /system/"));
@@ -78,6 +76,7 @@ symlink("/firmware/image/tzapps.b03", "/system/etc/firmware/tzapps.b03");
 symlink("/firmware/image/tzapps.mdt", "/system/etc/firmware/tzapps.mdt");
 symlink("/system/bin/toybox", "/system/xbin/ls",
 "/system/xbin/ps");
+set_progress(0.4);
 symlink("/system/lib/libbluetooth_jni.so", "/system/app/Bluetooth/lib/arm/libbluetooth_jni.so");
 symlink("/system/lib/libcmaudio_jni.so", "/system/priv-app/CMAudioService/lib/arm/libcmaudio_jni.so");
 symlink("/system/lib/libdefcontainer_jni.so", "/system/priv-app/DefaultContainerService/lib/arm/libdefcontainer_jni.so");
@@ -170,6 +169,7 @@ symlink("toybox", "/system/bin/acpi", "/system/bin/arp",
 "/system/bin/xzcat",
 "/system/bin/yes");
 ui_print("Setting permissions...");
+set_progress(0.5);
 set_metadata_recursive("/system", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", "0x0", "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/bin", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0755, "capabilities", "0x0", "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/bin/app_process32", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:zygote_exec:s0");
@@ -258,7 +258,7 @@ set_metadata("/system/xbin/procrank", "uid", 0, "gid", 0, "mode", 06755, "capabi
 set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:su_exec:s0");
 
 run_program("/tmp/install/bin/backuptool.sh", "restore");
-
+set_progress(0.6);
 #################################################################
 # KERNEL SELECTION AROMA BEGINS
 if
@@ -277,7 +277,6 @@ set_perm(0, 0, 0777, "/tmp/loki.sh");
 
 assert(run_program("/sbin/sh", "/system/etc/loki.sh") == 0);
 assert(run_program("/sbin/sh", "/tmp/loki.sh")==0);
-#run_program("/tmp/flash_kernel.sh");
 ui_print("");
 endif;
 
@@ -287,6 +286,8 @@ then
 ui_print("");
 ui_print("Cleaning STweaks since stock kernel is selected...");
 delete_recursive("/system/priv-app/STweaks");
+delete_recursive("/data/.alucard");
+delete_recursive("/data/.b--b");
 ui_print("Installing Stock CM Kernel");
 package_extract_dir("jdc/kfix", "/tmp");
 package_extract_file("jdc/kernel/stock/boot.img", "/tmp/boot.img");
@@ -325,6 +326,7 @@ package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
 ui_print("Removing STweaks");
 delete_recursive("/system/priv-app/STweaks");
 delete_recursive("/data/.alucard");
+delete_recursive("/data/.b--b");
 endif;
 
 if
@@ -375,8 +377,6 @@ ui_print("ViPER4Arise installed successfully");
 ui_print("");
 endif;
 
-
-set_progress(1.0);
 ui_print(" ");
 ui_print("Installation complete");
 ui_print("Unmounting partitions...");
@@ -396,6 +396,7 @@ then
 	delete_recursive("/tmp/supersu");
 	delete_recursive("/system/supersu");
 	ui_print("SuperSU installed successfully");
+	ui_print("Reboot may cause a bootloop.Its due to superSU installation.");
 endif;
 
 #Privacy Guard
