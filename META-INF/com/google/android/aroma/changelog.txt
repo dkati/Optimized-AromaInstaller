@@ -1,6 +1,6 @@
 Changes since Stable-6 update
 -----------------------------
--Update Stock kernel to 
--Upstream merge until 
+-Update stock kernel to 20-nov-2016
+-Upstream merge until 20-nov-2016
 -Ramdisk and kernel updates
 -Stable7 wallpaper
