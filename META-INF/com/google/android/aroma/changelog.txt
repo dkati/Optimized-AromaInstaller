@@ -22,3 +22,4 @@ Changes from OptimizedCM14.1-Alpha1
 -Allow dirty installations(A custom script ensures /system wipe)
 -Introduce JDCSettings Settings section
 -Build with -O3 flag on clang
+-Expose ROM's name at ABOUT PHONE section
