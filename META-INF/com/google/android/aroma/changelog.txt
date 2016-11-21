@@ -26,3 +26,4 @@ Changes from OptimizedCM14.1-Alpha1
 -Storage manager is enabled by default
 -Add Google Assistant property
 -Updates on blobs/graphics
+-Default STweaks theme is Sammy one
