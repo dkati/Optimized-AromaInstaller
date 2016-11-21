@@ -1,7 +1,7 @@
 Changes from OptimizedCM14.1-Alpha1
 ---------------------------------------------------
--Big upstream until 20-nov-2016
--Stock kernel updated kernel until 20-nov-2016
+-Big upstream until 21-nov-2016
+-Stock kernel updated kernel until 21-nov-2016
 -Alucard kernel updated
 -Ramdisk changes
 -Wallpaper changed
@@ -23,3 +23,6 @@ Changes from OptimizedCM14.1-Alpha1
 -Introduce JDCSettings Settings section
 -Build with -O3 flag on clang
 -Expose ROM's name at ABOUT PHONE section
+-Storage manager is enabled by default
+-Add Google Assistant property
+-Updates on blobs/graphics
