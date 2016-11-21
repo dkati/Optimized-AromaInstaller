@@ -27,3 +27,4 @@ Changes from OptimizedCM14.1-Alpha1
 -Add Google Assistant property
 -Updates on blobs/graphics
 -Default STweaks theme is Sammy one
+-Fix unified tree(All device are now supported!)
