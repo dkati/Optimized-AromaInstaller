@@ -251,7 +251,7 @@ selectbox(
 	  #--------------------------+--------------------------------------------------  ------+-------------------#
 	
 	"Root Corner",                       "",2,#-- Group 2. key = "selected.1"
-	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.1 = 1
+	"Use Privacy Guard (Built-In Superuser)","In case of LOCKED bootloaders,use this option",0, #-- selected.1 = 1
 	"Use SuperSU App (Seems To Work Better)",  "",1    #-- selected.1= 2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
