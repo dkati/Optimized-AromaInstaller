@@ -1,8 +1,8 @@
-Changes since Stable-6 update
+Changes since Nov 5 update
 -----------------------------
--Update stock kernel to 20-nov-2016
--Upstream merge until 20-nov-2016
+-Update stock kernel to Nov-20-2016
+-Upstream merge until Nov-20-2016
 -Ramdisk and kernel updates
--Stable7 wallpaper
+-Clouds wallpaper
 -System partition will be wiped on every installation. 
-That provides dirty installation capability
+   That provides dirty installation capability
