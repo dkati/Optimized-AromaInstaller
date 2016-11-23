@@ -6,3 +6,5 @@ Changes since Nov 5 update
 -Clouds wallpaper
 -System partition will be wiped on every installation. 
    That provides dirty installation capability
+-Add LTE QS Tile
+-Fix battery icon color while using battery saver mode
