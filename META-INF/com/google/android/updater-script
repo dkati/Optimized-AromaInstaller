@@ -319,7 +319,7 @@ ui_print(" ");
 #5=dirty install, nothing
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.3") == "1"
 then
 ui_print("STweaks will be installed");
 ui_print("Removing Kernel Adiutor if exist");
@@ -327,7 +327,7 @@ delete_recursive("/system/app/KernelAdiutor");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.3") == "2"
 then
 ui_print("Kernel adiutor will be installed");
 package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
@@ -338,14 +338,14 @@ delete_recursive("/data/.b--b");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "3"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.3") == "3"
 then
 ui_print("STweaks and Kernel Adiutor will be installed");
 package_extract_dir("jdc/kernelEditor/adiutor","/system/app/KernelAdiutor");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "4"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.3") == "4"
 then
 ui_print("Removing STweaks if exist");
 delete_recursive("/system/priv-app/STweaks");
@@ -355,7 +355,7 @@ delete_recursive("/system/app/KernelAdiutor");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "5"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.3") == "5"
 then
 ui_print("Keeping the old kernel editor if exists.");
 endif;
@@ -366,7 +366,7 @@ set_progress(0.9);
 
 #Sound tweaks
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
 ui_print("Installing BusyBox which is required for ViPER4Arise");
 package_extract_dir("system/busybox", "/tmp/busybox");
@@ -388,13 +388,13 @@ endif;
 #Camera options
 #################################
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
 then
 ui_print("AOSP Camera selected");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
 then
 delete_recursive("/system/app/Camera2");
 ui_print("AOSP Camera will be removed.Snap Camera will be installed");
@@ -405,7 +405,7 @@ ui_print("");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "3"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "3"
 then
 ui_print("Installing both AOSP and Snap Camera");
 package_extract_dir("jdc/camera/Snap","/system/priv-app/Snap");
@@ -421,7 +421,7 @@ endif;
 #Gello browser
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
 then
 ui_print("Gello will be removed");
 delete_recursive("/system/app/Gello");
@@ -433,7 +433,7 @@ endif;
 ##################################
 #themes
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.6") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
 then
 ui_print("QS themes will be removed");
 delete_recursive("/system/priv-app/s7Theme");
@@ -453,7 +453,7 @@ unmount("/system");
 
 #SuperSU installation IF exist
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.2") == "1"
 then
 	ui_print("Installing SuperSU...");
 	package_extract_dir("system/supersu", "/tmp/supersu");

@@ -1,12 +1,12 @@
-Changes since Nov 5 update
+<b><#selectbg_g>Changes since Nov 5 update</#></b>
 -----------------------------
--Update stock kernel to Nov-20-2016
--Upstream merge until Nov-20-2016
--Ramdisk and kernel updates
--Clouds wallpaper
--System partition will be wiped on every installation. 
-   That provides dirty installation capability
--Add LTE QS Tile
--Fix battery icon color while using battery saver mode
--Add option to remove browser
--Add option to remove OptCM QS Themes
+<*>Update stock kernel to Nov-20-2016</*>
+<*>Upstream merge until Nov-20-2016</*>
+<*>Ramdisk and kernel updates</*>
+<*>Clouds wallpaper</*>
+<*>System partition will be wiped on every installation. 
+   That provides dirty installation capability</*>
+<*>Add LTE QS Tile</*>
+<*>Fix battery icon color while using battery saver mode</*>
+<*>Add option to remove browser</*>
+<*>Add option to remove OptCM QS Themes</*>
