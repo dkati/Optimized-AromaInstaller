@@ -294,7 +294,11 @@ agreebox(
 	
 	"Browser Corner",			""			,2,	#-- Group 5.key = "selected.5"
 	"Use Gello browser",						,1,	#-- selected.5=1
-	"Do not include Gello",		""			,0	#-- selected.5=0
+	"Do not include Gello",		""			,0,	#-- selected.5=0
+	
+	"Theme Corner",			""			,2,	#-- Group 6.key = "selected.6"
+	"Use OptCM QS Theme","Lime and S7 QS"	,1,	#-- selected.6=1
+	"Do not include them",		""			,0	#-- selected.6=0
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );

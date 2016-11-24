@@ -9,3 +9,4 @@ Changes since Nov 5 update
 -Add LTE QS Tile
 -Fix battery icon color while using battery saver mode
 -Add option to remove browser
+-Add option to remove OptCM QS Themes

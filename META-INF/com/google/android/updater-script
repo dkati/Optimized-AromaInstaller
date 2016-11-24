@@ -422,6 +422,19 @@ endif;
 
 #################################end of gello
 
+##################################
+
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.6") == "0"
+then
+ui_print("QS themes will be removed");
+delete_recursive("/system/priv-app/s7Theme");
+delete_recursive("/system/priv-app/LimeTheme");
+ui_print("");
+endif;
+
+##################################end of themes
+
 ui_print(" ");
 ui_print("Installation complete");
 ui_print("Unmounting partitions...");
