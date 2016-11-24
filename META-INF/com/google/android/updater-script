@@ -390,7 +390,7 @@ file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
 then
 delete_recursive("/system/app/Camera2");
 ui_print("AOSP Camera will be removed.Snap Camera will be installed");
-package_extract_dir("jdc/camera/Snap","/system/app/Snap");
+package_extract_dir("jdc/camera/Snap","/system/priv-app/Snap");
 set_perm(0, 0, 0644, "/system/priv-app/Snap/Snap.apk");
 set_perm(0, 0, 0644, "/system/priv-app/Snap/oat/arm/Snap.odex");
 ui_print("");
@@ -400,7 +400,7 @@ if
 file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "3"
 then
 ui_print("Installing both AOSP and Snap Camera");
-package_extract_dir("jdc/camera/Snap","/system/app/Snap");
+package_extract_dir("jdc/camera/Snap","/system/priv-app/Snap");
 set_perm(0, 0, 0644, "/system/priv-app/Snap/Snap.apk");
 set_perm(0, 0, 0644, "/system/priv-app/Snap/oat/arm/Snap.odex");
 ui_print("");
