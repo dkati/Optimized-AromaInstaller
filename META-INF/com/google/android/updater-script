@@ -409,6 +409,19 @@ endif;
 
 #################################end of camera options
 
+#################################
+#Gello browser
+
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "0"
+then
+ui_print("Gello will be removed");
+delete_recursive("/system/app/Gello");
+ui_print("");
+endif;
+
+#################################end of gello
+
 ui_print(" ");
 ui_print("Installation complete");
 ui_print("Unmounting partitions...");

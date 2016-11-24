@@ -8,3 +8,4 @@ Changes since Nov 5 update
    That provides dirty installation capability
 -Add LTE QS Tile
 -Fix battery icon color while using battery saver mode
+-Add option to remove browser

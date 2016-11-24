@@ -290,7 +290,11 @@ agreebox(
 	"Camera Corner",			""			,2,	#-- Group 4.key = "selected.4"
 	"AOSP Camera",	  "Supposed to be stabler",1,	#-- selected.4=1
 	"Snap Camera",	  "CyanogenMod camera"	,0,	#-- selected.4=2
-	"Both Camera apps",		""			,0	#-- selected.4=3
+	"Both Camera apps",		""			,0,	#-- selected.4=3
+	
+	"Browser Corner",			""			,2,	#-- Group 5.key = "selected.5"
+	"Use Gello browser",						,1,	#-- selected.5=1
+	"Do not include Gello",		""			,0	#-- selected.5=0
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
