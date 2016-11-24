@@ -377,6 +377,38 @@ ui_print("ViPER4Arise installed successfully");
 ui_print("");
 endif;
 
+#Camera options
+#################################
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+then
+ui_print("AOSP Camera selected");
+endif;
+
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "3"
+then
+delete_recursive("/system/app/Camera2");
+ui_print("AOSP Camera will be removed.Snap Camera will be installed");
+package_extract_dir("jdc/camera/Snap","/system/app/Snap");
+set_perm(0, 0, 0644, "/system/priv-app/Snap/Snap.apk");
+set_perm(0, 0, 0644, "/system/priv-app/Snap/oat/arm/Snap.odex");
+ui_print("");
+endif;
+
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "3"
+then
+ui_print("Installing both AOSP and Snap Camera");
+package_extract_dir("jdc/camera/Snap","/system/app/Snap");
+set_perm(0, 0, 0644, "/system/priv-app/Snap/Snap.apk");
+set_perm(0, 0, 0644, "/system/priv-app/Snap/oat/arm/Snap.odex");
+ui_print("");
+endif;
+
+
+#################################end of camera options
+
 ui_print(" ");
 ui_print("Installation complete");
 ui_print("Unmounting partitions...");

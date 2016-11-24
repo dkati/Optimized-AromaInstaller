@@ -269,24 +269,29 @@ agreebox(
     #-- Will be saved in /tmp/aroma-data/mods.prop
       "mods.prop",
 
-	  #----------------------------------[ Select box With Groups ]----------------------------------#
-	  # TITLE                    |  SUBTITLE                                        | Initial Value #
-	  #--------------------------+--------------------------------------------------  ------+-------------------#
+	  #----------------------------[ Select box With Groups ]-------------------#
+	  # TITLE                     |         SUBTITLE           | Initial Value #
+	  #------------------------------+--------------------------------+-------------------#
 	
-	"Root Corner",                       "",2,#-- Group 2. key = "selected.1"
-	"Use SuperSU App (Seems To Work Better)",  "",1,     #-- selected.1= 1
-	"Use Privacy Guard (Built-In Superuser)",                  "",0, #-- selected.1 = 2
+	"Root Corner",                       	""			,2,	#-- Group 2. key = "selected.1"
+	"Use SuperSU App",   "Seems To Work Better"	,1,    #-- selected.1= 1
+	"Use Privacy Guard",      "Built-In Superuser"	,0, 	#-- selected.1 = 2
 	
-	"Audio Corner",            "",2,#-- Group 2. key = "selected.2"
-	"Use ViPER4Arise",       "",0,#-- selected.2=1
-	"Use AudioFX",            "",1, #-- selected.2= 2
+	"Audio Corner",       		  	""			,2,	#-- Group 2. key = "selected.2"
+	"Use ViPER4Arise",     	        ""  			,0,	#-- selected.2=1
+	"Use AudioFX",                         ""			,1, 	#-- selected.2= 2
 	
-	"Kernel Corner",             "",2,#--Group 3.key = "selected.3"
-	"STweaks",            "",                      	0,      #-- selected.3=1
-	"Kernel Adiutor",    "",                    	0,              #-- selected.3=2
-	"Both",            "Install both apps.",                 0,#-- selected.3=3
-	"Neither","Don't use either of those apps.",1,     #-- selected.3=4
-	"Its a dirty install.","Keep my edits.",0               #-- selected.3=5
+	"Kernel Corner",             		""			,2,	#--Group 3.key = "selected.3"
+	"STweaks",            			""				,0,    #-- selected.3=1
+	"Kernel Adiutor",    			""				,0,    #-- selected.3=2
+	"Both",                           "Install both apps."	,0,	#-- selected.3=3
+	"Neither",        "Don't use either of those apps"	,1,    #-- selected.3=4
+	"Its a dirty install.",		"Keep my edits."	,0,    #-- selected.3=5
+	
+	"Camera Corner",			""			,2,	#-- Group 4.key = "selected.4"
+	"AOSP Camera",	  "Supposed to be stabler",1,	#-- selected.4=1
+	"Snap Camera",	  "CyanogenMod camera"	,0,	#-- selected.4=2
+	"Both Camera apps",		""			,0	#-- selected.4=3
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
