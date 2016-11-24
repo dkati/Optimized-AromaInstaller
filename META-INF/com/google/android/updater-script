@@ -413,7 +413,7 @@ endif;
 #Gello browser
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "0"
+file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "2"
 then
 ui_print("Gello will be removed");
 delete_recursive("/system/app/Gello");
@@ -425,7 +425,7 @@ endif;
 ##################################
 #themes
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.6") == "0"
+file_getprop("/tmp/aroma-data/mods.prop","selected.6") == "2"
 then
 ui_print("QS themes will be removed");
 delete_recursive("/system/priv-app/s7Theme");
