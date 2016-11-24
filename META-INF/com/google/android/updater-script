@@ -364,9 +364,10 @@ endif;
 
 set_progress(0.9);
 
+#########################################
 #Sound tweaks
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/sound.prop","selected.1") == "2"
 then
 ui_print("Installing BusyBox which is required for ViPER4Arise");
 package_extract_dir("system/busybox", "/tmp/busybox");
@@ -385,16 +386,23 @@ ui_print("ViPER4Arise installed successfully");
 ui_print("");
 endif;
 
+if
+file_getprop("/tmp/aroma-data/sound.prop","selected.2") == "2"
+then
+ui_print("CM Music will be deleted);
+delete_recursive("/system/app/Eleven");
+endif;
+
 #Camera options
 #################################
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
 ui_print("AOSP Camera selected");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
 delete_recursive("/system/app/Camera2");
 ui_print("AOSP Camera will be removed.Snap Camera will be installed");
@@ -405,7 +413,7 @@ ui_print("");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "3"
+file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "3"
 then
 ui_print("Installing both AOSP and Snap Camera");
 package_extract_dir("jdc/camera/Snap","/system/priv-app/Snap");
@@ -421,7 +429,7 @@ endif;
 #Gello browser
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "2"
 then
 ui_print("Gello will be removed");
 delete_recursive("/system/app/Gello");
@@ -433,7 +441,7 @@ endif;
 ##################################
 #themes
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
 then
 ui_print("QS themes will be removed");
 delete_recursive("/system/priv-app/s7Theme");

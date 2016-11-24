@@ -273,7 +273,7 @@ agreebox(
       "Mods List",
 
     #-- Sub Title
-      "Please choose one of the options:",
+      "ROM edits:",
 
     #-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
       "@default",
@@ -285,23 +285,51 @@ agreebox(
 	  # TITLE                     |         SUBTITLE           | Initial Value #
 	  #------------------------------+--------------------------------+-------------------#
 	
+	"Camera Corner",			""			,2,	#-- Group 1.key = "selected.1"
+	"AOSP Camera",	  "Supposed to be stabler",1,	#-- selected.1=1
+	"Snap Camera",	  "CyanogenMod camera"	,0,	#-- selected.1=2
+	"Both Camera apps",		""			,0,	#-- selected.1=3
 	
-	"Audio Corner",       		  	""			,2,	#-- Group 1. key = "selected.1"
-	"Use ViPER4Arise",     	        ""  			,0,	#-- selected.2=1
-	"Use AudioFX",                         ""			,1, 	#-- selected.2= 2
+	"Browser Corner",			""			,2,	#-- Group 2.key = "selected.2"
+	"Use Gello browser",	  "CyanogenMod browser" ,1,	#-- selected.2=1
+	"Do not include Gello",		""			,0,	#-- selected.2=2
 	
-	"Camera Corner",			""			,2,	#-- Group 2.key = "selected.2"
-	"AOSP Camera",	  "Supposed to be stabler",1,	#-- selected.4=1
-	"Snap Camera",	  "CyanogenMod camera"	,0,	#-- selected.4=2
-	"Both Camera apps",		""			,0,	#-- selected.4=3
+	"Theme Corner",			""			,2,	#-- Group 3.key = "selected.3"
+	"Use OptCM QS Theme","Lime and S7 QS"	,1,	#-- selected.3=1
+	"Do not include them",		""			,0	#-- selected.3=2
+
+	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
+  );
+  
+###################################################################################################################
+# SOUND MODS
+#
+  #-- IF Not "Default" Show Main Features Selection
+  selectbox(
+    #-- Title
+      "Mods List",
+
+    #-- Sub Title
+      "Sound edits:",
+
+    #-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
+      "@default",
+
+    #-- Will be saved in /tmp/aroma-data/mods.prop
+      "sound.prop",
+
+	  #----------------------------[ Select box With Groups ]-------------------#
+	  # TITLE                     |         SUBTITLE           | Initial Value #
+	  #------------------------------+--------------------------------+-------------------#
 	
-	"Browser Corner",			""			,2,	#-- Group 3.key = "selected.3"
-	"Use Gello browser",			""			,1,	#-- selected.5=1
-	"Do not include Gello",		""			,0,	#-- selected.5=2
 	
-	"Theme Corner",			""			,2,	#-- Group 4.key = "selected.4"
-	"Use OptCM QS Theme","Lime and S7 QS"	,1,	#-- selected.6=1
-	"Do not include them",		""			,0	#-- selected.6=2
+	"EQ Corner",       		  	""				,2,	#-- Group 1. key = "selected.1"
+	"Use AudioFX",         "CyanogenMod equalizer" 	,1,	#-- selected.1=1
+	"Use ViPER4Arise",                    ""				,0, 	#-- selected.1=2
+	
+	"Music Corner",			""				,2,	#-- Group 2. key = "selected.2"
+	"Use Eleven player",	"CyanogenMod music player"	,1,	#-- selected.2=1
+	"Do not include Eleven,		""				,0	#-- selected.2=2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
