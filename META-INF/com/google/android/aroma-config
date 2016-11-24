@@ -151,7 +151,6 @@ viewbox(
 	"</b> for <b>"+ini_get("rom_device")+"</b>.\n\n"+
     "Rom Information:\n\n"+
 	  "  Rom\t: <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
-	  "  Version\t: <b><#selectbg_g>"+"</#></b>\n"+
       "  author\t: <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
       "  device\t: <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
       "  date\t: <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n"+
