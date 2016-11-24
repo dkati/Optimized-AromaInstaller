@@ -5,10 +5,15 @@
 <*>Ramdisk and kernel updates</*>
 <*>Clouds wallpaper</*>
 <*>System partition will be wiped on every installation. 
-   That provides dirty installation capability</*>
+	That provides dirty installation capability</*>
 <*>Add LTE QS Tile</*>
 <*>Fix battery icon color while using battery saver mode</*>
 <*>Add option to remove browser</*>
 <*>Add option to remove OptCM QS Themes</*>
 <*>Add option to remove Eleven</*>
 <*>Major Camera edits</*>
+<*>Also clean 
+	-/sdcard/Android
+	-/sdcard/DCIM/.thumbnails
+	-/sdcard/LOST.DIR
+	when installing the rom</*>
