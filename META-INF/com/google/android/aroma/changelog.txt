@@ -10,3 +10,5 @@
 <*>Fix battery icon color while using battery saver mode</*>
 <*>Add option to remove browser</*>
 <*>Add option to remove OptCM QS Themes</*>
+<*>Add option to remove Eleven</*>
+<*>Major Camera edits</*>
