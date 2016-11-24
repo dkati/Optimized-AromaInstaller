@@ -280,9 +280,9 @@ agreebox(
 	"Use ViPER4Arise",     	        ""  			,0,	#-- selected.2=1
 	"Use AudioFX",                         ""			,1, 	#-- selected.2= 2
 	
-	"Kernel Corner",             		""			,2,	#--Group 3.key = "selected.3"
-	"STweaks",            			""				,0,    #-- selected.3=1
-	"Kernel Adiutor",    			""				,0,    #-- selected.3=2
+	"Kernel Corner",             		""			,2,	#-- Group 3.key = "selected.3"
+	"STweaks",            			""			,0,    #-- selected.3=1
+	"Kernel Adiutor",    			""			,0,    #-- selected.3=2
 	"Both",                           "Install both apps."	,0,	#-- selected.3=3
 	"Neither",        "Don't use either of those apps"	,1,    #-- selected.3=4
 	"Its a dirty install.",		"Keep my edits."	,0,    #-- selected.3=5
@@ -293,12 +293,12 @@ agreebox(
 	"Both Camera apps",		""			,0,	#-- selected.4=3
 	
 	"Browser Corner",			""			,2,	#-- Group 5.key = "selected.5"
-	"Use Gello browser",						,1,	#-- selected.5=1
-	"Do not include Gello",		""			,0,	#-- selected.5=0
+	"Use Gello browser",			""			,1,	#-- selected.5=1
+	"Do not include Gello",		""			,0,	#-- selected.5=2
 	
 	"Theme Corner",			""			,2,	#-- Group 6.key = "selected.6"
 	"Use OptCM QS Theme","Lime and S7 QS"	,1,	#-- selected.6=1
-	"Do not include them",		""			,0	#-- selected.6=0
+	"Do not include them",		""			,0	#-- selected.6=2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );

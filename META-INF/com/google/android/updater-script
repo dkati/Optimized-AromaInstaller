@@ -423,7 +423,7 @@ endif;
 #################################end of gello
 
 ##################################
-
+#themes
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.6") == "0"
 then
