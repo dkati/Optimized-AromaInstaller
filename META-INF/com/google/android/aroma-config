@@ -70,10 +70,10 @@
 #
 # Initializing Rom Information
 #
-ini_set("rom_name",             "Optimized CyanogenMod 13.0");
+ini_set("rom_name",            "Optimized CyanogenMod 13.0");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
-ini_set("rom_date",             "November 2016");
+ini_set("rom_date",              "November 2016");
 
 ###################################################################################################################
 #
@@ -132,14 +132,7 @@ theme("jdc");
 fontresload( "0", "ttf/Roboto-Regular.ttf;ttf/DroidSansFallback.ttf;", "12" ); #-- Use sets of font (Font Family)
 fontresload( "1", "ttf/Roboto-Regular.ttf;ttf/DroidSansFallback.ttf;", "14" ); #-- Use sets of font (Font Family)
 
-
-###################################################################################################################
-#
-# STEP 2 - INCLUDE EXAMPLE = Language Selection & Form Example
-#
 include("language_select.edify");
-
-
 ###################################################################################################################
 #
 # View Information
@@ -158,7 +151,6 @@ viewbox(
 	"Press Next to Continue ...",
     "@welcome"
 );
-
 ###################################################################################################################
 #
 # STEP 3 - LICENSE
@@ -182,7 +174,6 @@ agreebox(
   #-- Unchecked Alert Message
     "<~terms.confirm>"
 );
-
 ###################################################################################################################
 #
 # STEP 4 - CHANGELOG
@@ -199,46 +190,6 @@ textbox(
 
   #-- Arg 4
     resread("changelog.txt")
-);
-
-
-###################################################################################################################
-#
-# SELECT DEVICE
-#
-
-selectbox(
-  #-- Title
-    "",
-
-  #-- Sub Title
-    "Select your default Kernel",
-
-  #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
-    "@install",
-
-  #-- Will be saved in /tmp/aroma/kernel.prop
-    "kernel.prop",
-
-  #-----------------------------[ Selectbox Without Group ]-------------------------#
-  # TITLE         			   |  SUBTITLE                          | Initial Value #
-  #----------------------------+------------------------------------+---------------#
-  
-	"Kernel Corner",				""								,2,    #-- Group 1. key = "selected.1"
-	"Alucard Kernel","Offers additional features and optimizations like STweaks."	,1,	#-- selected.1= 1
-	"Stock Kernel", "The official CM Nightly Stock Kernel"				   	,0,	#-- selected.1= 2
-    
-	"Root Corner",                       	""									,2,	#-- Group 2. key = "selected.2"
-	"Use SuperSU App",   "Seems To Work Better"							,1,    #-- selected.2= 1
-	"Use Privacy Guard",      "Built-In Superuser"							,0, 	#-- selected.2 = 2
-    
-	"Kernel Corner",             		""									,2,	#-- Group 3.key = "selected.3"
-	"STweaks",            			"Does NOT work with stock kernel"			,0,    #-- selected.3=1
-	"Kernel Adiutor",    			""									,0,    #-- selected.3=2
-	"Both",                           "Install both apps."							,0,	#-- selected.3=3
-	"Neither",        "Don't use either of those apps"							,1,    #-- selected.3=4
-	"Its a dirty install.",		"Keep my edits."							,0    #-- selected.3=5
-
 );
 ###################################################################################################################
 #
@@ -263,12 +214,48 @@ agreebox(
   #-- Unchecked Alert Message
     "Please confirm that everything was clear."
 );
+###################################################################################################################
+#
+# SELECT DEVICE
+#
+selectbox(
+  #-- Title
+    "",
 
+  #-- Sub Title
+    "Select your default Kernel",
+
+  #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
+    "@install",
+
+  #-- Will be saved in /tmp/aroma/kernel.prop
+    "kernel.prop",
+
+  #-----------------------------[ Selectbox Without Group ]-------------------------#
+  # TITLE         			   |  SUBTITLE                          | Initial Value #
+  #----------------------------+------------------------------------+---------------#
+  
+	"<#0f0>Kernel Corner</#>",				""						,2,    #-- Group 1. key = "selected.1"
+	"Alucard Kernel","Offers additional features and optimizations like STweaks."	,1,	#-- selected.1= 1
+	"Stock Kernel", "The official CM Nightly Stock Kernel"				   	,0,	#-- selected.1= 2
+    
+	"<#0f0>Root Corner</#>",                       	""						,2,	#-- Group 2. key = "selected.2"
+	"Use SuperSU App",   "Seems To Work Better"							,1,    #-- selected.2= 1
+	"Use Privacy Guard",      "Built-In Superuser"							,0, 	#-- selected.2 = 2
+    
+	"<#0f0>Editor Corner</#>",             		""						,2,	#-- Group 3.key = "selected.3"
+	"STweaks",            			"Does NOT work with stock kernel"			,0,    #-- selected.3=1
+	"Kernel Adiutor",    			""									,0,    #-- selected.3=2
+	"Both",                           "Install both apps."							,0,	#-- selected.3=3
+	"Neither",        "Don't use either of those apps"							,1,    #-- selected.3=4
+	"Its a dirty install.",		"Keep my edits."							,0    #-- selected.3=5
+
+);
 ###################################################################################################################
 # MODS
 #
-  #-- IF Not "Default" Show Main Features Selection
-  selectbox(
+#-- IF Not "Default" Show Main Features Selection
+selectbox(
     #-- Title
       "Mods List",
 
@@ -285,27 +272,26 @@ agreebox(
 	  # TITLE                     |         SUBTITLE           | Initial Value #
 	  #------------------------------+--------------------------------+-------------------#
 	
-	"Camera Corner",			""			,2,	#-- Group 1.key = "selected.1"
+	"<#0f0>Camera Corner</#>",	""		,2,	#-- Group 1.key = "selected.1"
 	"AOSP Camera",	  "Supposed to be stabler",1,	#-- selected.1=1
 	"Snap Camera",	  "CyanogenMod camera"	,0,	#-- selected.1=2
 	"Both Camera apps",		""			,0,	#-- selected.1=3
 	
-	"Browser Corner",			""			,2,	#-- Group 2.key = "selected.2"
+	"<#0f0>Browser Corner</#>",			""			,2,	#-- Group 2.key = "selected.2"
 	"Use Gello browser",	  "CyanogenMod browser" ,1,	#-- selected.2=1
 	"Do not include Gello",		""			,0,	#-- selected.2=2
 	
-	"Theme Corner",			""			,2,	#-- Group 3.key = "selected.3"
+	"<#0f0>Theme Corner</#>",			""			,2,	#-- Group 3.key = "selected.3"
 	"Use OptCM QS Theme","Lime and S7 QS"	,1,	#-- selected.3=1
 	"Do not include them",		""			,0	#-- selected.3=2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
-  );
-  
+);
 ###################################################################################################################
 # SOUND MODS
 #
-  #-- IF Not "Default" Show Main Features Selection
-  selectbox(
+#-- IF Not "Default" Show Main Features Selection
+selectbox(
     #-- Title
       "Mods List",
 
@@ -315,7 +301,7 @@ agreebox(
     #-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
       "@default",
 
-    #-- Will be saved in /tmp/aroma-data/mods.prop
+    #-- Will be saved in /tmp/aroma-data/sound.prop
       "sound.prop",
 
 	  #----------------------------[ Select box With Groups ]-------------------#
@@ -323,21 +309,17 @@ agreebox(
 	  #------------------------------+--------------------------------+-------------------#
 	
 	
-	"EQ Corner",       		  	""				,2,	#-- Group 1. key = "selected.1"
+	"<#0f0>EQ Corner</#>",       		  	""		,2,	#-- Group 1. key = "selected.1"
 	"Use AudioFX",         "CyanogenMod equalizer" 	,1,	#-- selected.1=1
 	"Use ViPER4Arise",                    ""				,0, 	#-- selected.1=2
 	
-	"Music Corner",			""				,2,	#-- Group 2. key = "selected.2"
+	"<#0f0>Music Corner</#>",			""		,2,	#-- Group 2. key = "selected.2"
 	"Use Eleven player",	"CyanogenMod music player"	,1,	#-- selected.2=1
-	"Do not include Eleven,		""				,0	#-- selected.2=2
+	"Do not include Eleven",		""				,0	#-- selected.2=2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
-  );
+);
 
-##
-#
-# Next Screen is Installation UI, So change the next button text to "Install Now"
-#
 ini_set("text_next", "Install ROM");
 ini_set("icon_next", "@installbutton");
 
@@ -357,14 +339,12 @@ viewbox(
   #-- Icon
     "@install"
 );
-
-##
+#
 #
 # Next Button in successfull installation should be back to "Next >"
 #
 ini_set("text_next", "Next");
 ini_set("icon_next", "@next");
-
 ###################################################################################################################
 #
 # STEP 10 - INSTALLATION PROCESS
