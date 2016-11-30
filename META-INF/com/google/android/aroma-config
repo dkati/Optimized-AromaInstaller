@@ -256,7 +256,7 @@ selectbox(
 	
 	"Google Apps","",2,												#-- Group 3. key = "selected.2"
 	"Add Pixel Launcher and Wallpaper","",1,								#-- selected.2 = 1
-	"Do not include them.","",0										#-- selected.2 = 1
+	"Do not include them.","",0										#-- selected.2 = 2
 
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
