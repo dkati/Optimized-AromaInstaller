@@ -225,8 +225,9 @@ selectbox(
   #-----------------------------[ Selectbox Without Group ]-------------------------#
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
+  "<#0aa>Kernel Corner</#>",                       "Choose your core.",2,	
     "Alucard Kernel",           "Offers additional features and optimizations like STweaks.",    	1,
-  	"Stock Kernel",    "The official CM Nightly Stock Kernel",                    	0
+  	"Stock Kernel",    "Use this if you got screen bugs",                    	0
 
 );
 ###################################################################################################################
@@ -250,15 +251,15 @@ selectbox(
 	  # TITLE                    |  SUBTITLE                                        | Initial Value #
 	  #--------------------------+--------------------------------------------------  ------+-------------------#
 	
-	"Root Corner",                       "",2,									#-- Group 2. key = "selected.1"
+	"<#0aa>Root Corner</#>",                       "",2,									#-- Group 2. key = "selected.1"
 	"Use Privacy Guard (Built-In Superuser)","In case of LOCKED bootloaders,use this option",0,	 #-- selected.1 = 1
 	"Use SuperSU App (Seems To Work Better)",  "",1,    								#-- selected.1= 2
 	
-	"Google Apps","",2,												#-- Group 3. key = "selected.2"
+	"<#0aa>Google Apps</#>","",2,												#-- Group 3. key = "selected.2"
 	"Add Pixel Launcher and Wallpaper","",1,								#-- selected.2 = 1
 	"Do not include them.","",0,										#-- selected.2 = 2
 	
-	"Camera Corner","",2,											#-- Group 4.key = "selected.3"
+	"<#0aa>Camera Corner</#>","",2,											#-- Group 4.key = "selected.3"
 	"AOSP Camera",	  "Supposed to be stabler",1,						#-- selected.3=1
 	"Snap Camera",	  "CyanogenMod camera"	,0,						#-- selected.3=2
 	"Both Camera apps", "" ,0 #-- selected.3=3
