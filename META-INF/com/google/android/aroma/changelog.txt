@@ -11,7 +11,6 @@
 <*>Add Recents Panel tweaks from OptCM13</*>
 <*>New wallpaper</*>
 <*>Add OptCM13s camera wrapper</*>
-<*>Add SELinux switch</*>
 <*>Replace charging string on keyguard(Help me translate)</*>
 <*>Aroma:</*>
 	<*>Add Nexus Launcher & Wallpaper capability</*>
