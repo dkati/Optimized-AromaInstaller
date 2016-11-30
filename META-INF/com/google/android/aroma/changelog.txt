@@ -1,3 +1,25 @@
 <b><#selectbg_g>Changes from OptimizedCM14.1-Beta1</#></b>
 ---------------------------------------------------
-<*></*>
+<*>Upstream merge until 30-nov-2016</*>
+<*>Update stock kernel to 30-nov-2016</*>
+<*>Ramdisk and profiles updates</*>
+<*>Kernel updates</*>
+<*>F2FS and sdcard edits</*>
+<*>Supersu:Update to v2.78-SR4</*>
+<*>STweaks:do not dex preopt</*>
+<*>Update ril-service daemon</*>
+<*>Add Recents Panel tweaks from OptCM13</*>
+<*>New wallpaper</*>
+<*>Add OptCM13s camera wrapper</*>
+<*>Add SELinux switch</*>
+<*>Replace charging string on keyguard(Help me translate)</*>
+<*>Aroma:</*>
+	<*>Add Nexus Launcher & Wallpaper capability</*>
+	<*>Also clean on installing:
+		-/sdcard/Android
+		-/sdcard/DCIM/.thumbnails
+		-/sdcard/LOST.DIR </*>
+	<*>Add Camera selection capability</*>
+	<*>Add file manager selection capability</*>
+	
+		
