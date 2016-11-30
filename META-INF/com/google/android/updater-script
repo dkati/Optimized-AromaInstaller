@@ -363,10 +363,10 @@ if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
 then
 ui_print("Installing Pixel Launcher and Wallpaper apps...");
-package_extract_file("jdc/google/NexusLauncher.apk","/system/app/NexusLauncher/NexusLauncher.apk");
-package_extract_file("jdc/google/Wallpaper.apk","/system/app/Wallpaper/Wallpaper.apk");
-set_perm(0, 0, 0777, "/system/app/NexusLauncher/NexusLauncher.apk");
-set_perm(0, 0, 0777, "/system/app/Wallpaper/Wallpaper.apk");
+package_extract_dir("jdc/google/launcher","/system/priv-app/NexusLauncher");
+package_extract_dir("jdc/google/wallpaper","/system/priv-app/Wallpaper");
+set_perm(0, 0, 0644, "/system/priv-app/NexusLauncher/NexusLauncher.apk");
+set_perm(0, 0, 0644, "/system/priv-app/Wallpaper/Wallpaper.apk");
 endif;
 ##########
 set_progress(0.9);
