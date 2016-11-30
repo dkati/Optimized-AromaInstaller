@@ -262,8 +262,12 @@ selectbox(
 	"<#0aa>Camera Corner</#>","",2,											#-- Group 4.key = "selected.3"
 	"AOSP Camera",	  "Supposed to be stabler",1,						#-- selected.3=1
 	"Snap Camera",	  "CyanogenMod camera"	,0,						#-- selected.3=2
-	"Both Camera apps", "" ,0 #-- selected.3=3
-
+	"Both Camera apps", "" ,0, #-- selected.3=3
+	
+	"<#0aa>File managerCorner</#>","",2,	
+	"ES File Explorer",	  "",1,						#-- selected.4=1
+	"CM File Manager",	  "CyanogenMod File manager"	,0						#-- selected.4=2
+	
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
 

@@ -369,6 +369,17 @@ set_perm(0, 0, 0644, "/system/priv-app/NexusLauncher/NexusLauncher.apk");
 set_perm(0, 0, 0644, "/system/priv-app/Wallpaper/Wallpaper.apk");
 endif;
 ##########
+
+##########File manager
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+then
+ui_print("Installing ES File Explorer...");
+package_extract_dir("jdc/manager/esFileExplorer","/system/priv-app/esFileExplorer");
+set_perm(0, 0, 0644, "/system/priv-app/esFileExplorer/es.apk");
+endif;
+
+##########
 set_progress(0.9);
 
 set_progress(1.0);
