@@ -5,7 +5,7 @@
 <*>Ramdisk and profiles updates</*>
 <*>Kernel updates</*>
 <*>F2FS and sdcard edits</*>
-<*>Supersu:Update to v2.78-SR4</*>
+<*>Supersu:Update to v2.78-SR5</*>
 <*>STweaks:do not dex preopt</*>
 <*>Update ril-service daemon</*>
 <*>Add Recents Panel tweaks from OptCM13</*>
