@@ -13,6 +13,8 @@
 <*>Add OptCM13s camera wrapper</*>
 <*>Resetting proximity sensor on every ROM flash</*>
 <*>Replace charging string on keyguard(Help me translate)</*>
+<*>Improve scrolling cache</*>
+<*>Speed up background transitions</*>
 <*>Aroma:</*>
 	<*>Add Nexus Launcher & Wallpaper capability</*>
 	<*>Also clean on installing:
