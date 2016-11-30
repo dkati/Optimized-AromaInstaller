@@ -288,7 +288,7 @@ set_metadata("/system/bin/qmuxd", "uid", 0, "gid", 2000, "mode", 0755, "capabili
 #################################################################
 # KERNEL SELECTION AROMA BEGINS
 if
-file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "1"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.1") == "1"
 then
 ui_print("");
 ui_print("Installing Alucard Kernel");
@@ -308,7 +308,7 @@ ui_print("");
 endif;
 
 if
-file_getprop("/tmp/aroma-data/kernel.prop","selected.0") == "2"
+file_getprop("/tmp/aroma-data/kernel.prop","selected.1") == "2"
 then
 ui_print("");
 ui_print("Cleaning STweaks since stock kernel is selected...");
