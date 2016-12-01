@@ -377,6 +377,7 @@ then
 ui_print("Installing ES File Explorer...");
 package_extract_dir("jdc/manager/esFileExplorer","/system/priv-app/esFileExplorer");
 set_perm(0, 0, 0644, "/system/priv-app/esFileExplorer/es.apk");
+delete_recursive("/system/app/CMFileManager");
 endif;
 
 ##########
