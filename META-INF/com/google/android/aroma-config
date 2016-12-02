@@ -1,70 +1,3 @@
-### INFO:
-#
-# * AROMA Resource Dir  = META-INF/com/google/android/aroma
-#
-# * AROMA Temporary Dir = /tmp/aroma/
-#
-# * About Icon          = @alert - show <AROMA Resource Dir>/icons/alert.png
-#                         or if theme used it will find <themedir>/icon.alert.png
-#                         you can still access it via "icons/alert"
-#
-# * dp                  = Device Pixelate. WVGA/QHD = 3, HVGA = 2.
-#                         dp calculated with = round(min(width,height) / 160)
-#
-###
-
-##
-# Fix Colorspace Issue
-#
-# For device which have a problem with color ( not display the correct color )
-# try to set "force_colorspace" with ini_set. It may caused by wrong framebuffer
-# information that passed by kernel into framebuffer device.
-#
-# You can use one of following values:
-#   "rgba", "abgr", "argb", "bgra"
-#
-# NOTE: It must be in top most script, or you will got the color flicker
-#
-#ini_set("force_colorspace","argb");
-#
-
-##
-# Forcing Device Pixelate Size
-#  defaut: floor( min( width, height ) / 160 )
-#
-# Usefull for tablet device, if interface was too big, you can
-# force dp size for smaller UI size.
-#
-#-------- Uncomment one of this to use custom dp size:
-#
-# ini_set("dp","1"); #-- LDPI ( 240x320 / QVGA )
-# ini_set("dp","2"); #-- MDPI ( 340x480 / HVGA )
-# ini_set("dp","3"); #-- HDPI ( 480x800 / WVGA )
-# ini_set("dp","4");
-# ini_set("dp","5");
-#
-
-##
-# Custom Key Code - Usefull For Some Device which not used
-#                   Standard key code for up/down/select/back/menu
-#
-# You can capture the keycode in
-# recovery using "aroma-keycapture-flashable.zip" Available in
-# AROMA Installer Thread.
-#
-# Press some key when it run, it will return key code,
-# that key can override up/down/select/back/menu actions in
-# AROMA Installer, you can even set your home key for up, or
-# volume down for select item
-#
-#-------- Uncomment & Modify this Code:
-#
-# ini_set("customkeycode_up",     "115");
-# ini_set("customkeycode_down",   "114");
-# ini_set("customkeycode_select", "116");
-# ini_set("customkeycode_menu",   "229");
-# ini_set("customkeycode_back",   "158");
-#
 
 ###################################################################################################################
 #
@@ -264,7 +197,7 @@ selectbox(
 	"Snap Camera",	  "CyanogenMod camera"	,0,						#-- selected.3=2
 	"Both Camera apps", "" ,0, #-- selected.3=3
 	
-	"<#0aa>File managerCorner</#>","",2,	
+	"<#0aa>File Manager Corner</#>","",2,	
 	"ES File Explorer",	  "",1,						#-- selected.4=1
 	"CM File Manager",	  "CyanogenMod File manager"	,0						#-- selected.4=2
 	
@@ -352,8 +285,6 @@ if
 then
   goto("aroma_installer_demo_pos");
 endif;
-
-
 
 ##
 #

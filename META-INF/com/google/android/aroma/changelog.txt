@@ -17,6 +17,7 @@
 <*>Speed up background transitions</*>
 <*>Add LTE tile</*>
 <*>Change the base main color of ROM</*>
+<*>Settings icon has got our custom color</*>
 <*>Aroma:</*>
 	<*>Add Nexus Launcher & Wallpaper capability</*>
 	<*>Also clean on installing:
