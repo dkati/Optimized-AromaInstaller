@@ -16,6 +16,7 @@
 <*>Improve scrolling cache</*>
 <*>Speed up background transitions</*>
 <*>Add LTE tile</*>
+<*>More edits affecting dirty installations</*>
 <*>Change the base main color of ROM</*>
 <*>Settings icon has got our custom color</*>
 <*>Aroma:</*>
