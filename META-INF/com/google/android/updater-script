@@ -41,9 +41,9 @@ ui_print("Installing...");
 ui_print("***********************");
 
 set_progress(0.2);
-#show_progress(0.4, "-70000");
 run_program("/sbin/busybox", "mount", "/system");
 package_extract_dir("system", "/system");
+set_progress(0.3);
 ui_print("Installing Selected Files...");
 
 
@@ -60,6 +60,7 @@ ifelse(is_substring("I9507", getprop("ro.bootloader")), run_program("/sbin/sh", 
 ifelse(is_substring("I9508", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/gsm/* /system/ && busybox rm /system/lib/libcnefeatureconfig.so"));
 delete_recursive("/system/rild");
 ui_print("Making symlinks...");
+set_progress(0.4);
 symlink("../bin/toybox", "/system/xbin/ps");
 symlink("../xbin/su", "/system/bin/su");
 symlink("/firmware-mdm/image/acdb.mbn", "/system/etc/firmware/acdb.mbn");
@@ -184,6 +185,7 @@ symlink("toybox", "/system/bin/acpi", "/system/bin/arp",
         "/system/bin/xzcat",
         "/system/bin/yes");
 ui_print("Setting permissions...");
+set_progress(0.5);
 set_metadata_recursive("/system", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", "0x0", "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/bin", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0755, "capabilities", "0x0", "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/bin/app_process32", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:zygote_exec:s0");
@@ -276,7 +278,7 @@ set_metadata("/system/xbin/bash", "uid", 0, "gid", 2000, "mode", 0755, "capabili
 set_metadata("/system/xbin/perfprofd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:perfprofd_exec:s0");
 set_metadata("/system/xbin/procmem", "uid", 0, "gid", 0, "mode", 06755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:su_exec:s0");
-
+set_progress(0.6);
 run_program("/tmp/install/bin/backuptool.sh", "restore");
 
 run_program("/sbin/busybox", "mount", "/system");
@@ -323,7 +325,7 @@ set_perm(0, 0, 0777, "/tmp/loki_flash");
 
 run_program("/tmp/flash_kernel.sh");
 endif;
-set_progress(0.6);
+set_progress(0.7);
 ui_print(" ");
 
 #########Cameras
@@ -357,7 +359,7 @@ endif;
 
 
 #########
-
+set_progress(0.8);
 #########Google apps 
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
@@ -388,7 +390,7 @@ package_extract_file("install/bin/proximity.sh", "/tmp/proximity.sh");
 set_perm(0, 0, 0777, "/tmp/proximity.sh");
 run_program("/tmp/proximity.sh");
 
-set_progress(1.0);
+
 ui_print(" ");
 ui_print("Installation complete");
 ui_print("Unmounting partitions...");

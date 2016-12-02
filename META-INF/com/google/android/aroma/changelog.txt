@@ -25,5 +25,6 @@
 		-/sdcard/LOST.DIR </*>
 	<*>Add Camera selection capability</*>
 	<*>Add file manager selection capability</*>
+	<*>Fully edited UI</*>
 	
 		
