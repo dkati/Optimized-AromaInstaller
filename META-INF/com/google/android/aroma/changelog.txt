@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes from OptimizedCM14.1-Beta1</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 2-dec-2016</*>
-<*>Update stock kernel to 2-dec-2016</*>
+<*>Upstream merge until 3-dec-2016</*>
+<*>Update stock kernel to 3-dec-2016</*>
 <*>Ramdisk and profiles updates</*>
 <*>Kernel updates</*>
 <*>F2FS and sdcard edits</*>
@@ -15,7 +15,8 @@
 <*>Replace charging string on keyguard(Help me translate)</*>
 <*>Improve scrolling cache</*>
 <*>Speed up background transitions</*>
-<*>Add LTE tile</*>
+<*>Add LTE tile(Not working properly)</*>
+<*>Add Sound tile</*>
 <*>More edits affecting dirty installations</*>
 <*>Change the base main color of ROM</*>
 <*>Settings icon has got our custom color</*>
