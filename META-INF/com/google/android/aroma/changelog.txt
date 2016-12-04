@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes from OptimizedCM14.1-Beta1</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -dec-2016</*>
-<*>Update stock kernel to -dec-2016</*>
+<*>Upstream merge until 4-dec-2016</*>
+<*>Update stock kernel to 4-dec-2016</*>
 <*>Ramdisk and profiles updates</*>
 <*>Kernel updates</*>
 <*>F2FS and sdcard edits</*>
@@ -10,6 +10,7 @@
 <*>Update ril-service daemon</*>
 <*>Add Recents Panel tweaks from OptCM13</*>
 <*>New wallpaper</*>
+<*>Brand new Snap camera</*>
 <*>Add OptCM13s camera wrapper</*>
 <*>Resetting proximity sensor on every ROM flash</*>
 <*>Replace charging string on keyguard(Help me translate)</*>
