@@ -11,6 +11,18 @@
 <*>Add Recents Panel tweaks from OptCM13</*>
 <*>New wallpaper</*>
 <*>Brand new Snap camera</*>
+	-Still buggy.Its not ROMs issue.Snap camera is 
+	under development.USE IT AT YOUR OWN RISK!!!
+	Bugs: 
+		-HDR not working.Its N issue.not Snap.wont work 
+		with any app
+		-1 shot with back camera = freeze of camera preview.
+		App does NOT freeze.Camera preview DOES.
+		solution:
+		Switch to front camera,and back again
+		OR
+		press home button to minimize and run it again to be back
+		
 <*>Add OptCM13s camera wrapper</*>
 <*>Resetting proximity sensor on every ROM flash</*>
 <*>Replace charging string on keyguard(Help me translate)</*>
