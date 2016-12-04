@@ -21,6 +21,9 @@
 <*>Change the base main color of ROM</*>
 <*>Settings icon has got our custom color</*>
 <*>Fix circle battery icon</*>
+<*>Turn off some default CM display features</*>
+<*>Implement press home to answer call </*>
+<*>Settings:LED capabilities </*>
 <*>Aroma:</*>
 	<*>Add Nexus Launcher & Wallpaper capability</*>
 	<*>Also clean on installing:
