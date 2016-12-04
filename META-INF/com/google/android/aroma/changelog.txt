@@ -15,7 +15,8 @@
 <*>Replace charging string on keyguard(Help me translate)</*>
 <*>Improve scrolling cache</*>
 <*>Speed up background transitions</*>
-<*>Add LTE tile(Not working properly)</*>
+<*>Add LTE tile(Works but not visible to Settings app)</*>
+	-Hold click to get in Network preference menu 
 <*>Add Sound tile</*>
 <*>More edits affecting dirty installations</*>
 <*>Change the base main color of ROM</*>
@@ -23,6 +24,7 @@
 <*>Fix circle battery icon</*>
 <*>Turn off some default CM display features</*>
 <*>Implement press home to answer call </*>
+<*>Remove STweaks and SuperSU from JDCSettings if not installed</*>
 <*>Settings:LED capabilities </*>
 <*>Aroma:</*>
 	<*>Add Nexus Launcher & Wallpaper capability</*>
