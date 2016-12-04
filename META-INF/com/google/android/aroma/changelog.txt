@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes from OptimizedCM14.1-Beta1</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 3-dec-2016</*>
-<*>Update stock kernel to 3-dec-2016</*>
+<*>Upstream merge until -dec-2016</*>
+<*>Update stock kernel to -dec-2016</*>
 <*>Ramdisk and profiles updates</*>
 <*>Kernel updates</*>
 <*>F2FS and sdcard edits</*>
@@ -20,6 +20,7 @@
 <*>More edits affecting dirty installations</*>
 <*>Change the base main color of ROM</*>
 <*>Settings icon has got our custom color</*>
+<*>Fix circle battery icon</*>
 <*>Aroma:</*>
 	<*>Add Nexus Launcher & Wallpaper capability</*>
 	<*>Also clean on installing:
