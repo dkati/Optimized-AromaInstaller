@@ -40,6 +40,7 @@
 <*>Fix network switch(Preferred network type)</*>
 <*>Turn off some default CM display features</*>
 <*>Implement press home to answer call </*>
+<*>Allow Google Assistant to be installed</*>
 <*>Remove STweaks and SuperSU from JDCSettings if not installed</*>
 <*>Settings:LED capabilities </*>
 <*>Aroma:</*>

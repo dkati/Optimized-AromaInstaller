@@ -389,6 +389,8 @@ endif;
 
 #########
 set_progress(0.8);
+
+
 #########Google apps 
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
@@ -413,6 +415,17 @@ endif;
 
 ##########
 set_progress(0.9);
+
+##########Google assistant
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.5") == "1"
+then
+run_program("/sbin/sh", "-c", "busybox sed -i 's/ro.product.model*/ro.product.model=Pixel XL/g' /system/build.prop");
+run_program("/sbin/sh", "-c", "busybox sed -i 'ro.opa.eligible_device=true' /system/build.prop");
+ui_print("This device can now use Google Assistant!");
+endif;
+##########
+
 
 ###########Proximity sensor reset
 package_extract_file("install/bin/proximity.sh", "/tmp/proximity.sh");
