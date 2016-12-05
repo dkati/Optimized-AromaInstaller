@@ -199,11 +199,7 @@ selectbox(
 	
 	"<#0aa>File Manager Corner</#>","",2,	
 	"ES File Explorer",	  "",1,						#-- selected.4=1
-	"CM File Manager",	  "CyanogenMod File manager"	,0,						#-- selected.4=2
-	
-	"<#0aa>Google Assistant Corner</#>","",2,	
-	"Allow ROM to use Google Assistant",	  "Use a gapps packages of your choice",0,#-- selected.5=1
-	"Do not allow ROM to use Google Assistant",	  ""	,1						#-- selected.5=2
+	"CM File Manager",	  "CyanogenMod File manager"	,0						#-- selected.4=2
 	
 	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
