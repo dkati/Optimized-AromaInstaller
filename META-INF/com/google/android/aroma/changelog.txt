@@ -1,6 +1,6 @@
 <b><#selectbg_g>Changes from OptimizedCM14.1-Beta1</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 4-dec-2016</*>
+<*>Upstream merge until 5-dec-2016</*>
 <*>Update stock kernel to 4-dec-2016</*>
 <*>Ramdisk and profiles updates</*>
 <*>Kernel updates</*>
