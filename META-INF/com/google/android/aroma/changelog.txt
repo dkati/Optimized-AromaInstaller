@@ -34,6 +34,7 @@
 <*>Add LTE tile(Works but not visible to Settings app)</*>
 	-Hold click to get in Network preference menu 
 <*>Add Sound tile</*>
+<*>Add Switch to disable/enable wake on plug</*>
 <*>More edits affecting dirty installations</*>
 <*>Change the base main color of ROM</*>
 <*>Settings icon has got our custom color</*>
