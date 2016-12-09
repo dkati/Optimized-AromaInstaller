@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes from OptimizedCM14.1-Beta1</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -dec-2016</*>
-<*>Update stock kernel to -dec-2016</*>
+<*>Upstream merge until 9-dec-2016</*>
+<*>Update stock kernel to 9-dec-2016</*>
 <*>Update to Android 7.1.1_r4</*>
 <*>Ramdisk and profiles updates</*>
 <*>Kernel updates</*>
