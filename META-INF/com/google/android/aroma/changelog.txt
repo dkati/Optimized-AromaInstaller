@@ -3,3 +3,5 @@
 <*>Upstream merge until -dec-2016</*>
 <*>Update stock kernel to -dec-2016</*>
 <*>Settings apk:Back to stock colors</*>
+<*>APN changes</*>
+<*>Kernel changes</*>
