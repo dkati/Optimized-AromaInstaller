@@ -5,3 +5,4 @@
 <*>Settings apk:Back to stock colors</*>
 <*>APN changes</*>
 <*>Kernel changes</*>
+<*>RIL/Network changes from upstream</*>
