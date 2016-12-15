@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since Nov 25 update</#></b>
 -----------------------------
-<*>Update stock kernel to -2016</*>
-<*>Upstream merge until -2016</*>
+<*>Update stock kernel to 15-dec-2016</*>
+<*>Upstream merge until 15-dec-2016</*>
 <*>Ramdisk and kernel updates</*>
 <*>Decembers wallpaper</*>
 <*>Fix SELinux switch at STweaks</*>
