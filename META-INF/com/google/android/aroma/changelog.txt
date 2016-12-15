@@ -6,3 +6,5 @@
 <*>APN changes</*>
 <*>Kernel changes</*>
 <*>RIL/Network changes from upstream</*>
+<*>Changed wallpaper</*>
+<*>Updated SuperSU to 2.79</*>
