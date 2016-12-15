@@ -7,3 +7,4 @@
 <*>Fix SELinux switch at STweaks</*>
 <*>Updated BusyBox</*>
 <*>Updated Snap Camera</*>
+<*>Correctly replace STweaks profiles on dirty flash</*>
