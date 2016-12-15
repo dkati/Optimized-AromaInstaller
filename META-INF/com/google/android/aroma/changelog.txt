@@ -1,20 +1,9 @@
-<b><#selectbg_g>Changes since Nov 5 update</#></b>
+<b><#selectbg_g>Changes since Nov 25 update</#></b>
 -----------------------------
-<*>Update stock kernel to Nov-25-2016</*>
-<*>Upstream merge until Nov-25-2016</*>
+<*>Update stock kernel to -2016</*>
+<*>Upstream merge until -2016</*>
 <*>Ramdisk and kernel updates</*>
-<*>Clouds wallpaper</*>
-<*>System partition will be wiped on every installation. 
-	That provides dirty installation capability</*>
-<*>Add LTE QS Tile</*>
-<*>Fix battery icon color while using battery saver mode</*>
-<*>Add option to remove browser</*>
-<*>Add option to remove OptCM QS Themes</*>
-<*>Add option to remove Eleven</*>
-<*>Major Camera edits</*>
-<*>Also clean 
-	-/sdcard/Android
-	-/sdcard/DCIM/.thumbnails
-	-/sdcard/LOST.DIR
-	when installing the rom</*>
-<*>Edit initialized Home Screen</*>
+<*>Decembers wallpaper</*>
+<*>Fix SELinux switch at STweaks</*>
+<*>Updated BusyBox</*>
+<*>Updated Snap Camera</*>
