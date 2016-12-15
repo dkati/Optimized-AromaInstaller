@@ -1,4 +1,4 @@
-<b><#selectbg_g>Changes from OptimizedCM14.1-Beta2</#></b>
+<b><#selectbg_g>Changes since OptimizedCM14.1-Beta2</#></b>
 ---------------------------------------------------
 <*>Upstream merge until -dec-2016</*>
 <*>Update stock kernel to -dec-2016</*>
@@ -8,3 +8,4 @@
 <*>RIL/Network changes from upstream</*>
 <*>Changed wallpaper</*>
 <*>Updated SuperSU to 2.79</*>
+<*>Fix SElinux switch at STweaks</*>
