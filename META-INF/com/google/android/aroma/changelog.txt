@@ -7,5 +7,8 @@
 <*>Kernel changes</*>
 <*>RIL/Network changes from upstream</*>
 <*>Changed wallpaper</*>
-<*>Updated SuperSU to 2.79</*>
+<*>Updated SuperSU to 2.79 SR1</*>
 <*>Fix SElinux switch at STweaks</*>
+<*>Disabled SDCARDfs again</*>
+<*>No scrolling cache-I need smoothness.not speed</*>
+<*>Always show battery percentage when charging</*>
