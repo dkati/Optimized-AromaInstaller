@@ -13,3 +13,4 @@
 <*>No scrolling cache-I need smoothness.not speed</*>
 <*>Always show battery percentage when charging</*>
 <*>Increase sms limit</*>
+<*>Removed Gello app</*>
