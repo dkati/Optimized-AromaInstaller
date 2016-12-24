@@ -73,7 +73,7 @@
 ini_set("rom_name",            "Optimized CyanogenMod 13.0");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
-ini_set("rom_date",              "November 2016");
+ini_set("rom_date",              "December 2016");
 
 ###################################################################################################################
 #
@@ -278,8 +278,8 @@ selectbox(
 	"Both Camera apps",		""			,0,	#-- selected.1=3
 	
 	"<#0f0>Browser Corner</#>",			""			,2,	#-- Group 2.key = "selected.2"
-	"Use Gello browser",	  "CyanogenMod browser" ,1,	#-- selected.2=1
-	"Do not include Gello",		""			,0,	#-- selected.2=2
+	"Keep Gello browser",	  "...if exist" ,1,	#-- selected.2=1
+	"Remove Gello",		"...if exist"			,0,	#-- selected.2=2
 	
 	"<#0f0>Theme Corner</#>",			""			,2,	#-- Group 3.key = "selected.3"
 	"Use OptCM QS Theme","Lime and S7 QS"	,1,	#-- selected.3=1

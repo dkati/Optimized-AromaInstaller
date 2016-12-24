@@ -10,3 +10,4 @@
 <*>Correctly replace STweaks profiles on dirty flash</*>
 <*>increase sms limit</*>
 <*>update to r74</*>
+<*>Remove Gello.If you fresh install choose whatever you want in aroma</*>
