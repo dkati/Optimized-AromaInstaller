@@ -1,10 +1,11 @@
 <b><#selectbg_g>Changes since Nov 25 update</#></b>
 -----------------------------
-<*>Update stock kernel to 15-dec-2016</*>
-<*>Upstream merge until 15-dec-2016</*>
+<*>Update stock kernel to 24-dec-2016</*>
+<*>Upstream merge until 24-dec-2016</*>
 <*>Ramdisk and kernel updates</*>
 <*>Decembers wallpaper</*>
 <*>Fix SELinux switch at STweaks</*>
 <*>Updated BusyBox</*>
 <*>Updated Snap Camera</*>
 <*>Correctly replace STweaks profiles on dirty flash</*>
+<*>increase sms limit</*>
