@@ -9,3 +9,4 @@
 <*>Updated Snap Camera</*>
 <*>Correctly replace STweaks profiles on dirty flash</*>
 <*>increase sms limit</*>
+<*>update to r74</*>
