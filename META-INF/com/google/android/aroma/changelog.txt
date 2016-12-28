@@ -1,16 +1,8 @@
-<b><#selectbg_g>Changes since OptimizedCM14.1-Beta2</#></b>
+<b><#selectbg_g>Changes since OptimizedCM14.1-Beta3</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 24-dec-2016</*>
-<*>Update stock kernel to 24-dec-2016</*>
+<*>Upstream merge until -dec-2016</*>
+<*>Update stock kernel to -dec-2016</*>
 <*>Settings apk:Back to stock colors</*>
-<*>APN changes</*>
 <*>Kernel and ramdisk changes</*>
-<*>RIL/Network changes from upstream</*>
-<*>Changed wallpaper</*>
-<*>Updated SuperSU to 2.79 SR1</*>
-<*>Fix SElinux switch at STweaks</*>
-<*>Disabled SDCARDfs again</*>
-<*>No scrolling cache-I need smoothness.not speed</*>
-<*>Always show battery percentage when charging</*>
-<*>Increase sms limit</*>
-<*>Removed Gello app</*>
+<*>Refresh Snap preview after photo shoot</*>
+<*>Edits on Doze</*>
