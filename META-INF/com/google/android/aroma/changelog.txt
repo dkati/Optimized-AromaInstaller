@@ -2,7 +2,17 @@
 ---------------------------------------------------
 <*>Upstream merge until -dec-2016</*>
 <*>Update stock kernel to -dec-2016</*>
-<*>Settings apk:Back to stock colors</*>
-<*>Kernel and ramdisk changes</*>
+<*>LineageOS</*>
+<*>Revision r9</*>
+<*>Kernel and ramdisk big updates</*>
+<*>STweaks is updated</*>
 <*>Refresh Snap preview after photo shoot</*>
 <*>Edits on Doze</*>
+<*>Substratum support</*>
+<*>Edit SMS Limit and restrictions</*>
+<*>Wallpaper</*>
+<*>Several device edits</*>
+<*>Updated Snap camera</*>
+<*>Completely remove CMStats and its drain</*>
+<*>Disable LiveDisplay by default</*>
+<*>SuperSU to 2.79 SR1</*>
