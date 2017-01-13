@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since OptimizedCM14.1-Beta3</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -dec-2016</*>
-<*>Update stock kernel to -dec-2016</*>
+<*>Upstream merge until -Jan-2016</*>
+<*>Update stock kernel to -Jan-2016</*>
 <*>LineageOS</*>
 <*>Revision r9</*>
 <*>Kernel and ramdisk big updates</*>
@@ -15,4 +15,5 @@
 <*>Updated Snap camera</*>
 <*>Completely remove CMStats and its drain</*>
 <*>Disable LiveDisplay by default</*>
-<*>SuperSU to 2.79 SR1</*>
+<*>SuperSU to 2.79 SR2</*>
+<*>Give persistent SU access to system apps</*>
