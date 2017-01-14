@@ -17,3 +17,4 @@
 <*>Disable LiveDisplay by default</*>
 <*>SuperSU to 2.79 SR2</*>
 <*>Give persistent SU access to system apps</*>
+<*>Fix WiFi Hotspot</*>
