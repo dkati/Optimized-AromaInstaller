@@ -19,3 +19,5 @@
 <*>Give persistent SU access to system apps</*>
 <*>Fix WiFi Hotspot</*>
 <*>Enable Google Assistant</*>
+<*>Add an advanced Google Play Services killer(Default)</*>
+<*>SystemUI:Remove 'x' sign from signal icon</*>
