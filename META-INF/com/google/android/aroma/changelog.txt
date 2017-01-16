@@ -23,3 +23,4 @@
 <*>SystemUI:Remove 'x' sign from signal icon</*>
 <*>Update Wallpaper app</*>
 <*>Update ES file manager app</*>
+<*>Updated bootanimation</*>
