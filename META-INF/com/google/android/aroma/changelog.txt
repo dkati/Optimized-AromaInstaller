@@ -4,6 +4,7 @@
 <*>Update stock kernel to -Jan-2016</*>
 <*>LineageOS</*>
 <*>Revision r9</*>
+<*>Reconstruct the way that ROM is provided</*>
 <*>Kernel and ramdisk big updates</*>
 <*>STweaks is updated</*>
 <*>Refresh Snap preview after photo shoot</*>
