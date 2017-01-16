@@ -21,3 +21,5 @@
 <*>Enable Google Assistant</*>
 <*>Add an advanced Google Play Services killer(Default)</*>
 <*>SystemUI:Remove 'x' sign from signal icon</*>
+<*>Update Wallpaper app</*>
+<*>Update ES file manager app</*>
