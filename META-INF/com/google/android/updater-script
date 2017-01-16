@@ -346,6 +346,8 @@ delete_recursive("/system/app/Camera2");
 delete_recursive("/system/app/lib/arm/libjni_jpegutil.so");
 delete_recursive("/system/app/lib/arm/libjni_tinyplanet.so");
 
+ui_print("Deleting old Snap if exist...");
+delete_recursive("/system/priv-app/Snap");
 ui_print("Extracting Snap camera app...");
 package_extract_dir("jdc/camera/snapcam/Snap","/system/priv-app/Snap");
 set_perm(0, 0, 0644, "/system/priv-app/Snap/Snap.apk");
