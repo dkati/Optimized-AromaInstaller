@@ -15,7 +15,7 @@
 <*>Updated Snap camera</*>
 <*>Completely remove CMStats and its drain</*>
 <*>Disable LiveDisplay by default</*>
-<*>SuperSU to 2.79 SR2</*>
+<*>SuperSU to 2.79 SR3</*>
 <*>Give persistent SU access to system apps</*>
 <*>Fix WiFi Hotspot</*>
 <*>Enable Google Assistant</*>
