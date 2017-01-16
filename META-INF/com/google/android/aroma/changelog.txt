@@ -25,3 +25,5 @@
 <*>Update Wallpaper app</*>
 <*>Update ES file manager app</*>
 <*>Updated bootanimation</*>
+<*>Add ability to download flashables from Opt-LineageOS menu</*>
+<*>Many transitions from CM to LineageOS</*>
