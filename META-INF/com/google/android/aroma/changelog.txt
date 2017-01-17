@@ -35,3 +35,4 @@
 <*>Set back button kill timeout to 500ms</*>
 <*>Increase timeout to compile GMS core</*>
 <*>Add ability to restrict app data/wifi usage</*>
+<*>Add CPU info overlay at developer options</*>
