@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since OptimizedCM14.1-Beta3</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -Jan-2016</*>
-<*>Update stock kernel to -Jan-2016</*>
+<*>Upstream merge until 17-Jan-2016</*>
+<*>Update stock kernel to 17-Jan-2016</*>
 <*>LineageOS</*>
 <*>Revision r9</*>
 <*>Reconstruct the way that ROM is provided</*>
@@ -30,3 +30,8 @@
 	<*>Give the proper permissions to your browser</*> 
 </*>
 <*>Many transitions from CM to LineageOS</*>
+<*>Fix SuperSU related logcat spam</*>
+<*>Add membar to OptLineage tweaks</*>
+<*>Set back button kill timeout to 500ms</*>
+<*>Increase timeout to compile GMS core</*>
+<*>Add ability to restrict app data/wifi usage</*>
