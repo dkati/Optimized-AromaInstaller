@@ -25,6 +25,7 @@
 <*>Update Wallpaper app</*>
 <*>Update ES file manager app</*>
 <*>Updated bootanimation</*>
+<*>Updated WebView</*>
 <*>Add ability to download flashables from Opt-LineageOS menu
 	<*>Give the proper permissions to your browser</*> 
 </*>
