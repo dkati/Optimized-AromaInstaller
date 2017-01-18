@@ -39,3 +39,4 @@
 <*>Add CPU info overlay at developer options</*>
 <*>Add mattgyver to Test Team</*>
 <*>bluetooth:Allow HFP protocol</*>
+<*>Edit Straight Talk APN</*>
