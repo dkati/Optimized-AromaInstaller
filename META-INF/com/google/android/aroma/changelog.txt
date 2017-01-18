@@ -37,3 +37,5 @@
 <*>Add ability to restrict app data/wifi usage</*>
 <*>LineageOS official bootanimation</*>
 <*>Add CPU info overlay at developer options</*>
+<*>Add mattgyver to Test Team</*>
+<*>bluetooth:Allow HFP protocol</*>
