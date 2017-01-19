@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since OptimizedCM14.1-Beta3</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 17-Jan-2016</*>
-<*>Update stock kernel to 17-Jan-2016</*>
+<*>Upstream merge until 19-Jan-2016</*>
+<*>Update stock kernel to 19-Jan-2016</*>
 <*>LineageOS</*>
 <*>Revision r9</*>
 <*>Reconstruct the way that ROM is provided</*>
