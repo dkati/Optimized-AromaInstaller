@@ -12,7 +12,7 @@
 <*>Substratum support</*>
 <*>Edit SMS Limit and restrictions</*>
 <*>Wallpaper</*>
-<*>Several device edits</*>
+<*>Several device edits(affects partitions)</*>
 <*>Updated Snap camera</*>
 <*>Completely remove CMStats and its drain</*>
 <*>Disable LiveDisplay by default</*>
@@ -40,3 +40,4 @@
 <*>Add mattgyver to Test Team</*>
 <*>bluetooth:Allow HFP protocol</*>
 <*>Edit Straight Talk APN</*>
+<*>Enable Blur feature</*>
