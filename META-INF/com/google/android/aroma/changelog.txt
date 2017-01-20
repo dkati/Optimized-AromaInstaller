@@ -41,3 +41,4 @@
 <*>bluetooth:Allow HFP protocol</*>
 <*>Edit Straight Talk APN</*>
 <*>Enable Blur feature</*>
+<*>Add unlink volumes feature</*>
