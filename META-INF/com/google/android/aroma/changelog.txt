@@ -1,44 +1,5 @@
-<b><#selectbg_g>Changes since OptimizedCM14.1-Beta3</#></b>
+<b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta4</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 20-Jan-2016</*>
-<*>Update stock kernel to 20-Jan-2016</*>
-<*>LineageOS</*>
-<*>Revision r9</*>
-<*>Reconstruct the way that ROM is provided</*>
-<*>Kernel and ramdisk big updates</*>
-<*>STweaks is updated</*>
-<*>Refresh Snap preview after photo shoot</*>
-<*>Edits on Doze</*>
-<*>Substratum support</*>
-<*>Edit SMS Limit and restrictions</*>
-<*>Wallpaper</*>
-<*>Several device edits(affects partitions)</*>
-<*>Updated Snap camera</*>
-<*>Completely remove CMStats and its drain</*>
-<*>Disable LiveDisplay by default</*>
-<*>SuperSU to 2.79 SR3</*>
-<*>Give persistent SU access to system apps</*>
-<*>Fix WiFi Hotspot</*>
-<*>Enable Google Assistant</*>
-<*>Add an advanced Google Play Services killer(Default)</*>
-<*>SystemUI:Remove 'x' sign from signal icon</*>
-<*>Update Wallpaper app</*>
-<*>Update ES file manager app</*>
-<*>Updated bootanimation</*>
-<*>Updated WebView</*>
-<*>Add ability to download flashables from Opt-LineageOS menu
-	<*>Give the proper permissions to your browser</*> 
-</*>
-<*>Many transitions from CM to LineageOS</*>
-<*>Fix SuperSU related logcat spam</*>
-<*>Add membar to OptLineage tweaks</*>
-<*>Set back button kill timeout to 500ms</*>
-<*>Increase timeout to compile GMS core</*>
-<*>Add ability to restrict app data/wifi usage</*>
-<*>LineageOS official bootanimation</*>
-<*>Add CPU info overlay at developer options</*>
-<*>Add mattgyver to Test Team</*>
-<*>bluetooth:Allow HFP protocol</*>
-<*>Edit Straight Talk APN</*>
-<*>Enable Blur feature</*>
-<*>Add unlink volumes feature</*>
+<*>Upstream merge until -2016</*>
+<*>Update stock kernel to -2016</*>
+
