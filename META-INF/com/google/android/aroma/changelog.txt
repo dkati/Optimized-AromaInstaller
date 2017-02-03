@@ -2,4 +2,15 @@
 ---------------------------------------------------
 <*>Upstream merge until -2016</*>
 <*>Update stock kernel to -2016</*>
-
+<*>Fixes on cellular issues.Affects Sprint variants</*>
+<*>Fix device behavior when lid case exist </*>
+<*>Overlay:Add some BT profiles</*>
+<*>Keep WiFi on during sleep by default</*>
+<*>Set backKill time to 250ms</*>
+<*>kernel:Disable CPUSET code</*>
+<*>system.prop:Enable quick power on</*>
+<*>system.prop:Set delay of ringing while calling to 0</*>
+<*>fix f2fs for alucard kernel when using SuperSU</*>
+<*>[Test]PermissionGrant: added missing permission for gapps</*>
+<*>sepolicy: Fix denials after restore of ROM backup</*>
+<*>OMS updates</*>
