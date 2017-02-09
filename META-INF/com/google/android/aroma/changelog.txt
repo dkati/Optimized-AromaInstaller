@@ -14,3 +14,12 @@
 <*>[Test]PermissionGrant: added missing permission for gapps</*>
 <*>sepolicy: Fix denials after restore of ROM backup</*>
 <*>OMS updates</*>
+<*>Removed HexoLibre.RIP Theme Engine</*>
+<*>Substratum does NOT come with ROM.Please get it from PlayStore</*>
+<*>Use 4 cores while installing apps</*>
+<*>Updated flashables and aroma packages</*>
+<*>Updated webview</*>
+<*>Some camera stability edits(Placebo?You tell me)</*>
+<*>Fix a buggy situation while Lid case cause freeze</*>
+<*>Edited icon when no recents apps,at recents panel</*>
+<*>Do not show clear icon when no recent apps</*>
