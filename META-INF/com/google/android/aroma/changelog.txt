@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta4</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -2016</*>
-<*>Update stock kernel to -2016</*>
+<*>Upstream merge until 9-Feb-2016</*>
+<*>Update stock kernel to 9-Feb-2016</*>
 <*>Fixes on cellular issues.Affects Sprint variants</*>
 <*>Fix device behavior when lid case exist </*>
 <*>Overlay:Add some BT profiles</*>
