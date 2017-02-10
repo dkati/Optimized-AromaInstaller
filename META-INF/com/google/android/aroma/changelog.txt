@@ -7,3 +7,10 @@
 <*>Android revision 78</*>
 <*>Updated SuperSU to 2.79 SR3</*>
 <*>From CM to LineageOS</*>
+<*>Update Snap camera</*>
+<*>Disable LiveDisplay by default</*>
+<*>Allow some BT profiles</*>
+<*>Enable quick power on</*>
+<*>Set delay of ringing while calling to 0</*>
+<*>Disable cpp duplication (affects camera</*>
+<*>Enable all cores on installing apps</*>
