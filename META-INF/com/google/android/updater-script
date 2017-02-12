@@ -360,7 +360,7 @@ ui_print("Installing both AOSP and Snap Camera");
 package_extract_dir("jdc/camera/aospcam/Camera2","/system/app/Camera2");
 set_perm(0, 0, 0644, "/system/app/Camera2/Camera2.apk");
 set_perm(0, 0, 0644, "/system/app/Camera2/oat/arm/Camera2.odex");
-
+ui_print("Installing proper libraries");
 package_extract_dir("jdc/camera/lib","/system/lib");
 set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
 set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
