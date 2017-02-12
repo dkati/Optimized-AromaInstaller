@@ -332,38 +332,23 @@ ui_print(" ");
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
 then
+ui_print("AOSP Camera selected");
+package_extract_dir("jdc/camera/lib","/system/lib");
+package_extract_dir("jdc/camera/aospcam/Camera2","/system/app/Camera2");
 delete_recursive("/system/lib/libjni_snapimageutil.so");
 delete_recursive("/system/lib/libjni_snapmosaic.so");
 delete_recursive("/system/lib/libjni_snaptinyplanet.so");
-ui_print("AOSP Camera selected");
+set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
+set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
 endif;
 
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
 then
-ui_print("AOSP Camera will be removed.Snap Camera will be installed");
+ui_print("Snap Camera will be installed.AOSP Camera will be removed if exist");
 delete_recursive("/system/app/Camera2");
 delete_recursive("/system/app/lib/arm/libjni_jpegutil.so");
 delete_recursive("/system/app/lib/arm/libjni_tinyplanet.so");
-
-ui_print("Deleting old Snap if exist...");
-delete_recursive("/system/priv-app/Snap");
-ui_print("Extracting Snap camera app...");
-package_extract_dir("jdc/camera/snapcam/Snap","/system/priv-app/Snap");
-set_perm(0, 0, 0644, "/system/priv-app/Snap/Snap.apk");
-set_perm(0, 0, 0644, "/system/priv-app/Snap/oat/arm/Snap.odex");
-
-ui_print("Deleting old camera libraries...");
-delete_recursive("/system/lib/libjni_snapimageutil.so");
-delete_recursive("/system/lib/libjni_snapmosaic.so");
-delete_recursive("/system/lib/libjni_snaptinyplanet.so");
-
-ui_print("Extracting new camera libraries");
-package_extract_dir("jdc/camera/lib","/system/lib");
-set_perm(0, 0, 0644, "/system/lib/libjni_snapimageutil.so");
-set_perm(0, 0, 0644, "/system/lib/libjni_snapmosaic.so");
-set_perm(0, 0, 0644, "/system/lib/libjni_snaptinyplanet.so");
-
 ui_print("");
 endif;
 
@@ -372,18 +357,13 @@ file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "3"
 then
 ui_print("Installing both AOSP and Snap Camera");
 
-package_extract_dir("jdc/camera/snapcam/Snap","/system/priv-app/Snap");
-set_perm(0, 0, 0644, "/system/priv-app/Snap/Snap.apk");
-set_perm(0, 0, 0644, "/system/priv-app/Snap/oat/arm/Snap.odex");
-
-delete_recursive("/system/lib/libjni_snapimageutil.so");
-delete_recursive("/system/lib/libjni_snapmosaic.so");
-delete_recursive("/system/lib/libjni_snaptinyplanet.so");
+package_extract_dir("jdc/camera/aospcam/Camera2","/system/app/Camera2");
+set_perm(0, 0, 0644, "/system/app/Camera2/Camera2.apk");
+set_perm(0, 0, 0644, "/system/app/Camera2/oat/arm/Camera2.odex");
 
 package_extract_dir("jdc/camera/lib","/system/lib");
-set_perm(0, 0, 0644, "/system/lib/libjni_snapimageutil.so");
-set_perm(0, 0, 0644, "/system/lib/libjni_snapmosaic.so");
-set_perm(0, 0, 0644, "/system/lib/libjni_snaptinyplanet.so");
+set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
+set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
 ui_print("");
 endif;
 
