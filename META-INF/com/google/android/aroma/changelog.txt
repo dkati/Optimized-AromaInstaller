@@ -23,3 +23,6 @@
 <*>Fix a buggy situation while Lid case cause freeze</*>
 <*>Edited icon when no recents apps,at recents panel</*>
 <*>Do not show clear icon when no recent apps</*>
+<*>Edited sound steps</*>
+<*>Long press Power to activate Torch</*>
+<*>Vibrate when connecting or disconnecting a power source</*>
