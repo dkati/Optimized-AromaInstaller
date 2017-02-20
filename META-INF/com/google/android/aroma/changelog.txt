@@ -2,6 +2,9 @@
 ---------------------------------------------------
 <*>Upstream merge until -Feb-2017</*>
 <*>Update stock kernel to -Feb-2017</*>
+<*>Huge updates on kernel and ramdisk</*>
+<*>Updated kernel Toolchain</*>
+<*>Update all our prebuilt binaries</*>
 <*>Device tree:Fix some ril denials</*>
-
+<*>Updated wallpaper and bootanimation</*>
 
