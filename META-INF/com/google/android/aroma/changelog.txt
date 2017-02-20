@@ -7,4 +7,5 @@
 <*>Update all our prebuilt binaries</*>
 <*>Device tree:Fix some ril denials</*>
 <*>Updated wallpaper and bootanimation</*>
+<*>Pump volumes a bit</*>
 
