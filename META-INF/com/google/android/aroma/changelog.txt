@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -Feb-2016</*>
-<*>Update stock kernel to -Feb-2016</*>
+<*>Upstream merge until -Feb-2017</*>
+<*>Update stock kernel to -Feb-2017</*>
 <*>Device tree:Fix some ril denials</*>
 
 
