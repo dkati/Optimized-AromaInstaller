@@ -1,28 +1,7 @@
-<b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta4</#></b>
+<b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 13-Feb-2016</*>
-<*>Update stock kernel to 13-Feb-2016</*>
-<*>Fixes on cellular issues.Affects Sprint variants</*>
-<*>Fix device behavior when lid case exist </*>
-<*>Overlay:Add some BT profiles</*>
-<*>Keep WiFi on during sleep by default</*>
-<*>Set backKill time to 250ms</*>
-<*>kernel:Disable CPUSET code</*>
-<*>system.prop:Enable quick power on</*>
-<*>system.prop:Set delay of ringing while calling to 0</*>
-<*>fix f2fs for alucard kernel when using SuperSU</*>
-<*>[Test]PermissionGrant: added missing permission for gapps</*>
-<*>sepolicy: Fix denials after restore of ROM backup</*>
-<*>OMS updates</*>
-<*>Removed HexoLibre.RIP Theme Engine</*>
-<*>Substratum does NOT come with ROM.Please get it from PlayStore</*>
-<*>Use 4 cores while installing apps</*>
-<*>Updated flashables and aroma packages</*>
-<*>Updated webview</*>
-<*>Some camera stability edits(Placebo?You tell me)</*>
-<*>Fix a buggy situation while Lid case cause freeze</*>
-<*>Edited icon when no recents apps,at recents panel</*>
-<*>Do not show clear icon when no recent apps</*>
-<*>Edited sound steps</*>
-<*>Long press Power to activate Torch</*>
-<*>Vibrate when connecting or disconnecting a power source</*>
+<*>Upstream merge until -Feb-2016</*>
+<*>Update stock kernel to -Feb-2016</*>
+<*>Device tree:Fix some ril denials</*>
+
+
