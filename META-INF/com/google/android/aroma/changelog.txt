@@ -8,4 +8,6 @@
 <*>Device tree:Fix some ril denials</*>
 <*>Updated wallpaper and bootanimation</*>
 <*>Pump volumes a bit</*>
+<*>Update our flashables</*>
+<*>Fix Optimized Lineage Settings icon color</*>
 
