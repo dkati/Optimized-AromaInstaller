@@ -124,10 +124,10 @@ agreebox(
 #
 textbox(
   #-- Title
-    "READ THIS CAREFULLY",
+    "CHANGELOG",
 
   #-- Subtitle
-    "Before Proceeding With Setup",
+    "Read about changes/updates",
 
   #-- Icon
     "@update",
@@ -147,7 +147,7 @@ selectbox(
     "",
 
   #-- Sub Title
-    "Select your default Kernel",
+    "Aroma Modifications",
 
   #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
     "@install",
@@ -158,9 +158,9 @@ selectbox(
   #-----------------------------[ Selectbox Without Group ]-------------------------#
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
-  "<#0aa>Kernel Corner</#>",                       "Choose your core.",2,	
-    "Alucard Kernel",           "Offers additional features and optimizations like STweaks.",    	1,
-  	"Stock Kernel",    "Use this if you got screen bugs",                    	0
+  "<#0aa>Kernel Corner</#>",           "Choose your core."                                             ,2,	
+    "Alucard Kernel",                  "Offers additional features and optimizations like STweaks."    ,1,
+  	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0
 
 );
 ###################################################################################################################
@@ -184,24 +184,24 @@ selectbox(
 	  # TITLE                    |  SUBTITLE                                        | Initial Value #
 	  #--------------------------+--------------------------------------------------  ------+-------------------#
 	
-	"<#0aa>Root Corner</#>",                       "",2,									#-- Group 2. key = "selected.1"
-	"Use Privacy Guard (Built-In Superuser)","In case of LOCKED bootloaders,use this option",0,	 #-- selected.1 = 1
-	"Use SuperSU App (Seems To Work Better)",  "",1,    								#-- selected.1= 2
+	"<#0aa>Root Corner</#>",                       ""                                                  ,2,	 #-- Group 1. key = "selected.1"
+	"Use Privacy Guard (Built-In Superuser)",      "In case of LOCKED bootloaders,use this option"     ,0,	 #-- selected.1 = 1
+	"Use SuperSU App (Seems To Work Better)",      ""                                                  ,1,   #-- selected.1 = 2
 	
-	"<#0aa>Google Apps</#>","",2,												#-- Group 3. key = "selected.2"
-	"Add Pixel Launcher and Wallpaper","",1,								#-- selected.2 = 1
-	"Do not include them.","",0,										#-- selected.2 = 2
+	"<#0aa>Google Apps</#>",                       ""                                                  ,2,	 #-- Group 2. key = "selected.2"
+	"Add Pixel Launcher and Wallpaper",            ""                                                  ,1,	 #-- selected.2 = 1
+	"Do not include them.",                        ""                                                  ,0,	 #-- selected.2 = 2
 	
-	"<#0aa>Camera Corner</#>","",2,											#-- Group 4.key = "selected.3"
-	"AOSP Camera",	  "Supposed to be stabler",1,						#-- selected.3=1
-	"Snap Camera",	  "CyanogenMod camera"	,0,						#-- selected.3=2
-	"Both Camera apps", "" ,0, #-- selected.3=3
+	"<#0aa>Camera Corner</#>",                     ""                                                  ,2,	 #-- Group 3. key = "selected.3"
+	"AOSP Camera",	                               "Supposed to be more stable"                        ,1,	 #-- selected.3 = 1
+	"Snap Camera",	                               "CyanogenMod camera"	                               ,0,	 #-- selected.3 = 2
+	"Both Camera apps",                            ""                                                  ,0,   #-- selected.3 = 3
 	
-	"<#0aa>File Manager Corner</#>","",2,	
-	"ES File Explorer",	  "",1,						#-- selected.4=1
-	"CM File Manager",	  "CyanogenMod File manager"	,0						#-- selected.4=2
+	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 4. key = "selected.4"
+	"Neither",	                                   ""                                                  ,1,	 #-- selected.4 = 1
+	"ES File Explorer",	                           ""                                                  ,0,	 #-- selected.4 = 2
+	"CM File Manager",	                           "CyanogenMod File manager"	                       ,0	 #-- selected.4 = 3
 	
-	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
   );
 
 ##
