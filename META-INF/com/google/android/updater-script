@@ -287,8 +287,10 @@ set_metadata("/system/bin/ks", "uid", 0, "gid", 2000, "mode", 0755, "capabilitie
 set_metadata("/system/bin/netmgrd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:netmgrd_exec:s0");
 set_metadata("/system/bin/qmuxd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:qmuxd_exec:s0");
 
+
 #################################################################
-# KERNEL SELECTION AROMA BEGINS
+# KERNEL SELECTION Alucard
+
 if
 file_getprop("/tmp/aroma-data/kernel.prop","selected.1") == "1"
 then
@@ -309,6 +311,10 @@ assert(run_program("/sbin/sh", "/tmp/loki.sh")==0);
 ui_print("");
 endif;
 
+
+#################################################################
+# KERNEL SELECTION Stock
+
 if
 file_getprop("/tmp/aroma-data/kernel.prop","selected.1") == "2"
 then
@@ -328,7 +334,10 @@ endif;
 set_progress(0.7);
 ui_print(" ");
 
-#########Cameras
+
+#################################################################
+# CAMERA AOSP
+
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
 then
@@ -342,6 +351,10 @@ set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
 set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
 endif;
 
+
+#################################################################
+# CAMERA Snap
+
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
 then
@@ -351,6 +364,10 @@ delete_recursive("/system/app/lib/arm/libjni_jpegutil.so");
 delete_recursive("/system/app/lib/arm/libjni_tinyplanet.so");
 ui_print("");
 endif;
+
+
+#################################################################
+# CAMERA Both
 
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "3"
@@ -368,10 +385,10 @@ ui_print("");
 endif;
 
 
-
-#########
 set_progress(0.8);
-#########Google apps 
+#################################################################
+# Pixel Launcher 
+
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
 then
@@ -381,11 +398,25 @@ package_extract_dir("jdc/google/wallpaper","/system/priv-app/Wallpaper");
 set_perm(0, 0, 0644, "/system/priv-app/NexusLauncher/NexusLauncher.apk");
 set_perm(0, 0, 0644, "/system/priv-app/Wallpaper/Wallpaper.apk");
 endif;
-##########
 
-##########File manager
+
+#################################################################
+# FILE MANAGER Neither
+
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+then
+ui_print("Removing File Explorers...");
+delete_recursive("/system/app/CMFileManager");
+delete_recursive("/system/priv-app/ESFileExplorer");
+endif;
+
+
+#################################################################
+# FILE MANAGER ES
+
+if
+file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
 then
 ui_print("Installing ES File Explorer...");
 package_extract_dir("jdc/manager/esFileExplorer","/system/priv-app/esFileExplorer");
@@ -393,15 +424,14 @@ set_perm(0, 0, 0644, "/system/priv-app/esFileExplorer/es.apk");
 delete_recursive("/system/app/CMFileManager");
 endif;
 
-##########
-set_progress(0.9);
 
-###########Proximity sensor reset
+set_progress(0.9);
+#################################################################
+# Proximity sensor reset
+
 package_extract_file("install/bin/proximity.sh", "/tmp/proximity.sh");
 set_perm(0, 0, 0777, "/tmp/proximity.sh");
 run_program("/tmp/proximity.sh");
-
-
 ui_print(" ");
 ui_print("Installation complete");
 ui_print("Unmounting partitions...");
@@ -410,7 +440,10 @@ unmount("/cache");
 unmount("/preload");
 unmount("/system");
 
-#SuperSU installation IF exist
+
+#################################################################
+# SuperSU
+
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
@@ -423,7 +456,10 @@ then
 	ui_print("SuperSU installed successfully");
 endif;
 
-#Privacy Guard
+
+#################################################################
+# Privacy Guard
+
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
@@ -432,8 +468,11 @@ endif;
 ui_print("Cleaning temporary files");
 delete_recursive("/tmpJDC");
 delete_recursive("/tmp/boot.img");
-unmount("/system");
 
+
+#################################################################
+
+unmount("/system");
 ui_print("___________________________________________");
 ui_print("Done!");
 set_progress(1.0);
