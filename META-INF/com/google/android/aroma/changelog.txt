@@ -1,3 +1,7 @@
+WORK-IN-PROGRESS:
+<*>Aroma: updated license, added 'neither' as File Manager Option.</*>
+
+
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
 ---------------------------------------------------
 <*>Upstream merge until -Feb-2017</*>
