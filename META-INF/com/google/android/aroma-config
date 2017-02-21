@@ -89,7 +89,7 @@ viewbox(
       "  author\t: <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
       "  device\t: <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
       "  date\t: <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n"+
-    "<b><#f00>Only for S4 Snapdragon 600 devices - I9505 and its variants</#></b>\n\n\n"+
+    "<b><#f00>Only for S4 Snapdragon 600 device variants</#></b>\n\n\n"+
 	"Press Next to Continue ...",
     "@welcome"
 );
@@ -194,13 +194,13 @@ selectbox(
 	
 	"<#0aa>Camera Corner</#>",                     ""                                                  ,2,	 #-- Group 3. key = "selected.3"
 	"AOSP Camera",	                               "Supposed to be more stable"                        ,1,	 #-- selected.3 = 1
-	"Snap Camera",	                               "CyanogenMod camera"	                               ,0,	 #-- selected.3 = 2
+	"Snap Camera",	                               "CyanogenMod camera"	                           ,0,	 #-- selected.3 = 2
 	"Both Camera apps",                            ""                                                  ,0,   #-- selected.3 = 3
 	
 	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 4. key = "selected.4"
-	"Neither",	                                   ""                                                  ,1,	 #-- selected.4 = 1
-	"ES File Explorer",	                           ""                                                  ,0,	 #-- selected.4 = 2
-	"CM File Manager",	                           "CyanogenMod File manager"	                       ,0	 #-- selected.4 = 3
+	"Neither",	                               ""                                                  ,1,	 #-- selected.4 = 1
+	"ES File Explorer",	                       ""                                                  ,0,	 #-- selected.4 = 2
+	"CM File Manager",	                       "CyanogenMod File manager"	                   ,0	 #-- selected.4 = 3
 	
   );
 
