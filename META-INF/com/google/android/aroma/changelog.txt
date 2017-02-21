@@ -12,4 +12,5 @@
 <*>Fix Optimized Lineage Settings icon color</*>
 <*>Updated beta webview</*>
 <*>Update busybox from source</*>
+<*>Minor aroma edit on bottom bar</*>
 
