@@ -1,6 +1,3 @@
-WORK-IN-PROGRESS:
-<*>Aroma: updated license, added 'neither' as File Manager Option.</*>
-
 
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
 ---------------------------------------------------
@@ -16,5 +13,6 @@ WORK-IN-PROGRESS:
 <*>Fix Optimized Lineage Settings icon color</*>
 <*>Updated beta webview</*>
 <*>Update busybox from source</*>
-<*>Minor aroma edit on bottom bar</*>
+<*>Aroma: Minor edit on bottom bar</*>
+<*>Aroma: updated license, added 'neither' as File Manager Option</*>
 
