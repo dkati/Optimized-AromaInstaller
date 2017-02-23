@@ -105,7 +105,7 @@ viewbox(
 #
 textbox(
   #-- Title
-    "Changelog",
+    "CHANGELOG",
 
   #-- Subtitle
     "Read about changes/updates",
@@ -144,6 +144,8 @@ selectbox(
 	"No Changes",                      "Make no kernel changes"                                        ,1
 
 );
+
+
 ###################################################################################################################
 # MODS
 #
@@ -180,11 +182,9 @@ selectbox(
 	
   );
 
-##
-#
-# Next Screen is Installation UI, So change the next button text to "Install Now"
-#
-	
+
+ini_set("text_next", "Install ROM");
+ini_set("icon_next", "@installbutton");
 	
 ###################################################################################################################
 # MODS2
@@ -220,24 +220,9 @@ selectbox(
 	
   );
 
-##
-#
-# Next Screen is Installation UI, So change the next button text to "Install Now"
-#
-ini_set("text_next", "Install ROM");
-ini_set("icon_next", "@installbutton");
 
-###################################################################################################################
-#
-# STEP 9 - MAKE SURE USER KNOW THAT NEXT STEP WAS INSTALLATION PROCESS
-#
-
-##
-#
-# Next Button in successfull installation should be back to "Next >"
-#
-ini_set("text_next", "Next");
-ini_set("icon_next", "@next");
+ini_set("text_next", "Finish");
+ini_set("icon_next", "@finish");
 
 ###################################################################################################################
 #
@@ -258,21 +243,9 @@ setvar("retstatus",
 
 	#-- Installation Finish Message
       "The installation wizard has successfully installed <b>"+ini_get("rom_name")+
-	  "</b>. Press Next to continue."
+	  "</b>. Press Finish to continue."
   )
 );
-
-#
-# ASK If We Want to back to main menu
-#
-
-##
-#
-# Next Button is "Finish"
-#
-ini_set("text_next", "Finish");
-ini_set("icon_next", "@finish");
-
 
 #---- FINISH
 
