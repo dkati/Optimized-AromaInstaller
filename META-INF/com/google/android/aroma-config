@@ -105,7 +105,7 @@ viewbox(
 #
 textbox(
   #-- Title
-    "CHANGELOG",
+    "Changelog",
 
   #-- Subtitle
     "Read about changes/updates",
