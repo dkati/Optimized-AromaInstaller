@@ -15,8 +15,8 @@
 <*>Update busybox from source</*>
 <*>Aroma: Minor edit on bottom bar</*>
 <*>Aroma: updated license, added 'neither' as File Manager Option</*>
+<*>Aroma: removed pages, added viper4arise, added No Changes as option</*>
 <*>Fix a buggy call situation caused by volumes steps</*>
 <*>Allow disabling the assistant disclosure</*>
 <*>exfat:use kernel driver</*>
 <*>Allow selinux to be permissive on all builds</*>
-
