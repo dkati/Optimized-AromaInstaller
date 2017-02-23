@@ -339,7 +339,7 @@ ui_print(" ");
 # CAMERA AOSP
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "1"
 then
 ui_print("AOSP Camera selected");
 package_extract_dir("jdc/camera/lib","/system/lib");
@@ -356,7 +356,7 @@ endif;
 # CAMERA Snap
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "2"
 then
 ui_print("Snap Camera will be installed.AOSP Camera will be removed if exist");
 delete_recursive("/system/app/Camera2");
@@ -370,7 +370,7 @@ endif;
 # CAMERA Both
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "3"
+file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "3"
 then
 ui_print("Installing both AOSP and Snap Camera");
 
@@ -390,7 +390,7 @@ set_progress(0.8);
 # Pixel Launcher 
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/mods.prop","selected.3") == "1"
 then
 ui_print("Installing Pixel Launcher and Wallpaper apps...");
 package_extract_dir("jdc/google/launcher","/system/priv-app/NexusLauncher");
@@ -401,10 +401,36 @@ endif;
 
 
 #################################################################
+# Viper4Arise
+
+if
+file_getprop("/tmp/aroma/mods.prop","selected.2") == "1"
+then
+ui_print("  ");
+ui_print("ViPER4Arise is installing");
+package_extract_dir("system/arise", "/tmp/arise");
+run_program("/sbin/busybox", "unzip", "/tmp/arise/arise.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/arise");
+run_program("/sbin/busybox", "sh", "/tmp/arise/META-INF/com/google/android/update-binary", "null", "1", "/tmp/arise/arise.zip");
+delete_recursive("/tmp/arise");
+ui_print("  ");
+ui_print("- Unmounting /system");
+ui_print("- Done !");
+ui_print("  ");
+ui_print("ViPER4Arise installed successfully");
+ui_print("  ");
+ui_print("-- Remounting  /system");
+ui_print("  ");
+ifelse(is_mounted("/system"), unmount("/system"));
+run_program("/sbin/busybox", "mount", "/system");
+ui_print("  ");
+endif;
+
+
+#################################################################
 # FILE MANAGER Neither
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/mods2.prop","selected.2") == "1"
 then
 ui_print("Removing File Explorers...");
 delete_recursive("/system/app/CMFileManager");
@@ -416,7 +442,7 @@ endif;
 # FILE MANAGER ES
 
 if
-file_getprop("/tmp/aroma-data/mods.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/mods2.prop","selected.2") == "2"
 then
 ui_print("Installing ES File Explorer...");
 package_extract_dir("jdc/manager/esFileExplorer","/system/priv-app/esFileExplorer");
@@ -465,13 +491,13 @@ file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "1"
 then
 ui_print("Privacy guard will be installed");
 endif;
-ui_print("Cleaning temporary files");
-delete_recursive("/tmpJDC");
-delete_recursive("/tmp/boot.img");
 
 
 #################################################################
 
+ui_print("Cleaning temporary files");
+delete_recursive("/tmpJDC");
+delete_recursive("/tmp/boot.img");
 unmount("/system");
 ui_print("___________________________________________");
 ui_print("Done!");
