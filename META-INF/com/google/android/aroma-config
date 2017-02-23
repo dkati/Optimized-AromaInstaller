@@ -42,7 +42,7 @@ anisplash(
 	"splash/a9", 20,
 	"splash/a10", 20,
 	"splash/a11", 20,
-	"splash/a12", 1500,
+	"splash/a12", 2000,
 	"splash/a13", 20,
 	"splash/a14", 20,
 	"splash/a15", 20,
@@ -71,7 +71,7 @@ fontresload( "1", "ttf/Roboto-Regular.ttf;ttf/DroidSansFallback.ttf;", "14" ); #
 #
 # STEP 2 - INCLUDE EXAMPLE = Language Selection & Form Example
 #
-include("language_select.edify");
+#include("language_select.edify");
 
 
 ###################################################################################################################
@@ -89,7 +89,7 @@ viewbox(
       "  author\t: <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
       "  device\t: <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
       "  date\t: <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n"+
-    "<b><#f00>Only for S4 Snapdragon 600 device variants</#></b>\n\n\n"+
+    "<b><#000>Only for S4 Snapdragon 600 device variants</#></b>\n\n\n"+
 	"Press Next to Continue ...",
     "@welcome"
 );
@@ -98,25 +98,6 @@ viewbox(
 #
 # STEP 3 - LICENSE
 #
-agreebox(
-  #-- Title
-    "<~terms.title>",
-
-  #-- Subtitle / Description
-    "<~terms.desc>",
-
-  #-- Icon
-    "@license",
-
-  #-- Text Content ( Read from <AROMA Resource Dir>/license.txt )
-    resread("license.txt"),
-
-  #-- Checkbox Text
-    "<~terms.check>",
-
-  #-- Unchecked Alert Message
-    "<~terms.confirm>"
-);
 
 ###################################################################################################################
 #
@@ -138,16 +119,15 @@ textbox(
 
 
 ###################################################################################################################
-#
-# SELECT DEVICE
+# KERNEL
 #
 
 selectbox(
   #-- Title
-    "",
+    "Kernel List",
 
   #-- Sub Title
-    "Aroma Modifications",
+    "Please choose one of the options:",
 
   #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
     "@install",
@@ -159,9 +139,9 @@ selectbox(
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
   "<#0aa>Kernel Corner</#>",           "Choose your core."                                             ,2,	
-    "Alucard Kernel",                  "Offers additional features and optimizations like STweaks"     ,1,
+    "Alucard Kernel",                  "Offers additional features and optimizations like STweaks"     ,0,
   	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0,
-	"No Changes",                      "Make no kernel changes"                                        ,0
+	"No Changes",                      "Make no kernel changes"                                        ,1
 
 );
 ###################################################################################################################
@@ -187,24 +167,56 @@ selectbox(
 	
 	"<#0aa>Root Corner</#>",                       ""                                                  ,2,	 #-- Group 1. key = "selected.1"
 	"Use Privacy Guard (Built-In Superuser)",      "In case of LOCKED bootloaders,use this option"     ,0,	 #-- selected.1 = 1
-	"Use SuperSU App (Seems To Work Better)",      ""                                                  ,1,   #-- selected.1 = 2
-	"No Changes",                                  "Make no root changes"                              ,0,   #-- selected.1 = 2
+	"Add SuperSU App (Seems To Work Better)",      ""                                                  ,0,   #-- selected.1 = 2
+	"No Changes",                                  "Make no root changes"                              ,1,   #-- selected.1 = 3
+		
+	"<#0aa>Audio Corner</#>",                      ""                                                  ,2,	 #-- Group 2. key = "selected.2"
+	"Add Viper4Arise",                             ""                                                  ,0,	 #-- selected.2 = 1
+	"No Changes",                                  "Make no audio changes"                             ,1,	 #-- selected.2 = 2
 	
-	"<#0aa>Launcher Corner</#>",                   ""                                                  ,2,	 #-- Group 2. key = "selected.2"
-	"Add Pixel Launcher and Wallpaper",            ""                                                  ,0,	 #-- selected.2 = 1
-	"No Changes",                                  "Make no launcher changes"                          ,1,	 #-- selected.2 = 2
+	"<#0aa>Launcher Corner</#>",                   ""                                                  ,2,	 #-- Group 3. key = "selected.3"
+	"Add Pixel Launcher and Wallpaper",            ""                                                  ,0,	 #-- selected.3 = 1
+	"No Changes",                                  "Make no launcher changes"                          ,1	 #-- selected.3 = 2
+	
+  );
 
-	"<#0aa>Camera Corner</#>",                     ""                                                  ,2,	 #-- Group 3. key = "selected.3"
-	"AOSP Camera",	                               "Supposed to be more stable"                        ,1,	 #-- selected.3 = 1
-	"Snap Camera",	                               "CyanogenMod camera"	                               ,0,	 #-- selected.3 = 2
-	"Both Camera apps",                            ""                                                  ,0,   #-- selected.3 = 3
-	"No Changes",                                  "Make no camera changes"                            ,0,   #-- selected.3 = 4
+##
+#
+# Next Screen is Installation UI, So change the next button text to "Install Now"
+#
 	
-	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 4. key = "selected.4"
-	"Neither",	                                   ""                                                  ,1,	 #-- selected.4 = 1
-	"ES File Explorer",	                           "ES file manager"                                   ,0,	 #-- selected.4 = 2
-	"CM File Manager",	                           "CyanogenMod file manager"	                       ,0,	 #-- selected.4 = 3
-	"No Changes",                                  "Make no file manager changes"                      ,0	 #-- selected.4 = 4
+	
+###################################################################################################################
+# MODS2
+#
+  #-- IF Not "Default" Show Main Features Selection
+  selectbox(
+    #-- Title
+      "Mods List",
+
+    #-- Sub Title
+      "Please choose one of the options:",
+
+    #-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
+      "@default",
+
+    #-- Will be saved in /tmp/aroma-data/mods2.prop
+      "mods2.prop",
+
+	  #----------------------------------[ Select box With Groups ]----------------------------------#
+	  # TITLE                    |  SUBTITLE                                        | Initial Value  #
+	  #--------------------------+--------------------------------------------------  ------+--------#		
+	"<#0aa>Camera Corner</#>",                     ""                                                  ,2,	 #-- Group 1. key = "selected.1"
+	"AOSP Camera",	                               "Supposed to be more stable"                        ,0,	 #-- selected.1 = 1
+	"Snap Camera",	                               "CyanogenMod camera"	                               ,0,	 #-- selected.1 = 2
+	"Both Camera apps",                            ""                                                  ,0,   #-- selected.1 = 3
+	"No Changes",                                  "Make no camera changes"                            ,1,   #-- selected.1 = 4
+	
+	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 2. key = "selected.2"
+	"Neither",	                                   ""                                                  ,0,	 #-- selected.2 = 1
+	"ES File Explorer",	                           "ES file manager"                                   ,0,	 #-- selected.2 = 2
+	"CM File Manager",	                           "CyanogenMod file manager"	                       ,0,	 #-- selected.2 = 3
+	"No Changes",                                  "Make no file manager changes"                      ,1	 #-- selected.2 = 4
 	
   );
 
@@ -219,18 +231,6 @@ ini_set("icon_next", "@installbutton");
 #
 # STEP 9 - MAKE SURE USER KNOW THAT NEXT STEP WAS INSTALLATION PROCESS
 #
-viewbox(
-  #-- Title
-    "Ready to Install",
-
-  #-- Text
-    "The wizard is ready to begin installation.\n\n"+
-	"Press <b>Install ROM</b> to begin the installation.\n\n"+
-	"If you want to review or change any of your installation settings, press <b>Back</b>. Press Menu Key -> Quit Installation to exit the wizard.",
-
-  #-- Icon
-    "@install"
-);
 
 ##
 #
@@ -265,30 +265,6 @@ setvar("retstatus",
 #
 # ASK If We Want to back to main menu
 #
-checkviewbox(
-  #-- Title
-    "Post Installation",
-
-  #-- Text
-    "Installation Finished. Going back to Main Menu\n\n<#0f0>In case you flash gapps: \nPlease flash GApps BEFORE rebooting ROM \nand leaving the recovery.</#>\n\n\n<b><#f00>IF SUPERSU APP IS SELECTED KEEP IN MIND THAT DEVICE WILL REBOOT TWICE ON FIRST BOOT.ITS DUE TO SU SCRIPTS.DONT WORRY</#></b>",
-
-  #-- Icon
-    "@welcome",
-
-  #-- Checkbox Text
-    "OK.",
-
-  #-- Initial Checkbox value ( 0=unchecked, 1=checked ) -  (Optional, default:0)
-    "1",
-
-  #-- Save checked value in variable "reboot_it" (Optional)
-    "goto_mainmenu"
-);
-if
-  getvar("goto_mainmenu")=="1"
-then
-  goto("aroma_installer_demo_pos");
-endif;
 
 ##
 #
