@@ -347,6 +347,7 @@ package_extract_dir("jdc/camera/aospcam/Camera2","/system/app/Camera2");
 delete_recursive("/system/lib/libjni_snapimageutil.so");
 delete_recursive("/system/lib/libjni_snapmosaic.so");
 delete_recursive("/system/lib/libjni_snaptinyplanet.so");
+delete_recursive("/system/priv-app/Snap");
 set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
 set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
 endif;
