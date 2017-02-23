@@ -506,6 +506,6 @@ ui_print(" ");
 ui_print(" ");
 ui_print(" ");
 ui_print(" ");
-ui_print("                Press NEXT to exit and continue to TWRP");
+ui_print("              Press Finish to exit and continue to TWRP");
 ui_print(" ");
 set_progress(1.0);
