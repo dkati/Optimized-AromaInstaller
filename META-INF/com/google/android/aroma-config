@@ -215,7 +215,7 @@ ini_set("icon_next", "@installbutton");
 	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 2. key = "selected.2"
 	"Neither",	                                   ""                                                  ,0,	 #-- selected.2 = 1
 	"ES File Explorer",	                           "ES file manager"                                   ,0,	 #-- selected.2 = 2
-	"CM File Manager",	                           "CyanogenMod file manager"	                       ,0,	 #-- selected.2 = 3
+	"Files Manager",	                           "LineageOS file manager"	                       ,0,	 #-- selected.2 = 3
 	"No Changes",                                  "Make no file manager changes"                      ,1	 #-- selected.2 = 4
 	
   );
