@@ -436,19 +436,21 @@ then
 ui_print("Removing File Explorers...");
 delete_recursive("/system/priv-app/DocumentsUI");
 delete_recursive("/system/priv-app/ESFileExplorer");
+delete_recursive("/system/priv-app/MiXplorer");
 endif;
 
 
 #################################################################
-# FILE MANAGER ES
+# FILE MANAGER MiXplorer
 
 if
 file_getprop("/tmp/aroma-data/mods2.prop","selected.2") == "2"
 then
-ui_print("Installing ES File Explorer...");
-package_extract_dir("jdc/manager/esFileExplorer","/system/priv-app/esFileExplorer");
-set_perm(0, 0, 0644, "/system/priv-app/esFileExplorer/es.apk");
+ui_print("Installing MiXplorer...");
+package_extract_dir("jdc/manager/mixplorer","/system/priv-app/MiXplorer");
+set_perm(0, 0, 0644, "/system/priv-app/MiXplorer/mixplorer.apk");
 delete_recursive("/system/priv-app/DocumentsUI");
+delete_recursive("/system/priv-app/ESFileExplorer");
 endif;
 
 
