@@ -139,9 +139,8 @@ selectbox(
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
   "<#0aa>Kernel Corner</#>",           "Choose your core"                                              ,2,	
-    "Alucard Kernel",                  "Offers additional features and optimizations like STweaks"     ,0,
-  	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0,
-	"No Changes",                      "Make no kernel changes (Default: Stock Kernel)"              ,1
+    "Alucard Kernel",                  "Offers additional features and optimizations like STweaks"     ,1,
+  	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0
 
 );
 
