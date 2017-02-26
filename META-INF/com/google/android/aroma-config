@@ -167,13 +167,12 @@ selectbox(
 	  #--------------------------+--------------------------------------------------  ------+--------#
 	
 	"<#0aa>Root Corner</#>",                       ""                                                  ,2,	 #-- Group 1. key = "selected.1"
-	"Use Privacy Guard (Built-In Superuser)",      "In case of LOCKED bootloaders,use this option"     ,0,	 #-- selected.1 = 1
-	"Add SuperSU App (Seems To Work Better)",      ""                                                  ,0,   #-- selected.1 = 2
-	"No Changes",                                  "Make no root changes"                              ,1,   #-- selected.1 = 3
+	"Use Privacy Guard (Built-In Superuser)",      "LOCKED bootloaders must use this option"           ,0,	 #-- selected.1 = 1
+	"Add SuperSU App (Seems To Work Better)",      ""                                                  ,1,   #-- selected.1 = 2
 		
 	"<#0aa>Audio Corner</#>",                      ""                                                  ,2,	 #-- Group 2. key = "selected.2"
-	"Add Viper4Arise",                             ""                                                  ,0,	 #-- selected.2 = 1
-	"No Changes",                                  "Make no audio changes"                             ,1,	 #-- selected.2 = 2
+	"Add Viper4Arise",                             ""                                                  ,1,	 #-- selected.2 = 1
+	"No Changes",                                  "Make no audio changes"                             ,0,	 #-- selected.2 = 2
 	
 	"<#0aa>Launcher Corner</#>",                   ""                                                  ,2,	 #-- Group 3. key = "selected.3"
 	"Add Pixel Launcher and Wallpaper",            ""                                                  ,0,	 #-- selected.3 = 1
@@ -206,16 +205,16 @@ ini_set("icon_next", "@installbutton");
 	  # TITLE                    |  SUBTITLE                                        | Initial Value  #
 	  #--------------------------+--------------------------------------------------  ------+--------#		
 	"<#0aa>Camera Corner</#>",                     ""                                                  ,2,	 #-- Group 1. key = "selected.1"
-	"AOSP Camera",	                               "Supposed to be more stable"                        ,0,	 #-- selected.1 = 1
+	"AOSP Camera",	                               "Supposed to be more stable"                        ,1,	 #-- selected.1 = 1
 	"Snap Camera",	                               "CyanogenMod camera"	                               ,0,	 #-- selected.1 = 2
 	"Both Camera apps",                            ""                                                  ,0,   #-- selected.1 = 3
-	"No Changes",                                  "Make no camera changes"                            ,1,   #-- selected.1 = 4
+	
 	
 	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 2. key = "selected.2"
-	"Neither",	                                   ""                                                  ,0,	 #-- selected.2 = 1
+	"Neither",	                                   ""                                                  ,1,	 #-- selected.2 = 1
 	"MiXplorer",	                           "MiXplorer file manager"                                   ,0,	 #-- selected.2 = 2
-	"Files Manager",	                           "LineageOS file manager"	                       ,0,	 #-- selected.2 = 3
-	"No Changes",                                  "Make no file manager changes"                      ,1	 #-- selected.2 = 4
+	"Files Manager",	                           "LineageOS file manager"	                       ,0 	 #-- selected.2 = 3
+	
 	
   );
 
