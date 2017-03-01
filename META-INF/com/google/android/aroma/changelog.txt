@@ -28,3 +28,9 @@
 <*>Re-enable SDCARDfs </*>
 <*>Ship arise</*>
 <*>Aroma:Some beauty</*>
+<*>Fix Sprint connections</*>
+
+<*>BT edits</*>
+<*>Snap:ISO values as numbers</*>
+<*>SELinux=enforcing</*>
+
