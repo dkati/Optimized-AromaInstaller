@@ -29,8 +29,8 @@
 <*>Ship arise</*>
 <*>Aroma:Some beauty</*>
 <*>Fix Sprint connections</*>
-
-<*>BT edits</*>
 <*>Snap:ISO values as numbers</*>
-<*>SELinux=enforcing</*>
-
+<*>Add Wakelock Blocker</*>
+<*>Add some missing graphics libs</*>
+<*>KernelWakelockReader: stop the panic</*>
+<*>introduce backuptools to support dirty installs</*>
