@@ -34,3 +34,4 @@
 <*>Add some missing graphics libs</*>
 <*>KernelWakelockReader: stop the panic</*>
 <*>introduce backuptools to support dirty installs</*>
+<*>Build date to english</*>
