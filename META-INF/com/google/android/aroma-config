@@ -144,6 +144,31 @@ selectbox(
 
 );
 
+###################################################################################################################
+# KERNEL EDITS
+#
+
+selectbox(
+  #-- Title
+    "Kernel List",
+
+  #-- Sub Title
+    "Please choose one of the options:",
+
+  #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
+    "@install",
+
+  #-- Will be saved in /tmp/aroma/kernel.prop
+    "prefs.prop",
+
+  #-----------------------------[ Selectbox Without Group ]-------------------------#
+  # TITLE         			   |  SUBTITLE                          | Initial Value #
+  #----------------------------+------------------------------------+---------------#
+  "<#0aa>Kernel Corner</#>",           "Keep my alucard personal settings"                                              ,2,	
+    "Yes",                  "This option will clean /data/.b--b/ folder.Recommended"     ,1,
+  	"No",                    "Keep my changes."                               ,0
+
+);
 
 ###################################################################################################################
 # MODS

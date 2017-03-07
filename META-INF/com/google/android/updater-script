@@ -334,6 +334,15 @@ endif;
 set_progress(0.7);
 ui_print(" ");
 
+#################################################################
+# KERNEL PREFERENCES
+if
+file_getprop("/tmp/aroma-data/prefs.prop","selected.1") == "1"
+then
+ui_print("Deleting personal kernel tweaks");
+delete_recursive("/data/.b--b");
+delete_recursive("/data/.Synapse");
+endif;
 
 #################################################################
 # CAMERA AOSP
