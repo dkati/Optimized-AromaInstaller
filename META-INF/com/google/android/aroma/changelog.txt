@@ -38,3 +38,4 @@
 <*>Allow user to keep/delete kernel tweaks</*>
 <*>Fixed reboot issue (?)</*>
 <*>back button kill timeout = 400ms</*>
+<*>Add backup scripts to support dirty installs</*>
