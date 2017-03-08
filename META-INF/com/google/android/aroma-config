@@ -164,9 +164,9 @@ selectbox(
   #-----------------------------[ Selectbox Without Group ]-------------------------#
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
-  "<#0aa>Kernel Corner</#>",           "Keep my alucard personal settings"                                              ,2,	
-    "Yes",                  "This option will clean /data/.b--b/ folder.Recommended"     ,1,
-  	"No",                    "Keep my changes."                               ,0
+  "<#0aa>Kernel Corner</#>",           ""                                              ,2,	
+    "Clear my alucard edits",                  "This option will clean /data/.b--b/ folder,taking the latest updates"     ,1,
+  	"Keep my alucard edits",                    ""                               ,0
 
 );
 
