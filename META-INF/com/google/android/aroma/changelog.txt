@@ -1,8 +1,8 @@
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -March-2017</*>
-<*>Update stock kernel to -March-2017</*>
-<*>Update to r21</*>
+<*>Upstream merge until 8-March-2017</*>
+<*>Update stock kernel to 8-March-2017</*>
+<*>Update to r25</*>
 <*>Fixed and safe f2fs</*>
 <*>Huge updates on kernel and ramdisk</*>
 <*>Updated kernel Toolchain</*>
@@ -39,3 +39,5 @@
 <*>Fixed reboot issue (?)</*>
 <*>back button kill timeout = 400ms</*>
 <*>Add backup scripts to support dirty installs</*>
+<*>Enable sdcardfs </*>
+<*>Move to ThemeInterface(new masquerade)</*>
