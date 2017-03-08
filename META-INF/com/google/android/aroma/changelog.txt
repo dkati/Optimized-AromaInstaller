@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -Feb-2017</*>
-<*>Update stock kernel to -Feb-2017</*>
+<*>Upstream merge until -March-2017</*>
+<*>Update stock kernel to -March-2017</*>
 <*>Update to r21</*>
 <*>Fixed and safe f2fs</*>
 <*>Huge updates on kernel and ramdisk</*>
@@ -25,7 +25,6 @@
 <*>Bluetooth:Dont crash when unpair</*>
 <*>jf:Partition size edits for Nougat</*>
 <*>Use the stable webview.not the beta</*>
-<*>Re-enable SDCARDfs </*>
 <*>Ship arise</*>
 <*>Aroma:Some beauty</*>
 <*>Fix Sprint connections</*>
@@ -35,3 +34,7 @@
 <*>KernelWakelockReader: stop the panic</*>
 <*>introduce backuptools to support dirty installs</*>
 <*>Build date to english</*>
+<*>Allow user to bypass SetupWizard</*>
+<*>Allow user to keep/delete kernel tweaks</*>
+<*>Fixed reboot issue (?)</*>
+<*>back button kill timeout = 400ms</*>
