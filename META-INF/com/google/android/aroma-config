@@ -238,7 +238,11 @@ ini_set("icon_next", "@installbutton");
 	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 2. key = "selected.2"
 	"Neither",	                                   ""                                                  ,1,	 #-- selected.2 = 1
 	"MiXplorer",	                           "MiXplorer file manager"                                   ,0,	 #-- selected.2 = 2
-	"Files Manager",	                           "LineageOS file manager"	                       ,0 	 #-- selected.2 = 3
+	"Files Manager",	                           "LineageOS file manager"	                       ,0, 	 #-- selected.2 = 3
+	
+	"<#0aa>Setup Wizard Corner</#>",	""					,2, #-- Group 3. key = "selected.3"
+	"Use Setup Wizard",					""					,0,#-- selected.3 = 1
+	"Do NOT use Setup Wizard",			"There will be no Setup Wizard on first boot",1#-- selected.3 = 2
 	
 	
   );

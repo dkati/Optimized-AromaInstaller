@@ -463,6 +463,19 @@ endif;
 
 
 set_progress(0.9);
+
+#################################################################
+# Setup Wizard
+if
+file_getprop("/tmp/aroma-data/mods2.prop","selected.3") == "2"
+then
+ui_print("Deleting LineageSetupWizard");
+delete_recursive("/system/priv-app/LineageSetupWizard");
+package_extract_dir("jdc/setupwizard/Provision","/system/priv-app/Provision");
+set_perm(0, 0, 0644, "/system/priv-app/Provision/Provision.apk");
+set_perm(0, 0, 0644, "/system/priv-app/Provision/oat/arm/Provision.odex");
+endif;
+
 #################################################################
 # Proximity sensor reset
 
