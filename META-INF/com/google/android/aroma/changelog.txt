@@ -39,5 +39,5 @@
 <*>Fixed reboot issue (?)</*>
 <*>back button kill timeout = 400ms</*>
 <*>Add backup scripts to support dirty installs</*>
-<*>Enable sdcardfs </*>
+<*>Kernel edits affecting GPU</*>
 <*>Move to ThemeInterface(new masquerade)</*>
