@@ -1,7 +1,7 @@
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 8-March-2017</*>
-<*>Update stock kernel to 8-March-2017</*>
+<*>Upstream merge until 11-March-2017</*>
+<*>Update stock kernel to 11-March-2017</*>
 <*>Update to r25</*>
 <*>Fixed and safe f2fs</*>
 <*>Huge updates on kernel and ramdisk</*>
@@ -41,3 +41,6 @@
 <*>Add backup scripts to support dirty installs</*>
 <*>Kernel edits affecting GPU</*>
 <*>Move to ThemeInterface(new masquerade)</*>
+<*>User can now edit the back button kill(Firstly enable it from Dev options</*>
+<*>Add custom system animations</*>
+<*>touch.pressure.scale=2</*>
