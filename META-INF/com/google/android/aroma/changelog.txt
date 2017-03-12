@@ -44,3 +44,5 @@
 <*>User can now edit the back button kill(Firstly enable it from Dev options</*>
 <*>Add custom system animations</*>
 <*>touch.pressure.scale=2</*>
+<*>Ship some selinux denials fixes</*>
+<*>Fix call log being deleted if bt is turned on</*>
