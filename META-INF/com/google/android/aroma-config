@@ -138,15 +138,16 @@ selectbox(
   #-----------------------------[ Selectbox Without Group ]-------------------------#
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
-  "<#0aa>Kernel Corner</#>",           "Choose your core"                                              ,2,	
-    "Alucard Kernel",                  "Offers additional features and optimizations like STweaks"     ,1,
-  	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0,
+  "<#0aa>Kernel Corner</#>",        "Choose your core"                                              ,2,	  #-- Group 1. key = "selected.1"
+    "Alucard Kernel",               "Offers additional features and optimizations like STweaks"     ,1,   #-- selected.1 = 1
+  	"Stock Kernel",                 "Use this if you got screen bugs"                               ,0,   #-- selected.1 = 2
 	
-  "<#0aa>Alucard Edits</#>",           ""                                              ,2,	
-    "Clear my alucard edits",                  "This option will clean /data/.b--b/ folder,taking the latest updates"     ,1,
-  	"Keep my alucard edits",                    ""                               ,0
+  "<#0aa>Alucard Edits</#>",        ""                                                                         ,2,	 #-- Group 2. key = "selected.2"
+    "Clear my alucard edits",       "This option will clean /data/.b--b/ folder,taking the latest updates"     ,1,   #-- selected.2 = 1
+  	"Keep my alucard edits",        ""                                                                         ,0    #-- selected.2 = 2
 
 );
+
 
 ###################################################################################################################
 # MODS
