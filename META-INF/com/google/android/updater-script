@@ -46,7 +46,6 @@ package_extract_dir("system", "/system");
 set_progress(0.3);
 ui_print("Installing Selected Files...");
 
-
 ifelse(is_substring("I337", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/gsm/* /system/ && busybox rm /system/lib/libcnefeatureconfig.so"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp -R /system/rild/vzw/* /system/"));
 ifelse(is_substring("I545", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox sed -i 's/ro.com.google.clientidbase=android-google/ro.com.google.clientidbase=android-verizon/g' /system/build.prop"));
@@ -278,16 +277,14 @@ set_metadata("/system/xbin/bash", "uid", 0, "gid", 2000, "mode", 0755, "capabili
 set_metadata("/system/xbin/perfprofd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:perfprofd_exec:s0");
 set_metadata("/system/xbin/procmem", "uid", 0, "gid", 0, "mode", 06755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:su_exec:s0");
-set_progress(0.6);
 run_program("/tmp/install/bin/backuptool.sh", "restore");
-
 run_program("/sbin/busybox", "mount", "/system");
 set_metadata("/system/bin/qcks", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:mdm_helper_exec:s0");
 set_metadata("/system/bin/ks", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:mdm_helper_exec:s0");
 set_metadata("/system/bin/netmgrd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:netmgrd_exec:s0");
 set_metadata("/system/bin/qmuxd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:qmuxd_exec:s0");
 
-
+set_progress(0.6);
 #################################################################
 # KERNEL SELECTION Alucard
 
@@ -298,27 +295,15 @@ ui_print("");
 ui_print("Installing Alucard Kernel");
 package_extract_dir("jdc/kfix", "/tmp");
 package_extract_file("boot.img", "/tmp/boot.img");
-
 set_perm(0, 0, 0777, "/tmp/loki_bootloaders");
 set_perm(0, 0, 0777, "/tmp/flash_kernel.sh");
 set_perm(0, 0, 0777, "/tmp/loki_patch");
 set_perm(0, 0, 0777, "/tmp/loki_flash");
 set_perm(0, 0, 0777, "/tmp/loki.sh");
-
 assert(run_program("/sbin/sh", "/system/etc/loki.sh") == 0);
 assert(run_program("/sbin/sh", "/tmp/loki.sh")==0);
 #run_program("/tmp/flash_kernel.sh");
 ui_print("");
-endif;
-
-#################################################################
-# KERNEL PREFERENCES
-if
-file_getprop("/tmp/aroma-data/prefs.prop","selected.1") == "1"
-then
-ui_print("Deleting personal kernel tweaks");
-delete_recursive("/data/.b--b");
-delete_recursive("/data/.Synapse");
 endif;
 
 #################################################################
@@ -337,11 +322,20 @@ set_perm(0, 0, 0777, "/tmp/loki_bootloaders");
 set_perm(0, 0, 0777, "/tmp/flash_kernel.sh");
 set_perm(0, 0, 0777, "/tmp/loki_patch");
 set_perm(0, 0, 0777, "/tmp/loki_flash");
-
 run_program("/tmp/flash_kernel.sh");
 endif;
+
 set_progress(0.7);
-ui_print(" ");
+#################################################################
+# KERNEL PREFERENCES
+
+if
+file_getprop("/tmp/aroma-data/kernel.prop","selected.2") == "1"
+then
+ui_print("Deleting personal kernel tweaks");
+delete_recursive("/data/.b--b");
+delete_recursive("/data/.Synapse");
+endif;
 
 #################################################################
 # CAMERA AOSP
@@ -360,7 +354,6 @@ set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
 set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
 endif;
 
-
 #################################################################
 # CAMERA Snap
 
@@ -373,7 +366,6 @@ delete_recursive("/system/app/lib/arm/libjni_jpegutil.so");
 delete_recursive("/system/app/lib/arm/libjni_tinyplanet.so");
 ui_print("");
 endif;
-
 
 #################################################################
 # CAMERA Both
@@ -393,7 +385,6 @@ set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
 ui_print("");
 endif;
 
-
 set_progress(0.8);
 #################################################################
 # Pixel Launcher 
@@ -407,7 +398,6 @@ package_extract_dir("jdc/google/wallpaper","/system/priv-app/Wallpaper");
 set_perm(0, 0, 0644, "/system/priv-app/NexusLauncher/NexusLauncher.apk");
 set_perm(0, 0, 0644, "/system/priv-app/Wallpaper/Wallpaper.apk");
 endif;
-
 
 #################################################################
 # Viper4Arise
@@ -434,7 +424,6 @@ run_program("/sbin/busybox", "mount", "/system");
 ui_print("  ");
 endif;
 
-
 #################################################################
 # FILE MANAGER Neither
 
@@ -446,7 +435,6 @@ delete_recursive("/system/priv-app/ESFileExplorer");
 delete_recursive("/system/priv-app/MiXplorer");
 ui_print("Files app is not deleted.Its a mandatory");
 endif;
-
 
 #################################################################
 # FILE MANAGER MiXplorer
@@ -461,11 +449,10 @@ delete_recursive("/system/priv-app/ESFileExplorer");
 ui_print("Files app is not deleted.Its a mandatory");
 endif;
 
-
 set_progress(0.9);
-
 #################################################################
 # Setup Wizard
+
 if
 file_getprop("/tmp/aroma-data/mods2.prop","selected.3") == "2"
 then
@@ -490,22 +477,20 @@ unmount("/cache");
 unmount("/preload");
 unmount("/system");
 
-
 #################################################################
 # SuperSU
 
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "2"
 then
-	ui_print("Installing SuperSU...");
-	package_extract_dir("system/supersu", "/tmp/supersu");
-	run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/supersu");
-	run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "null", "1", "/tmp/supersu/supersu.zip");
-	delete_recursive("/tmp/supersu");
-	delete_recursive("/system/supersu");
-	ui_print("SuperSU installed successfully");
+ui_print("Installing SuperSU...");
+package_extract_dir("system/supersu", "/tmp/supersu");
+run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/supersu");
+run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "null", "1", "/tmp/supersu/supersu.zip");
+delete_recursive("/tmp/supersu");
+delete_recursive("/system/supersu");
+ui_print("SuperSU installed successfully");
 endif;
-
 
 #################################################################
 # Privacy Guard
@@ -516,8 +501,8 @@ then
 ui_print("Privacy guard will be installed");
 endif;
 
-
 #################################################################
+# Finish Script
 
 ui_print("Cleaning temporary files");
 delete_recursive("/tmpJDC");
