@@ -141,30 +141,8 @@ selectbox(
   "<#0aa>Kernel Corner</#>",           "Choose your core"                                              ,2,	
     "Alucard Kernel",                  "Offers additional features and optimizations like STweaks"     ,1,
   	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0
-
-);
-
-###################################################################################################################
-# KERNEL EDITS
-#
-
-selectbox(
-  #-- Title
-    "Kernel List",
-
-  #-- Sub Title
-    "Please choose one of the options:",
-
-  #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
-    "@install",
-
-  #-- Will be saved in /tmp/aroma/kernel.prop
-    "prefs.prop",
-
-  #-----------------------------[ Selectbox Without Group ]-------------------------#
-  # TITLE         			   |  SUBTITLE                          | Initial Value #
-  #----------------------------+------------------------------------+---------------#
-  "<#0aa>Kernel Corner</#>",           ""                                              ,2,	
+	
+  "<#0aa>Alucard Edits</#>",           ""                                              ,2,	
     "Clear my alucard edits",                  "This option will clean /data/.b--b/ folder,taking the latest updates"     ,1,
   	"Keep my alucard edits",                    ""                               ,0
 
