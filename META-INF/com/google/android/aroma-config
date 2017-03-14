@@ -140,7 +140,7 @@ selectbox(
   #----------------------------+------------------------------------+---------------#
   "<#0aa>Kernel Corner</#>",           "Choose your core"                                              ,2,	
     "Alucard Kernel",                  "Offers additional features and optimizations like STweaks"     ,1,
-  	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0
+  	"Stock Kernel",                    "Use this if you got screen bugs"                               ,0,
 	
   "<#0aa>Alucard Edits</#>",           ""                                              ,2,	
     "Clear my alucard edits",                  "This option will clean /data/.b--b/ folder,taking the latest updates"     ,1,
