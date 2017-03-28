@@ -3,4 +3,12 @@
 <*>Upstream merge until </*>
 <*>Update stock kernel to </*>
 <*>Update to </*>
-
+<*>Remove GApps killer</*>
+<*>Kernel:Enforce kernel to read users edits</*>
+<*>Readd Logger switch </*>
+<*>Kill mediaserver on boot</*>
+<*>system.prop:Disable 2 audio-voip flags.Fixes some VOIP apps(?)</*>
+<*>Recalculate the lights values </*>
+<*>Add HPF bt profile</*>
+<*>Reorganize the contributors list</*>
+<*>Fix panorama mode on Snap camera</*>
