@@ -12,3 +12,5 @@
 <*>Add HPF bt profile</*>
 <*>Reorganize the contributors list</*>
 <*>Fix panorama mode on Snap camera</*>
+<*>Enable night mode</*>
+<*>Big kernel changes again...</*>
