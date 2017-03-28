@@ -1,48 +1,6 @@
-<b><#selectbg_g>Changes since Optimized LineageOS14.1-Beta5</#></b>
+<b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable1</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 11-March-2017</*>
-<*>Update stock kernel to 11-March-2017</*>
-<*>Update to r25</*>
-<*>Fixed and safe f2fs</*>
-<*>Huge updates on kernel and ramdisk</*>
-<*>Updated kernel Toolchain</*>
-<*>Update all our prebuilt binaries</*>
-<*>Device tree:Fix some ril denials</*>
-<*>Updated wallpaper and bootanimation</*>
-<*>Pump volumes a bit</*>
-<*>Update our flashables</*>
-<*>Fix Optimized Lineage Settings icon color</*>
-<*>Updated beta webview</*>
-<*>Update busybox from source</*>
-<*>Aroma: Minor edit on bottom bar</*>
-<*>Aroma: updated license, added 'neither' as File Manager Option</*>
-<*>Aroma: removed pages, added viper4arise, added No Changes as option</*>
-<*>Fix a buggy call situation caused by volumes steps</*>
-<*>Allow disabling the assistant disclosure</*>
-<*>exfat:use kernel driver</*>
-<*>Allow selinux to be permissive on all builds</*>
-<*>Replace CMFileManager with Files one</*>
-<*>Bluetooth:Dont crash when unpair</*>
-<*>jf:Partition size edits for Nougat</*>
-<*>Use the stable webview.not the beta</*>
-<*>Ship arise</*>
-<*>Aroma:Some beauty</*>
-<*>Fix Sprint connections</*>
-<*>Snap:ISO values as numbers</*>
-<*>Add Wakelock Blocker</*>
-<*>Add some missing graphics libs</*>
-<*>KernelWakelockReader: stop the panic</*>
-<*>introduce backuptools to support dirty installs</*>
-<*>Build date to english</*>
-<*>Allow user to bypass SetupWizard</*>
-<*>Allow user to keep/delete kernel tweaks</*>
-<*>Fixed reboot issue (?)</*>
-<*>back button kill timeout = 400ms</*>
-<*>Add backup scripts to support dirty installs</*>
-<*>Kernel edits affecting GPU</*>
-<*>Move to ThemeInterface(new masquerade)</*>
-<*>User can now edit the back button kill(Firstly enable it from Dev options</*>
-<*>Add custom system animations</*>
-<*>touch.pressure.scale=2</*>
-<*>Ship some selinux denials fixes</*>
-<*>Fix call log being deleted if bt is turned on</*>
+<*>Upstream merge until </*>
+<*>Update stock kernel to </*>
+<*>Update to </*>
+
