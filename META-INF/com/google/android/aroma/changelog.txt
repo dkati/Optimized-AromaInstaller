@@ -14,3 +14,4 @@
 <*>Fix panorama mode on Snap camera</*>
 <*>Enable night mode</*>
 <*>Big kernel changes again...</*>
+<*>Edits on lockscreen's charging message</*>
