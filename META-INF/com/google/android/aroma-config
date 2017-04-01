@@ -172,7 +172,8 @@ selectbox(
 	
 	"<#0aa>Root Corner</#>",                       ""                                                  ,2,	 #-- Group 1. key = "selected.1"
 	"Use Privacy Guard (Built-In Superuser)",      "LOCKED bootloaders must use this option"           ,0,	 #-- selected.1 = 1
-	"Add SuperSU App (Seems To Work Better)",      ""                                                  ,1,   #-- selected.1 = 2
+	"Add SuperSU App (Seems To Work Better)",      ""                                                  ,0,   #-- selected.1 = 2
+	"Add Magisk",                                                      ""                                               ,1,    #-- selected.1 = 3
 		
 	"<#0aa>Audio Corner</#>",                      ""                                                  ,2,	 #-- Group 2. key = "selected.2"
 	"Add Viper4Arise",                             ""                                                  ,1,	 #-- selected.2 = 1

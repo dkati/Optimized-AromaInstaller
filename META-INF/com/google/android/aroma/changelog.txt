@@ -15,3 +15,4 @@
 <*>Enable night mode</*>
 <*>Big kernel changes again...</*>
 <*>Edits on lockscreen's charging message</*>
+<*>Allow user to select Magisk</*>
