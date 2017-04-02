@@ -3,16 +3,18 @@
 <*>Upstream merge until </*>
 <*>Update stock kernel to </*>
 <*>Update to </*>
-<*>Remove GApps killer</*>
 <*>Kernel:Enforce kernel to read users edits</*>
-<*>Readd Logger switch </*>
+<*>Kernel:Huge updates regarding battery life</*>
+<*>Readd Logger switch.REBOOT WHEN CHANGED</*>
 <*>Kill mediaserver on boot</*>
 <*>system.prop:Disable 2 audio-voip flags.Fixes some VOIP apps(?)</*>
 <*>Recalculate the lights values </*>
 <*>Add HPF bt profile</*>
 <*>Reorganize the contributors list</*>
 <*>Fix panorama mode on Snap camera</*>
-<*>Enable night mode</*>
-<*>Big kernel changes again...</*>
+<*>Enable night mode.New QS Tile</*>
 <*>Edits on lockscreen's charging message</*>
 <*>Allow user to select Magisk</*>
+<*>Faster boot speed</*>
+<*>Faster reboot to recovery</*>
+<*>Edits on doze</*>
