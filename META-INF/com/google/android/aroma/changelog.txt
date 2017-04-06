@@ -22,3 +22,5 @@
 <*>Allow user to select different LED color when device is fully charged</*>
 <*>Add some extra infos on some STweaks menus</*>
 <*>Edits on Gapps killer</*>
+<*>Update ThemeInterfacer</*>
+<*>Get latest Substratum commits</*>
