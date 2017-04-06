@@ -3,9 +3,10 @@
 <*>Upstream merge until </*>
 <*>Update stock kernel to </*>
 <*>Update to </*>
+<*>Stable2 Wallpaper</*>
 <*>Kernel:Enforce kernel to read users edits</*>
 <*>Kernel:Huge updates regarding battery life</*>
-<*>Readd Logger switch.REBOOT WHEN CHANGED</*>
+<*>Readd Logger switch.Default:OFF.REBOOT WHEN CHANGED</*>
 <*>Kill mediaserver on boot</*>
 <*>system.prop:Disable 2 audio-voip flags.Fixes some VOIP apps(?)</*>
 <*>Recalculate the lights values </*>
@@ -14,7 +15,10 @@
 <*>Fix panorama mode on Snap camera</*>
 <*>Enable night mode.New QS Tile</*>
 <*>Edits on lockscreen's charging message</*>
-<*>Allow user to select Magisk</*>
+<*>aroma:Allow user to select Magisk</*>
 <*>Faster boot speed</*>
 <*>Faster reboot to recovery</*>
 <*>Edits on doze</*>
+<*>Allow user to select different LED color when device is fully charged</*>
+<*>Add some extra infos on some STweaks menus</*>
+<*>Edits on Gapps killer</*>
