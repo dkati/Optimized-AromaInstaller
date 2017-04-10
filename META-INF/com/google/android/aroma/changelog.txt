@@ -33,5 +33,5 @@
 <*>CPU usage overlay:Relocate it and make its interval faster</*>
 <*>telephony:Hack GSM and LTE signal strength</*>
 <*>Fix LTE tile</*>
-<*>Fix timezone changes</*>
+<*>Timezone bug changes</*>
 <*>Reduce reboot delay by 4 seconds</*>
