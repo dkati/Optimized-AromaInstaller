@@ -19,6 +19,7 @@
 <*>Faster boot speed</*>
 <*>Faster reboot to recovery</*>
 <*>Edits on doze</*>
+<*>Add lekiaM to contributors</*>
 <*>Allow user to select different LED color when device is fully charged</*>
 <*>Add some extra infos on some STweaks menus</*>
 <*>Edits on Gapps killer</*>
