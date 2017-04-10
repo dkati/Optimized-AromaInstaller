@@ -24,3 +24,11 @@
 <*>Edits on Gapps killer</*>
 <*>Update ThemeInterfacer</*>
 <*>Get latest Substratum commits</*>
+<*>Bypass SafetyNet check</*>
+<*>Updated ramdisk scripts for Magisk root</*>
+<*>Fixed CVE-2017-0583</*>
+<*>Show USB mode dialog when USB is inserted</*>
+<*>BatteryStatsService:Stop logcat spam about modem</*>
+<*>CPU usage overlay:Relocate it and make its interval faster</*>
+<*>telephony:Hack GSM and LTE signal strength</*>
+<*>Fix LTE tile</*>
