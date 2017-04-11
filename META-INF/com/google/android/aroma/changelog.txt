@@ -41,3 +41,4 @@
 		3-It now works</*>
 </*>
 <*>Speed up some background animations</*>
+<*>Update Webview</*>
