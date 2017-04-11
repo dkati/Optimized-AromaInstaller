@@ -30,7 +30,7 @@
 <*>Fixed CVE-2017-0583</*>
 <*>Show USB mode dialog when USB is inserted</*>
 <*>BatteryStatsService:Stop logcat spam about modem</*>
-<*>CPU usage overlay:Relocate it and make its interval faster</*>
+<*>CPU usage overlay:Relocate it,make its interval faster,remove temperature</*>
 <*>telephony:Hack GSM and LTE signal strength</*>
 <*>Timezone bug changes</*>
 <*>Reduce reboot delay by 4 seconds</*>
