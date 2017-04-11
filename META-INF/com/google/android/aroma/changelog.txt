@@ -1,6 +1,6 @@
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable1</#></b>
 ---------------------------------------------------
-<*>Upstream merge until </*>
+<*>Upstream merge until 12-April</*>
 <*>Update stock kernel to 11 April </*>
 <*>Update to 7.1.2</*>
 <*>Stable2 Wallpaper</*>
@@ -41,4 +41,3 @@
 		3-It now works</*>
 </*>
 <*>Speed up some background animations</*>
-<*>Advanced reboot is enabled by default</*>
