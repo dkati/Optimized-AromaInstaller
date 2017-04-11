@@ -176,8 +176,8 @@ selectbox(
 	"Add Magisk",                                                      ""                                               ,1,    #-- selected.1 = 3
 		
 	"<#0aa>Audio Corner</#>",                      ""                                                  ,2,	 #-- Group 2. key = "selected.2"
-	"Add Viper4Arise",                             ""                                                  ,1,	 #-- selected.2 = 1
-	"No Changes",                                  "Make no audio changes"                             ,0,	 #-- selected.2 = 2
+	"Add Viper4Arise",                             ""                                                  ,0,	 #-- selected.2 = 1
+	"No Changes",                                  "Make no audio changes"                             ,1,	 #-- selected.2 = 2
 	
 	"<#0aa>Launcher Corner</#>",                   ""                                                  ,2,	 #-- Group 3. key = "selected.3"
 	"Add Pixel Launcher and Wallpaper",            ""                                                  ,0,	 #-- selected.3 = 1
@@ -210,9 +210,9 @@ ini_set("icon_next", "@installbutton");
 	  # TITLE                    |  SUBTITLE                                        | Initial Value  #
 	  #--------------------------+--------------------------------------------------  ------+--------#		
 	"<#0aa>Camera Corner</#>",                     ""                                                  ,2,	 #-- Group 1. key = "selected.1"
-	"AOSP Camera",	                               "Supposed to be more stable"                        ,1,	 #-- selected.1 = 1
+	"AOSP Camera",	                               "Supposed to be more stable"                        ,0,	 #-- selected.1 = 1
 	"Snap Camera",	                               "CyanogenMod camera"	                               ,0,	 #-- selected.1 = 2
-	"Both Camera apps",                            ""                                                  ,0,   #-- selected.1 = 3
+	"Both Camera apps",                            ""                                                  ,1,   #-- selected.1 = 3
 	
 	
 	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 2. key = "selected.2"
