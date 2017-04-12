@@ -40,5 +40,10 @@
 		2-Now the QS tile should be disabled.
 		3-It now works</*>
 </*>
-<*>Speed up some background animations</*>
+<*>Speed up the UI feeling without affect the animation speeds</*>
+<*>Remove the icon from 'Clean all' tweaks</*>
 <*>Update Webview</*>
+<*>Remove Soft Reboot option
+	<*>Details here:https://github.com/JDCTeam/android_device_samsung_jf-common/commit/86306fb5df2cdb7932b51a0dbe88b096cb7ac913</*>
+</*>
+<*>Advanced reboot is automatically enabled when you enable dev options</*>
