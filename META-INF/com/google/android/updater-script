@@ -420,10 +420,28 @@ delete_recursive("/data/.Synapse");
 endif;
 
 #################################################################
-# CAMERA AOSP
+# CAMERA Both
 
 if
 file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "1"
+then
+ui_print("Installing both AOSP and Snap Camera");
+
+package_extract_dir("jdc/camera/aospcam/Camera2","/system/app/Camera2");
+set_perm(0, 0, 0644, "/system/app/Camera2/Camera2.apk");
+set_perm(0, 0, 0644, "/system/app/Camera2/oat/arm/Camera2.odex");
+ui_print("Installing proper libraries");
+package_extract_dir("jdc/camera/lib","/system/lib");
+set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
+set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
+ui_print("");
+endif;
+
+#################################################################
+# CAMERA AOSP
+
+if
+file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "2"
 then
 ui_print("AOSP Camera selected");
 package_extract_dir("jdc/camera/lib","/system/lib");
@@ -440,30 +458,12 @@ endif;
 # CAMERA Snap
 
 if
-file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "3"
 then
 ui_print("Snap Camera will be installed.AOSP Camera will be removed if exist");
 delete_recursive("/system/app/Camera2");
 delete_recursive("/system/app/lib/arm/libjni_jpegutil.so");
 delete_recursive("/system/app/lib/arm/libjni_tinyplanet.so");
-ui_print("");
-endif;
-
-#################################################################
-# CAMERA Both
-
-if
-file_getprop("/tmp/aroma-data/mods2.prop","selected.1") == "3"
-then
-ui_print("Installing both AOSP and Snap Camera");
-
-package_extract_dir("jdc/camera/aospcam/Camera2","/system/app/Camera2");
-set_perm(0, 0, 0644, "/system/app/Camera2/Camera2.apk");
-set_perm(0, 0, 0644, "/system/app/Camera2/oat/arm/Camera2.odex");
-ui_print("Installing proper libraries");
-package_extract_dir("jdc/camera/lib","/system/lib");
-set_perm(0, 0, 0644, "/system/lib/libjni_tinyplanet.so");
-set_perm(0, 0, 0644, "/system/lib/libjni_jpegutil.so");
 ui_print("");
 endif;
 
