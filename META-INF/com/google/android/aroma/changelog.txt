@@ -32,7 +32,7 @@
 <*>BatteryStatsService:Stop logcat spam about modem</*>
 <*>CPU usage overlay:Relocate it,make its interval faster,remove temperature</*>
 <*>telephony:Hack GSM and LTE signal strength</*>
-<*>Timezone bug changes</*>
+<*>Timezone bug is now fixed</*>
 <*>Reduce reboot delay by 4 seconds</*>
 <*>Edits on LTE tile
 	<*>Still doesnt work,for a strange reason.to make it work 
