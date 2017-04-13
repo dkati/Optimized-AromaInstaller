@@ -6,7 +6,7 @@
 ini_set("rom_name",             "Optimized LineageOS 14.1");
 ini_set("rom_version",          "Stable2");
 ini_set("rom_author",           "JDCTeam");
-ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
+ini_set("rom_device",           "Samsung Galaxy S4 Snapdragons");
 ini_set("rom_date",             "April 2017");
 
 ###################################################################################################################
@@ -84,12 +84,11 @@ viewbox(
 	  ini_get("rom_name")+
 	"</b> for <b>"+ini_get("rom_device")+"</b>.\n\n"+
     "Rom Information:\n\n"+
-	  "  Rom\t: <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
-	  "  Version\t: <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
-      "  author\t: <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
-      "  device\t: <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
-      "  date\t: <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n"+
-    "<b><#000>Only for S4 Snapdragon 600 device variants</#></b>\n\n\n"+
+	  "  Rom\t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
+	  "  Version\t:  <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
+      "  Author\t:  <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
+      "  Device\t:  <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
+      "  Date\t:  <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n"+
 	"Press Next to Continue ...",
     "@welcome"
 );
@@ -138,13 +137,13 @@ selectbox(
   #-----------------------------[ Selectbox Without Group ]-------------------------#
   # TITLE         			   |  SUBTITLE                          | Initial Value #
   #----------------------------+------------------------------------+---------------#
-  "<#0aa>Kernel Corner</#>",        "Choose your core"                                              ,2,	  #-- Group 1. key = "selected.1"
-    "Alucard Kernel",               "Offers additional features and optimizations like STweaks"     ,1,   #-- selected.1 = 1
-  	"Stock Kernel",                 "Use this if you got screen bugs"                               ,0,   #-- selected.1 = 2
-	
-  "<#0aa>Alucard Edits</#>",        ""                                                                         ,2,	 #-- Group 2. key = "selected.2"
-    "Clear my alucard edits",       "This option will clean /data/.b--b/ folder,taking the latest updates"     ,1,   #-- selected.2 = 1
-  	"Keep my alucard edits",        ""                                                                         ,0    #-- selected.2 = 2
+  "Kernel Corner",                       ""                                                      ,2,   #-- Group 1. key = "selected.1"
+    "Alucard Kernel",                    "Offers additional features and optimizations"          ,1,   #-- selected.1 = 1
+  	"Stock Kernel",                      "Use this if you have touch screen bugs"                ,0,   #-- selected.1 = 2
+
+  "Stweaks Corner",                      ""                                                      ,2,   #-- Group 2. key = "selected.2"
+    "Clear my Alucard profile edits",    ""                                                      ,1,   #-- selected.2 = 1
+  	"Keep my Alucard Profile edits",     ""                                                      ,0    #-- selected.2 = 2
 
 );
 
@@ -170,16 +169,16 @@ selectbox(
 	  # TITLE                    |  SUBTITLE                                        | Initial Value  #
 	  #--------------------------+--------------------------------------------------  ------+--------#
 	
-	"<#0aa>Root Corner</#>",                       ""                                                  ,2,	 #-- Group 1. key = "selected.1"
-	"Use Privacy Guard (Built-In Superuser)",      "LOCKED bootloaders must use this option"           ,1,	 #-- selected.1 = 1
-	"Add SuperSU App (Seems To Work Better)",      ""                                                  ,0,   #-- selected.1 = 2
-	"Add Magisk",                                                      ""                                               ,0,    #-- selected.1 = 3
+	"Root Corner",                                 ""                                                  ,2,	 #-- Group 1. key = "selected.1"
+	"Privacy Guard",                               "Locked bootloaders must use this option"           ,1,	 #-- selected.1 = 1
+	"SuperSU App",                                 ""                                                  ,0,   #-- selected.1 = 2
+	"Magisk",                                      ""                                                  ,0,   #-- selected.1 = 3
 		
-	"<#0aa>Audio Corner</#>",                      ""                                                  ,2,	 #-- Group 2. key = "selected.2"
-	"Add Viper4Arise",                             ""                                                  ,0,	 #-- selected.2 = 1
+	"Audio Corner",                                ""                                                  ,2,	 #-- Group 2. key = "selected.2"
+	"Viper4Arise",                                 ""                                                  ,0,	 #-- selected.2 = 1
 	"No Changes",                                  "Make no audio changes"                             ,1,	 #-- selected.2 = 2
 	
-	"<#0aa>Launcher Corner</#>",                   ""                                                  ,2,	 #-- Group 3. key = "selected.3"
+	"Launcher Corner",                             ""                                                  ,2,	 #-- Group 3. key = "selected.3"
 	"Add Pixel Launcher and Wallpaper",            ""                                                  ,0,	 #-- selected.3 = 1
 	"No Changes",                                  "Make no launcher changes"                          ,1	 #-- selected.3 = 2
 	
@@ -209,20 +208,19 @@ ini_set("icon_next", "@installbutton");
 	  #----------------------------------[ Select box With Groups ]----------------------------------#
 	  # TITLE                    |  SUBTITLE                                        | Initial Value  #
 	  #--------------------------+--------------------------------------------------  ------+--------#		
-	"<#0aa>Camera Corner</#>",                     ""                                                  ,2,	 #-- Group 1. key = "selected.1"
-	"AOSP Camera",	                               "Supposed to be more stable"                        ,0,	 #-- selected.1 = 1
-	"Snap Camera",	                               "CyanogenMod camera"	                               ,0,	 #-- selected.1 = 2
-	"Both Camera apps",                            ""                                                  ,1,   #-- selected.1 = 3
+	"Camera Corner",                               ""                  ,2,	 #-- Group 1. key = "selected.1"
+	"Both Camera apps",                            ""                  ,1,   #-- selected.1 = 1
+	"AOSP Camera",	                               ""                  ,0,	 #-- selected.1 = 2
+	"Snap Camera",	                               ""	               ,0,	 #-- selected.1 = 3
 	
+	"File Manager Corner",                         ""                  ,2,	 #-- Group 2. key = "selected.2"
+	"Neither",	                                   ""                  ,1,	 #-- selected.2 = 1
+	"MiXplorer",	                               ""                  ,0,	 #-- selected.2 = 2
+	"Files Manager",	                           ""	               ,0, 	 #-- selected.2 = 3
 	
-	"<#0aa>File Manager Corner</#>",               ""                                                  ,2,	 #-- Group 2. key = "selected.2"
-	"Neither",	                                   ""                                                  ,1,	 #-- selected.2 = 1
-	"MiXplorer",	                           "MiXplorer file manager"                                   ,0,	 #-- selected.2 = 2
-	"Files Manager",	                           "LineageOS file manager"	                       ,0, 	 #-- selected.2 = 3
-	
-	"<#0aa>Setup Wizard Corner</#>",	""					,2, #-- Group 3. key = "selected.3"
-	"Use Setup Wizard",					""					,0,#-- selected.3 = 1
-	"Do NOT use Setup Wizard",			"There will be no Setup Wizard on first boot",1#-- selected.3 = 2
+	"Setup Wizard Corner",	                       ""                  ,2,   #-- Group 3. key = "selected.3"
+	"Use Setup Wizard",					           ""                  ,1,   #-- selected.3 = 1
+	"Do NOT use Setup Wizard",			           ""                  ,0    #-- selected.3 = 2
 	
 	
   );
