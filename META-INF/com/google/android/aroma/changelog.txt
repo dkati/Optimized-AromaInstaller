@@ -47,3 +47,4 @@
 	<*>Details here:https://github.com/JDCTeam/android_device_samsung_jf-common/commit/86306fb5df2cdb7932b51a0dbe88b096cb7ac913</*>
 </*>
 <*>Advanced reboot is automatically enabled when you enable dev options</*>
+<*>Support microG Gapps by supporting fake signature spoofing</*>
