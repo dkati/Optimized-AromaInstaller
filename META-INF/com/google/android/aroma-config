@@ -171,7 +171,7 @@ selectbox(
 	
 	"Root Corner",                                 ""                                                  ,2,	 #-- Group 1. key = "selected.1"
 	"Privacy Guard",                               "Locked bootloaders must use this option"           ,1,	 #-- selected.1 = 1
-	"SuperSU App",                                 ""                                                  ,0,   #-- selected.1 = 2
+	"SuperSU",                                     ""                                                  ,0,   #-- selected.1 = 2
 	"Magisk",                                      ""                                                  ,0,   #-- selected.1 = 3
 		
 	"Audio Corner",                                ""                                                  ,2,	 #-- Group 2. key = "selected.2"
