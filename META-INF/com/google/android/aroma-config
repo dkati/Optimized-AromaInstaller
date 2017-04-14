@@ -215,7 +215,7 @@ ini_set("icon_next", "@installbutton");
 	
 	"File Manager Corner",                         ""                  ,2,	 #-- Group 2. key = "selected.2"
 	"MiXplorer",	                               ""                  ,0,	 #-- selected.2 = 2
-	"No Changes",	                               ""	               ,0, 	 #-- selected.2 = 3
+	"No Changes",	                               ""	               ,1, 	 #-- selected.2 = 3
 	
 	"Setup Wizard Corner",	                       ""                  ,2,   #-- Group 3. key = "selected.3"
 	"Use Setup Wizard",					           ""                  ,1,   #-- selected.3 = 1
