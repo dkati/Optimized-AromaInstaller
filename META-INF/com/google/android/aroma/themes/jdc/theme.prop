@@ -1,5 +1,5 @@
 img.background=bg
-img.titlebar=titlebar.9
+img.titlebar=titlebar
 img.navbar=navbar
 img.dialog=dialog.9
 img.dialog.titlebar=dialog_titlebar.9
@@ -24,34 +24,34 @@ img.radio.on.focus=radio_on_focus
 img.radio.on.push=radio_on_press
 
 
-color.winbg           = #043E5E
-color.winbg_g         = #444
-color.winfg           = #fff
-color.winfg_gray      = #33b5e5
-color.dialogbg        = #043E5E
-color.dialogbg_g      = #444
-color.dialogfg        = #fff
-color.textbg          = #043E5E
-color.textfg          = #fff
-color.textfg_gray     = #6699ff
-color.controlbg       = #999
-color.controlbg_g     = #999
-color.controlfg       = #fff
-color.selectbg        = #33b5e5
-color.selectbg_g      = #33b5e5
-color.selectfg        = #fff
-color.titlebg         = #043E5E
-color.titlebg_g       = #043E5E
-color.titlefg         = #fff
-color.dlgtitlebg      = #fff
-color.dlgtitlebg_g    = #043E5E
-color.dlgtitlefg      = #fff
-color.scrollbar       = #06F7FB
-color.navbg           = #043E5E
-color.navbg_g         = #043E5E
-color.border          = #666
-color.border_g        = #666
-color.progressglow    = #33b5e5
+color.winbg           = #FAF4F4
+color.winbg_g         = #eeeeee
+color.winfg           = #000000
+color.winfg_gray      = #666666
+color.dialogbg        = #FAF4F4
+color.dialogbg_g      = #eeeeee
+color.dialogfg        = #000000
+color.textbg          = #FAF4F4
+color.textfg          = #000000
+color.textfg_gray     = #666666
+color.controlbg       = #dddddd
+color.controlbg_g     = #cccccc
+color.controlfg       = #000000
+color.selectbg        = #c00000
+color.selectbg_g      = #c00000
+color.selectfg        = #FAF4F4
+color.titlebg         = #c00000
+color.titlebg_g       = #c00000
+color.titlefg         = #FAF4F4
+color.dlgtitlebg      = #FAF4F4
+color.dlgtitlebg_g    = #FAF4F4
+color.dlgtitlefg      = #444444
+color.scrollbar       = #c00000
+color.navbg           = #FAF4F4
+color.navbg_g         = #eeeeee
+color.border          = #666666
+color.border_g        = #666666
+color.progressglow    = #800080
 
 config.roundsize             = 1
 config.button_roundsize      = 1
@@ -60,7 +60,6 @@ config.transition_frame      = 5
 
 font.small                   = font.roboto.small
 font.big                     = font.roboto.big
-
 
 info.themename        = JDCTeam
 info.description      = JDCTeam Theme for AROMA Installer
