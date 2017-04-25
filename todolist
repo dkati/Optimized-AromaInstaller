@@ -8,9 +8,6 @@ Stable3
 ***Gpu blobs. Kang em from shamu
 Or d2
 
-***media scanner on boot releated with boot cpu load issue
-check media scanner service for boot
-
 ***Audio flags tests
 ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicerec=true
@@ -30,12 +27,8 @@ use.voice.path.for.pcm.voip=true
 
 ***chad's anims
 
-
-
 //cpu load logs by turk
 ***https://slack-files.com/T19HJRUDC-F51CECMHT-3807501999
-
-***Try voice-rec-mic change ADC3 volume from 2 to 3
 
 ***gpu never goes to 128mhz when idle...thats not good tho O_O'
 
