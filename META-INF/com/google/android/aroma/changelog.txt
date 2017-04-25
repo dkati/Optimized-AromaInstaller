@@ -4,11 +4,11 @@
 <*>Update stock kernel to  </*>
 <*>Updated Alucard kernel</*>
 <*>Remerge 7.1.2 to avoid issues</*>
-<*>Stable2 Wallpaper</*> <---to be done
+<*>Stable3 Wallpaper</*>
 <*>STweaks profiles edits</*>
 <*>Add the new HealthD flag to device tree</*>
 <*>jflte: turn off carrier provisioning and allow tethering for everyone</*>
 <*>Dex2oat speed edits</*>
 <*>Edits on audio</*>
 <*>Updated default bootanimation</*>
-<*>Aroma Installer buttons, icon, and colors change</*>
+<*>Aroma installer buttons, icons, and colors change</*>
