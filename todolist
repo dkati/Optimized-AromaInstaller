@@ -1,16 +1,17 @@
 Stable3
 =======================
-Option to add 4g tile/icon instead of LTE? suspended for now (edited)
 
-Recheck profiles. Yugioh plays fine on Exprof. Doesn't on default
+***Option to add 4g tile/icon instead of LTE? suspended for now (edited)
 
-Gpu blobs. Kang em from shamu
+***Recheck profiles. Yugioh plays fine on Exprof. Doesn't on default
+
+***Gpu blobs. Kang em from shamu
 Or d2
 
-feedmee
-media scanner on boot releated with boot cpu load issue
+***media scanner on boot releated with boot cpu load issue
 check media scanner service for boot
 
+***Audio flags tests
 ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicerec=true
 persist.audio.fluence.speaker=false
@@ -26,41 +27,41 @@ ro.qc.sdk.audio.fluencetype=fluence
 use.dedicated.device.for.voip=true
 use.voice.path.for.pcm.voip=true
 
-side
-jf tree new flag from core
-alu update
 
-chad's anims
+***jf tree new flag from core
+***alu update
 
-//build prop FUCKING TEST EM
-+pm.dexopt.install=speed
-+pm.dexopt.first-boot=speed
-+pm.dexopt.boot=speed
+***chad's anims
+
+***build prop FUCKING TEST EM
+pm.dexopt.install=speed
+pm.dexopt.first-boot=speed
+pm.dexopt.boot=speed
 pm.dexopt.bg-dexopt=speed-profile
-+pm.dexopt.ab-ota=speed-profile
-+pm.dexopt.nsys-library=speed
-+pm.dexopt.shared-apk=speed
-+pm.dexopt.forced-dexopt=speed
-+pm.dexopt.core-app=speeddalvik.vm.usejit=true
-+dalvik.vm.usejitprofiles=true
-+dalvik.vm.appimageformat=lz4
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.nsys-library=speed
+pm.dexopt.shared-apk=speed
+pm.dexopt.forced-dexopt=speed
+pm.dexopt.core-app=speeddalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+dalvik.vm.appimageformat=lz4
 
 
 //cpu load logs by turk
-https://slack-files.com/T19HJRUDC-F51CECMHT-3807501999
+***https://slack-files.com/T19HJRUDC-F51CECMHT-3807501999
 
-Try voice-rec-mic change ADC3 volume from 2 to 3
+***Try voice-rec-mic change ADC3 volume from 2 to 3
 
-powermanager
+***powermanager from pixel xl
 
-recheck my media kill script
+***recheck my media kill script
 
-gpu never goes to 128mhz when idle...thats not good tho O_O'
+***gpu never goes to 128mhz when idle...thats not good tho O_O'
 
-ramdisk default prop: persist.sys.usb.config=mtp,adb
+***ramdisk default prop: persist.sys.usb.config=mtp,adb
 
-retry googy
+***retry googy
 
-quick unlock after pin entered
+***quick unlock after pin entered
 
 
