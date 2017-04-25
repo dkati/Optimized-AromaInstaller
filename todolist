@@ -28,23 +28,8 @@ use.dedicated.device.for.voip=true
 use.voice.path.for.pcm.voip=true
 
 
-***jf tree new flag from core
-***alu update
-
 ***chad's anims
 
-***build prop FUCKING TEST EM
-pm.dexopt.install=speed
-pm.dexopt.first-boot=speed
-pm.dexopt.boot=speed
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.ab-ota=speed-profile
-pm.dexopt.nsys-library=speed
-pm.dexopt.shared-apk=speed
-pm.dexopt.forced-dexopt=speed
-pm.dexopt.core-app=speeddalvik.vm.usejit=true
-dalvik.vm.usejitprofiles=true
-dalvik.vm.appimageformat=lz4
 
 
 //cpu load logs by turk
@@ -57,8 +42,6 @@ dalvik.vm.appimageformat=lz4
 ***recheck my media kill script
 
 ***gpu never goes to 128mhz when idle...thats not good tho O_O'
-
-***ramdisk default prop: persist.sys.usb.config=mtp,adb
 
 ***retry googy
 
