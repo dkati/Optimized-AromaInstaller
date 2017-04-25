@@ -37,10 +37,6 @@ use.voice.path.for.pcm.voip=true
 
 ***Try voice-rec-mic change ADC3 volume from 2 to 3
 
-***powermanager from pixel xl
-
-***recheck my media kill script
-
 ***gpu never goes to 128mhz when idle...thats not good tho O_O'
 
 ***retry googy
