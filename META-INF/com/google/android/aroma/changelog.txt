@@ -10,3 +10,5 @@
 <*>jflte: turn off carrier provisioning and allow tethering for everyone</*>
 <*>Dex2oat speed edits</*>
 <*>Edits on audio</*>
+<*>Updated default bootanimation</*>
+<*>Aroma Installer buttons, icon, and colors change</*>
