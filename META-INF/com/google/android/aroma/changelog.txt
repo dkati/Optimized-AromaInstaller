@@ -1,50 +1,8 @@
-<b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable1</#></b>
+<b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable2</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 12-April</*>
-<*>Update stock kernel to 11 April </*>
-<*>Update to 7.1.2</*>
-<*>Stable2 Wallpaper</*>
-<*>Kernel:Enforce kernel to read users edits</*>
-<*>Kernel:Huge updates regarding battery life</*>
-<*>Readd Logger switch.Default:OFF.REBOOT WHEN CHANGED</*>
-<*>Kill mediaserver on boot</*>
-<*>system.prop:Disable 2 audio-voip flags.Fixes some VOIP apps(?)</*>
-<*>Recalculate the lights values </*>
-<*>Add HPF bt profile</*>
-<*>Reorganize the contributors list</*>
-<*>Fix panorama mode on Snap camera</*>
-<*>Enable night mode.New QS Tile</*>
-<*>Edits on lockscreen's charging message</*>
-<*>aroma:Allow user to select Magisk</*>
-<*>Faster boot speed</*>
-<*>Faster reboot to recovery</*>
-<*>Edits on doze</*>
-<*>Add lekiaM to contributors</*>
-<*>Allow user to select different LED color when device is fully charged</*>
-<*>Add some extra infos on some STweaks menus</*>
-<*>Edits on Gapps killer</*>
-<*>Update ThemeInterfacer</*>
-<*>Get latest Substratum commits</*>
-<*>Bypass SafetyNet check</*>
-<*>Updated ramdisk scripts for Magisk root</*>
-<*>Fixed CVE-2017-0583</*>
-<*>Show USB mode dialog when USB is inserted</*>
-<*>BatteryStatsService:Stop logcat spam about modem</*>
-<*>CPU usage overlay:Relocate it,make its interval faster,remove temperature</*>
-<*>telephony:Hack GSM and LTE signal strength</*>
-<*>Timezone bug is now fixed</*>
-<*>Reduce reboot delay by 4 seconds</*>
-<*>Edits on LTE tile
-	<*>Still doesnt work,for a strange reason.to make it work 
-		1-From Settings use 3g as prefered network
-		2-Now the QS tile should be disabled.
-		3-It now works</*>
-</*>
-<*>Speed up the UI feeling without affect the animation speeds</*>
-<*>Remove the icon from 'Clean all' tweaks</*>
-<*>Update Webview</*>
-<*>Remove Soft Reboot option
-	<*>Details here:https://github.com/JDCTeam/android_device_samsung_jf-common/commit/86306fb5df2cdb7932b51a0dbe88b096cb7ac913</*>
-</*>
-<*>Advanced reboot is automatically enabled when you enable dev options</*>
-<*>Support microG Gapps by supporting fake signature spoofing</*>
+<*>Upstream merge until </*>
+<*>Update stock kernel to  </*>
+<*>Remerge 7.1.2 to avoid issues</*>
+<*>Stable2 Wallpaper</*> <---to be done
+<*>STweaks profiles edits</*>
+
