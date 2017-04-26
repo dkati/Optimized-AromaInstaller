@@ -82,13 +82,13 @@ viewbox(
     "",
     "You are about to install <b>"+
 	  ini_get("rom_name")+
-	"</b> for <b>"+ini_get("rom_device")+"</b>.\n\n"+
+	"</b> for the <b>"+ini_get("rom_device")+"</b>.\n\n"+
     "Rom Information:\n\n"+
 	  "  Rom\t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
 	  "  Version\t:  <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
       "  Author\t:  <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
       "  Device\t:  <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
-      "  Date\t:  <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n\n\n"+
+      "  Date\t:  <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n\n"+
 	"Press Next to Continue ...",
     "@welcome"
 );
