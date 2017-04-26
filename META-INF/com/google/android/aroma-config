@@ -245,7 +245,7 @@ setvar("retstatus",
       "@install",
 
 	#-- Installation Finish Message
-      "The installation has successfully completed.\nPress Finish to continue."
+      "The installation has successfully completed.\n\nPress <b>Finish</b> to continue."
   )
 );
 
