@@ -1,3 +1,4 @@
+
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable2</#></b>
 ---------------------------------------------------
 <*>Upstream merge until </*>
