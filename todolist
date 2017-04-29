@@ -21,7 +21,4 @@ ro.qc.sdk.audio.fluencetype=fluence
 use.dedicated.device.for.voip=true
 use.voice.path.for.pcm.voip=true
 
-
-***retry googy
-
-(bugbash 96,243,264,302,308) hfp bt
+sdcardfs
