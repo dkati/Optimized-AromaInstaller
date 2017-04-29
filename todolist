@@ -1,12 +1,9 @@
 Stable3
 =======================
 
-***Option to add 4g tile/icon instead of LTE? suspended for now (edited)
+
 
 ***Recheck profiles. Yugioh plays fine on Exprof. Doesn't on default
-
-***Gpu blobs. Kang em from shamu
-Or d2
 
 ***Audio flags tests
 ro.qc.sdk.audio.fluencetype=none
@@ -25,16 +22,6 @@ use.dedicated.device.for.voip=true
 use.voice.path.for.pcm.voip=true
 
 
-***chad's anims
-
-//cpu load logs by turk
-***https://slack-files.com/T19HJRUDC-F51CECMHT-3807501999
-
-***gpu never goes to 128mhz when idle...thats not good tho O_O'
-
 ***retry googy
 
-***quick unlock after pin entered
-***Select area while taking screenshot?
-
-***idle when battery <15% is perfect.why?ramdisk ?
+(bugbash 96,243,264,302,308) hfp bt

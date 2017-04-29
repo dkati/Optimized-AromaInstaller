@@ -13,3 +13,15 @@
 <*>Edits on audio</*>
 <*>Updated default bootanimation</*>
 <*>Aroma installer buttons, icons, and colors change</*>
+<*>system.prop:Enable use.voice.path.for.pcm.voip</*>
+<*>Quick unlock on lockscreen password</*>
+<*>Edits on ramdisk affecting battery life</*>
+<*>Stweaks:New variable about mediaserver killer</*>
+<*>STweaks:Allow user to select other IO while sleeping</*>
+<*>CameraWrapper:Increase camera open retries</*>
+<*>Add ldjcdo to test team/Remove SkL</*>
+<*>Add powersave,conservative and simple GPU govs</*>
+<*>Add hyper,pegasusq and slim CPU governors</*>
+<*>Wifi Edits from upstream</*>
+<*>SystemUI: Use AOSP AutoBrightness implementation</*>
+<*>GsmCdmaPhone: Fix GSM SIM card ICCID on NV sub CDMA devices </*>
