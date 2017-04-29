@@ -25,3 +25,5 @@
 <*>Wifi Edits from upstream</*>
 <*>SystemUI: Use AOSP AutoBrightness implementation</*>
 <*>GsmCdmaPhone: Fix GSM SIM card ICCID on NV sub CDMA devices </*>
+<*>Speedup the dex2oat operation</*>
+<*>Edit on BlueTooth HPF overlay</*>
