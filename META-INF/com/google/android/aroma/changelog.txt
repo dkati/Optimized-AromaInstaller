@@ -29,3 +29,6 @@
 <*>Edit on BlueTooth HPF overlay</*>
 <*>Truly enable sdcardfs</*>
 <*>Enable and tweak KSM</*>
+<*>Update our flashables</*>
+<*>Update aroma-installed packages</*>
+<*>Update WebView</*>
