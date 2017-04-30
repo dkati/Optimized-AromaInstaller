@@ -27,3 +27,5 @@
 <*>GsmCdmaPhone: Fix GSM SIM card ICCID on NV sub CDMA devices </*>
 <*>Speedup the dex2oat operation</*>
 <*>Edit on BlueTooth HPF overlay</*>
+<*>Truly enable sdcardfs</*>
+<*>Enable and tweak KSM</*>
