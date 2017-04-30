@@ -32,3 +32,7 @@
 <*>Update our flashables</*>
 <*>Update aroma-installed packages</*>
 <*>Update WebView</*>
+<*>Support Custom QS rows/columns</*>
+<*>QS Tile which support partial screenshot</*>
+<*>GPU MAXIMUM FREQUENCY IS SET TO MINIMUM.Change it if you want from STweaks</*>
+
