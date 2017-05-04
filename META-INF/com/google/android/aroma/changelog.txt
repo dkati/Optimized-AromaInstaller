@@ -37,3 +37,4 @@
 <*>GPU MAXIMUM FREQUENCY IS SET TO MINIMUM.Change it if you want from STweaks</*>
 <*>Drop stock browser.Use Jelly </*>
 <*>prop:set persist.bluetooth.disableabsvol=false</*>
+<*>profiles:Fix camera and headset mic volumes</*>
