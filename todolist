@@ -1,23 +1,2 @@
 Stable3
 =======================
-
-
-***Recheck profiles. Yugioh plays fine on Exprof. Doesn't on default
-
-***Audio flags tests
-ro.qc.sdk.audio.fluencetype=none
-persist.audio.fluence.voicerec=true
-persist.audio.fluence.speaker=false
-use.voice.path.for.pcm.voip=true
-//optcm13 audio profile (kills phone speaker on 7.1.x)
-
-since i got s4 i have flashed only your roms, no nightlyes at all. i had a problem with viber and messenger, when i would tick the speaker during a call or video call i was loosing the mic, the other side couldnt hear me but i could hear them very well
-
-audio.offload.disable=1
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-ro.qc.sdk.audio.fluencetype=fluence
-use.dedicated.device.for.voip=true
-use.voice.path.for.pcm.voip=true
-
-sdcardfs
