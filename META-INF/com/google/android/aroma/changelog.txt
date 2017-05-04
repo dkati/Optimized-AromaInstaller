@@ -21,7 +21,6 @@
 <*>STweaks:Allow user to select other IO while sleeping</*>
 <*>CameraWrapper:Increase camera open retries</*>
 <*>Add ldjcdo to test team/Remove SkL</*>
-<*>Add powersave,conservative and simple GPU govs</*>
 <*>Add hyper,pegasusq and slim CPU governors</*>
 <*>Wifi Edits from upstream</*>
 <*>SystemUI: Use AOSP AutoBrightness implementation</*>
