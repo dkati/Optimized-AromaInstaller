@@ -1,8 +1,8 @@
 
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable2</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 4</*>
-<*>Update stock kernel to  4-may-2017</*>
+<*>Upstream merge until 6</*>
+<*>Update stock kernel to  6-may-2017</*>
 <*>Updated Alucard kernel</*>
 <*>Remerge 7.1.2 to avoid issues</*>
 <*>Update to r8</*>
@@ -34,7 +34,10 @@
 <*>Update WebView</*>
 <*>Support Custom QS rows/columns</*>
 <*>QS Tile which support partial screenshot</*>
-<*>GPU MAXIMUM FREQUENCY IS SET TO MINIMUM.Change it if you want from STweaks</*>
+<*>GPU MAXIMUM FREQUENCY IS SET TO 280Mhz.Change it if you want from STweaks</*>
 <*>Drop stock browser.Use Jelly </*>
 <*>prop:set persist.bluetooth.disableabsvol=false</*>
 <*>profiles:Fix camera and headset mic volumes</*>
+<*>Introduce Aroma-BootAnimations.See it at Optimized LineageOS Settings</*>
+<*>Revert "telephony:Hack GSM and LTE signal strength"</*>
+<*>post-init:Speedup the profiles loading after boot </*>
