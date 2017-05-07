@@ -42,3 +42,4 @@
 <*>Revert "telephony:Hack GSM and LTE signal strength"</*>
 <*>post-init:Speedup the profiles loading after boot </*>
 <*>Update backuptool scripts</*>
+<*>Settings:Add changelog tile</*>
