@@ -1,8 +1,8 @@
 
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable2</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 6</*>
-<*>Update stock kernel to  6-may-2017</*>
+<*>Upstream merge until 7</*>
+<*>Update stock kernel to  7-may-2017</*>
 <*>Updated Alucard kernel</*>
 <*>Remerge 7.1.2 to avoid issues</*>
 <*>Update to r8</*>
@@ -41,3 +41,4 @@
 <*>Introduce Aroma-BootAnimations.See it at Optimized LineageOS Settings</*>
 <*>Revert "telephony:Hack GSM and LTE signal strength"</*>
 <*>post-init:Speedup the profiles loading after boot </*>
+<*>Update backuptool scripts</*>
