@@ -116,54 +116,69 @@ textbox(
     resread("changelog.txt")
 );
 
-
 ###################################################################################################################
-# KERNEL
+#
+# STEP 5 - Clean or Install
 #
 
-selectbox(
-  #-- Title
-    "Kernel List",
-
-  #-- Sub Title
-    "Please choose one of the options:",
-
-  #-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
-    "@install",
-
-  #-- Will be saved in /tmp/aroma/kernel.prop
-    "kernel.prop",
-
-  #-----------------------------[ Selectbox Without Group ]-------------------------#
-  # TITLE         			   |  SUBTITLE                          | Initial Value #
-  #----------------------------+------------------------------------+---------------#
-  "Kernel Corner",                                ""                                                      ,2,   #-- Group 1. key = "selected.1"
-  "Alucard Kernel",                               "Offers additional features and optimizations"          ,1,   #-- selected.1 = 1
-  "Stock Kernel",                                 "Use this if you have touch screen bugs"                ,0,   #-- selected.1 = 2
-
-  "Stweaks Corner",                               ""                                                      ,2,   #-- Group 2. key = "selected.2"
-  "Clear my Alucard profile edits",               ""                                                      ,1,   #-- selected.2 = 1
-  "Keep my Alucard Profile edits",                ""                                                      ,0    #-- selected.2 = 2
-
+menubox(
+	"Optimized LineageOS for jflte",
+	"Please select a menu option",
+	"@install",
+	"menu.prop",
+	"<b>Install the ROM</b>","Install the ROM following the traditional process","@install",
+	"<b>Remove some packages</b>","Remove some unnecessary packages from already installed ROM","@install"
 );
 
+#IF INSTALLATION OF ROM IS SELECTED
+if prop("menu.prop","selected")=="1" then
+	###################################################################################################################
+	# KERNEL
+	#
 
-###################################################################################################################
-# MODS
-#
-  #-- IF Not "Default" Show Main Features Selection
-  selectbox(
-    #-- Title
-      "Mods List",
+	selectbox(
+	#-- Title
+	"Kernel List",
 
-    #-- Sub Title
-      "Please choose one of the options:",
+	#-- Sub Title
+	"Please choose one of the options:",
 
-    #-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
-      "@default",
+	#-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
+	"@install",
 
-    #-- Will be saved in /tmp/aroma-data/mods.prop
-      "mods.prop",
+	#-- Will be saved in /tmp/aroma/kernel.prop
+	"kernel.prop",
+
+	#-----------------------------[ Selectbox Without Group ]-------------------------#
+	# TITLE         			   |  SUBTITLE                          | Initial Value #
+	#----------------------------+------------------------------------+---------------#
+	"Kernel Corner",                                ""                                                      ,2,   #-- Group 1. key = "selected.1"
+	"Alucard Kernel",                               "Offers additional features and optimizations"          ,1,   #-- selected.1 = 1
+	"Stock Kernel",                                 "Use this if you have touch screen bugs"                ,0,   #-- selected.1 = 2
+	
+	"Stweaks Corner",                               ""                                                      ,2,   #-- Group 2. key = "selected.2"
+	"Clear my Alucard profile edits",               ""                                                      ,1,   #-- selected.2 = 1
+	"Keep my Alucard Profile edits",                ""                                                      ,0    #-- selected.2 = 2
+
+	);
+
+
+	###################################################################################################################
+	# MODS
+	#
+	#-- IF Not "Default" Show Main Features Selection
+	selectbox(
+	#-- Title
+	"Mods List",
+
+	#-- Sub Title
+	"Please choose one of the options:",
+
+	#-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
+	"@default",
+
+	#-- Will be saved in /tmp/aroma-data/mods.prop
+	"mods.prop",
 
 	  #----------------------------------[ Select box With Groups ]----------------------------------#
 	  # TITLE                    |  SUBTITLE                                        | Initial Value  #
@@ -182,28 +197,28 @@ selectbox(
 	"Add Pixel Launcher and Wallpaper",            ""                                                    ,0,	 #-- selected.3 = 1
 	"No Changes",                                  ""                                                    ,1	     #-- selected.3 = 2
 	  
-  );
+	);
 
 
-ini_set("text_next", "Install ROM");
-ini_set("icon_next", "@installbutton");
+	ini_set("text_next", "Install ROM");
+	ini_set("icon_next", "@installbutton");
 	
-###################################################################################################################
-# MODS2
-#
-  #-- IF Not "Default" Show Main Features Selection
-  selectbox(
-    #-- Title
-      "Mods List",
+	###################################################################################################################
+	# MODS2
+	#
+	#-- IF Not "Default" Show Main Features Selection
+	selectbox(
+	#-- Title
+	"Mods List",
 
-    #-- Sub Title
-      "Please choose one of the options:",
+	#-- Sub Title
+	"Please choose one of the options:",
 
-    #-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
-      "@default",
+	#-- Icon: <AROMA Resource Dir>/icons/default.png or <ThemeDir>/icon.default.png
+	"@default",
 
-    #-- Will be saved in /tmp/aroma-data/mods2.prop
-      "mods2.prop",
+	#-- Will be saved in /tmp/aroma-data/mods2.prop
+	"mods2.prop",
 
 	  #----------------------------------[ Select box With Groups ]----------------------------------#
 	  # TITLE                    |  SUBTITLE                                        | Initial Value  #
@@ -222,31 +237,100 @@ ini_set("icon_next", "@installbutton");
 	"Do NOT use Setup Wizard",                     ""                                                  ,0    #-- selected.3 = 2
 	
 	
-  );
+	);
 
 
-ini_set("text_next", "Finish");
-ini_set("icon_next", "@finish");
+	ini_set("text_next", "Finish");
+	ini_set("icon_next", "@finish");
 
-###################################################################################################################
-#
-# STEP 10 - INSTALLATION PROCESS
-#
-setvar("retstatus",
-  install(
+	###################################################################################################################
+	#
+	# STEP 10 - INSTALLATION PROCESS
+	#
+	setvar("retstatus",
+	install(
+		#-- Title
+		"Installing",
+
+		#-- Installation Process message
+		"<b>"+ini_get("rom_name")+"</b> is being installed.\n\n"+
+		"Please wait till the installation completes.",
+
+		#-- Installation Icon
+		"@install",
+
+		#-- Installation Finish Message
+	"The installation has successfully completed.\n\nPress <b>Finish</b> to continue."
+	)
+	);
+	
+endif;
+
+#IF PACKAGE REMOVE IS SELECTED
+if prop("menu.prop","selected")=="2" then
+	selectbox(
 	#-- Title
-      "Installing",
+	"Remove packages",
 
-	#-- Installation Process message
-	  "<b>"+ini_get("rom_name")+"</b> is being installed.\n\n"+
-      "Please wait till the installation completes.",
+	#-- Sub Title
+	"Please choose one of the options:",
 
-	#-- Installation Icon
-      "@install",
+	#-- Icon: <AROMA Resource Dir>/icons/personalize.png or <ThemeDir>/icon.personalize.png
+	"@install",
 
-	#-- Installation Finish Message
-      "The installation has successfully completed.\n\nPress <b>Finish</b> to continue."
-  )
-);
+	#-- Will be saved in /tmp/aroma/kernel.prop
+	"remove.prop",
+
+	#-----------------------------[ Selectbox Without Group ]-------------------------#
+	# TITLE         			   |  SUBTITLE                          | Initial Value #
+	#----------------------------+------------------------------------+---------------#
+	"STweaks",                                ""                                                      ,2,   #-- Group 1. key = "selected.1"
+	"Keep it",                               "if exists"          ,1,   #-- selected.1 = 1
+	"Remove it",                                 "if exists"                ,0,   #-- selected.1 = 2
+	
+	"Viper4Arise",                               ""                                                      ,2,   #-- Group 2. key = "selected.2"
+	"Keep it",               "if exists"                                                      ,1,   #-- selected.2 = 1
+	"Remove it",                "if exists"                                                      ,0,    #-- selected.2 = 2
+	
+	"MiXplorer",                               ""                                                      ,2,   #-- Group 3. key = "selected.3"
+	"Keep it",               "if exists"                                                      ,1,   #-- selected.3 = 1
+	"Remove it",                "if exists"                                                      ,0,    #-- selected.3 = 2
+	
+	"AOSP Camera",                               ""                                                      ,2,   #-- Group 4. key = "selected.4"
+	"Keep it",               "if exists"                                                      ,1,   #-- selected.4 = 1
+	"Remove it",                "if exists"                                                      ,0,    #-- selected.4 = 2
+
+	"Snap Camera",                               ""                                                      ,2,   #-- Group 5. key = "selected.5"
+	"Keep it",               "if exists"                                                      ,1,   #-- selected.5 = 1
+	"Remove it",                "if exists"                                                      ,0,    #-- selected.5 = 2
+	
+	"Pixel Launcher and Wallpaper",                               ""                      ,2,   #-- Group 6. key = "selected.6"
+	"Keep it",               "if exists"                                                      ,1,   #-- selected.6 = 1
+	"Remove it",                "if exists"                                                      ,0    #-- selected.6 = 2
+	
+	);
+	
+	ini_set("text_next", "Finish");
+	ini_set("icon_next", "@finish");
+	
+	setvar("retstatus",
+	install(
+		#-- Title
+		"Removing",
+
+		#-- Installation Process message
+		"<b>"+ini_get("rom_name")+"</b>. \n\n"+
+		"Please wait till the installation completes.",
+
+		#-- Installation Icon
+		"@install",
+
+		#-- Installation Finish Message
+	"Selected packages removed.\n\nPress <b>Finish</b> to continue."
+	)
+	);
+	
+
+endif;
 
 #---- FINISH
