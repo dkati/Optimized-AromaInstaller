@@ -58,6 +58,8 @@ anisplash(
 
 #initialize theme from the beginning
 theme("jdc");
+fontresload( "0", "ttf/Roboto-Regular.ttf;ttf/DroidSansFallback.ttf;", "12" ); #-- Use sets of font (Font Family)
+fontresload( "1", "ttf/Roboto-Regular.ttf;ttf/DroidSansFallback.ttf;", "14" ); #-- Use sets of font (Font Family)
 
 menubox(
 	"Aroma theme",
@@ -72,19 +74,7 @@ menubox(
 if prop("theme.prop","selected")=="2" then
 	theme("ubuntu");
 endif;
-###################################################################################################################
-#
-# Set Small Font to Support all fonts
-#
-fontresload( "0", "ttf/Roboto-Regular.ttf;ttf/DroidSansFallback.ttf;", "12" ); #-- Use sets of font (Font Family)
-fontresload( "1", "ttf/Roboto-Regular.ttf;ttf/DroidSansFallback.ttf;", "14" ); #-- Use sets of font (Font Family)
 
-
-###################################################################################################################
-#
-# STEP 2 - INCLUDE EXAMPLE = Language Selection & Form Example
-#
-#include("language_select.edify");
 
 
 ###################################################################################################################
