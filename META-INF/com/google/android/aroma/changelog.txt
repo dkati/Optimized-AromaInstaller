@@ -9,4 +9,7 @@
 <*>Use S8s sounds (Notifications/UI/ringtones) </*>
 <*>Use S8 wallpaper</*>
 <*>Remove some ugly sounds from stock</*>
-
+<*>SettingsProvider:Always allow non-play store apps installations</*>
+<*>aroma:Split aroma to 2 pieces (Install/Remove sections)</*>
+<*>proc: Remove additional SafetyNet flags from /proc/cmdline</*>
+<*>Allow apps to read statistics from /proc/stat </*>
