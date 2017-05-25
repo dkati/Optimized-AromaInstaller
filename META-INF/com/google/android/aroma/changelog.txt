@@ -15,3 +15,4 @@
 <*>Allow apps to read statistics from /proc/stat </*>
 <*>Big kernel changes affecting sot and heat</*>
 <*>Webview:always use the latest beta version</*>
+<*>Fixes on pegasusq and hyper governors</*>
