@@ -16,3 +16,5 @@
 <*>Big kernel changes affecting sot and heat</*>
 <*>Webview:always use the latest beta version</*>
 <*>Fixes on pegasusq and hyper governors</*>
+<*>Support two themes for aroma</*>
+<*>Back to default bootanimation</*>

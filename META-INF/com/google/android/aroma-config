@@ -59,6 +59,19 @@ anisplash(
 #initialize theme from the beginning
 theme("jdc");
 
+menubox(
+	"Aroma theme",
+	"Please select a menu option",
+	"@install",
+	"theme.prop",
+	"<b>Default</b>","","@install",
+	"<b>Ubuntu theme</b>","","@install"
+);
+
+#IF INSTALLATION OF ROM IS SELECTED
+if prop("theme.prop","selected")=="2" then
+	theme("ubuntu");
+endif;
 ###################################################################################################################
 #
 # Set Small Font to Support all fonts
