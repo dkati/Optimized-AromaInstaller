@@ -19,7 +19,6 @@
 <*>Support two themes for aroma</*>
 <*>Back to default bootanimation</*>
 <*>Back to 450mhz max gpu-less heat</*>
-<*>Add kernel wakelocks fix</*>
 <*>Revert some audio flags</*>
 <*>Enable wifi on first boot</*>
 <*>Remove old IR driver</*>
