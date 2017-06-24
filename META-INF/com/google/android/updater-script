@@ -565,9 +565,6 @@ endif;
 if
 file_getprop("/tmp/aroma-data/mods.prop","selected.1") == "3"
 then
-ui_print("Installing Magisk Manager...");
-package_extract_dir("jdc/magisk/packages/manager", "/system/priv-app/Magisk");
-set_perm(0, 0, 0644, "/system/priv-app/Magisk/MagiskManager.apk");
 
 ui_print("Installing proper Toolbox...");
 delete_recursive("/system/priv-app/Toolbox.apk");
