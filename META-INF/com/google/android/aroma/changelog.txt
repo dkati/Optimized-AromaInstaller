@@ -10,3 +10,5 @@
 <*>Update alucard kernel</*>
 <*>custom scrolling values</*>
 <*>Add more sensitive apns </*>
+<*>Remove decay time hack</*>
+<*>Update Magisk</*>
