@@ -12,3 +12,7 @@
 <*>Add more sensitive apns </*>
 <*>Remove decay time hack</*>
 <*>Update Magisk</*>
+<*>Updated wallpaper</*>
+<*>CarrierConfig overlay.affects data connections</*>
+<*>Even more bt edits</*>
+<*>Switch to chromium patched webview</*>
