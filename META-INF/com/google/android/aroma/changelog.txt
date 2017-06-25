@@ -16,3 +16,7 @@
 <*>CarrierConfig overlay.affects data connections</*>
 <*>Even more bt edits</*>
 <*>Switch to chromium patched webview</*>
+<*>Update aroma packages</*>
+<*>Update flashables from optcm settings</*>
+<*>bdroid_buildcfg:enable BTM_WBS_INCLUDED</*>
+<*>bluetooth:vnd_jf:set SCO_WBS_SAMPLE_RATE = </*>
