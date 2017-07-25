@@ -1,25 +1,16 @@
 
-<b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable3</#></b>
+<b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 9-July-2017</*>
-<*>Update stock kernel to 9-July-2017</*>
-<*>Update to revision 24</*>
-<*>SuperSU to 2.82</*>
-<*>Core edits from upstream</*>
-<*>Ramdisk edits</*>
-<*>art: switch to -O3 completely</*>
-<*>Kernel optimized ToolChain edits</*>
-<*>default.prop:Enable MTP by default</*>
-<*>Update alucard kernel</*>
-<*>Custom scrolling values</*>
-<*>Add more sensitive apns </*>
-<*>Remove decay time hack</*>
-<*>Update Magisk</*>
-<*>Updated wallpaper</*>
-<*>CarrierConfig overlay.affects data connections</*>
-<*>Even more bt edits</*>
-<*>Switch to chromium patched webview</*>
-<*>Update aroma packages</*>
-<*>Update flashables from optcm settings</*>
-<*>bdroid_buildcfg:enable BTM_WBS_INCLUDED</*>
-<*>bluetooth:vnd_jf:Do not set SCO_WBS_SAMPLE_RATE </*>
+<*>Upstream merge until -2017</*>
+<*>Update stock kernel to -2017</*>
+<*>Update Alucard kernel</*>
+<*>Build Alucard with 7.1.1 Linaro TC</*>
+<*>kernel:Add bioshock governor</*>
+<*>Add tripndroid IO scheduler and set it as default</*>
+<*>device:capacitive keys: light up only when pressed</*>
+<*>device:animate screen lights</*>
+<*>Doze: do not build SamsungDoze for the moment</*>
+<*>Pin camera app in memory for faster executions</*>
+<*>Allow GMS power saving</*>
+<*>Hack to make YouTube 4K videos work</*>
+<*>aroma:Update Magisk to 13.3</*>
