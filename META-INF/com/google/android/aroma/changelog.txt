@@ -3,10 +3,9 @@
 ---------------------------------------------------
 <*>Upstream merge until -2017</*>
 <*>Update stock kernel to -2017</*>
+<*>Stable 6 wallpaper</*>
 <*>Update Alucard kernel</*>
 <*>Build Alucard with 7.1.1 Linaro TC</*>
-<*>kernel:Add bioshock governor</*>
-<*>Add tripndroid IO scheduler and set it as default</*>
 <*>device:capacitive keys: light up only when pressed</*>
 <*>device:animate screen lights</*>
 <*>Doze: do not build SamsungDoze for the moment</*>
