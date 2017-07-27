@@ -5,6 +5,7 @@
 <*>Update stock kernel to -2017</*>
 <*>Stable 6 wallpaper</*>
 <*>Update Alucard kernel</*>
+<*>More Sprint variant edits on signal</*>
 <*>Build Alucard with 7.1.1 Linaro TC</*>
 <*>device:capacitive keys: light up only when pressed</*>
 <*>device:animate screen lights</*>
