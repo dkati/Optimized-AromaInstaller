@@ -15,3 +15,10 @@
 <*>Hack to make YouTube 4K videos work</*>
 <*>aroma:Update Magisk to 13.3</*>
 <*>Enable "Panic Detection" mode</*>
+<*>Aroma:Fix an unexpected format on removing option</*>
+<*>ramdisk-tweaks/cortexbrain:make script less aggresive</*>
+<*>Kernel:Default profile:Enable power_efficiency_workqueue</*>
+<*>All profiles:Slightly reduce voltages</*>
+<*>default/battery/exbattery profiles:Set maxcoreslimit_sleep=1</*>
+<*>APNs:Add freedomLTE</*>
+<*>Bluetooth:Fix car audio (?)</*>
