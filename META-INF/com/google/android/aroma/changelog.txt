@@ -1,8 +1,8 @@
 
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until -2017</*>
-<*>Update stock kernel to -2017</*>
+<*>Upstream merge until 3-August-2017</*>
+<*>Update stock kernel to 3-August-2017</*>
 <*>Stable 6 wallpaper</*>
 <*>Update Alucard kernel</*>
 <*>More Sprint variant edits on signal</*>
