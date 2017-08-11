@@ -1,16 +1,12 @@
-<b><#selectbg_g>Changes since Dec 25 update</#></b>
+<b><#selectbg_g>Changes since 02/11 update</#></b>
 -----------------------------
-<*>Update stock kernel to 10-Feb-2016</*>
-<*>Upstream merge until 10-Feb-2016</*>
+<*>Update stock kernel to 11-August-2017</*>
+<*>Upstream merge until 11-August-2017</*>
 <*>Ramdisk and kernel updates</*>
-<*>Februarys wallpaper</*>
-<*>Android revision 78</*>
-<*>Updated SuperSU to 2.79 SR3</*>
-<*>From CM to LineageOS</*>
-<*>Update Snap camera</*>
-<*>Disable LiveDisplay by default</*>
-<*>Allow some BT profiles</*>
-<*>Enable quick power on</*>
-<*>Set delay of ringing while calling to 0</*>
-<*>Disable cpp duplication (affects camera</*>
-<*>Enable all cores on installing apps</*>
+<*>August wallpaper</*>
+<*>Android revision 79</*>
+<*>Updated SuperSU to 2.82 </*>
+<*>Android art to O3 </*>
+<*>Update snap camera</*>
+<*>Update kernel adiutor</*>
+<*>Sync alucard kernel from Opt-cm-14.1 </*>
