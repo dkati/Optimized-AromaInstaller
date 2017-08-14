@@ -29,3 +29,4 @@
 <*>More SafetyNet patches</*>
 <*>Reduce DEFAULT_MIN_BOOST_FREQ at alucard kernel</*>
 <*>debug.hwui.use_buffer_age=false Affects display updates</*>
+<*>Fix a Sprint connections property overwrite</*>
