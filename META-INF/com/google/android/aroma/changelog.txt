@@ -10,5 +10,4 @@
 <*>Update snap camera</*>
 <*>Update kernel adiutor</*>
 <*>Sync alucard kernel from Opt-cm-14.1 </*>
-<*>Build alucard with updated toolchain linaro </*>
-<*>Safetynet patches on alucard </*>
+<*>New bootanimation </*>
