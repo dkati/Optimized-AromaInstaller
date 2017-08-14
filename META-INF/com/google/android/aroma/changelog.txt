@@ -4,6 +4,8 @@
 <*>Upstream merge until 6-August-2017</*>
 <*>Update stock kernel to 6-August-2017</*>
 <*>Stable 6 wallpaper</*>
+<*>Update to _r29</*>
+<*>PhoneToggler: Update preferred network mode setting</*>
 <*>Update Alucard kernel</*>
 <*>More Sprint variant edits on signal</*>
 <*>Build Alucard with 7.1.1 Linaro TC</*>
