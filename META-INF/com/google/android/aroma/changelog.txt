@@ -1,13 +1,27 @@
 <b><#selectbg_g>Changes since 02/11 update</#></b>
 -----------------------------
-<*>Update stock kernel to 11-August-2017</*>
-<*>Upstream merge until 11-August-2017</*>
+<*>Update stock kernel to 15-August-2017</*>
+<*>Upstream merge until 15-August-2017</*>
 <*>Ramdisk and kernel updates</*>
 <*>August wallpaper</*>
 <*>Android revision 79</*>
-<*>Updated SuperSU to 2.82 </*>
+<*>Updated SuperSU to 2.79 (Problems with 2.82) </*>
 <*>Android art to O3 </*>
-<*>Update snap camera</*>
-<*>Update kernel adiutor</*>
-<*>Sync alucard kernel from Opt-cm-14.1 </*>
-<*>New bootanimation </*>
+<*>Update snap camera </*>
+<*>Update kernel adiutor </*>
+<*>core:Support microG Gapps </*>
+<*>system.prop:set ro.build.shutdown_timeout=3 </*>
+<*>bacon:Hack to make YouTube 4K videos work </*>
+<*>try allow GMS saving </*>
+<*>jf:Pin camera app in memory </*>
+<*>Overlays: capacitive keys: light up only when pressed </*>
+<*>Pump dex2oat operation </*>
+<*>system.prop:Add dex2oat limits </*>
+<*>CameraWrapper:Increase camera open retries </*>
+<*>jflteRIL: bring back handleNitzTimeReceived </*>
+<*>jf:overlay:Record panorama with lower res to make it faster </*>
+<*>jf:doze after screen is off </*>
+<*>overlay: SnapdragonCamera: Reduce frame size of panorama pictures </*>
+<*>system.prop: touch.pressure.scale=2 </*>
+<*>mixer_paths:  reduce speaker volume from 88 to 80 </*>
+<*>bt:Enable BTM_WBS_INCLUDED flag </*>
