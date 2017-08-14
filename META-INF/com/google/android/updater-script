@@ -101,9 +101,9 @@ symlink("/system/lib/libappfuse_jni.so", "/system/priv-app/MtpDocumentsProvider/
 symlink("/system/lib/libbluetooth_jni.so", "/system/app/Bluetooth/lib/arm/libbluetooth_jni.so");
 symlink("/system/lib/libcmaudio_jni.so", "/system/priv-app/CMAudioService/lib/arm/libcmaudio_jni.so");
 symlink("/system/lib/libdefcontainer_jni.so", "/system/priv-app/DefaultContainerService/lib/arm/libdefcontainer_jni.so");
-symlink("/system/lib/libjni_eglfence.so", "/system/priv-app/Gallery2/lib/arm/libjni_eglfence.so");
-symlink("/system/lib/libjni_filtershow_filters.so", "/system/priv-app/Gallery2/lib/arm/libjni_filtershow_filters.so");
-symlink("/system/lib/libjni_jpegstream.so", "/system/priv-app/Gallery2/lib/arm/libjni_jpegstream.so");
+symlink("/system/lib/libjni_gallery_eglfence.so", "/system/priv-app/Gallery2/lib/arm/libjni_gallery_eglfence.so");
+symlink("/system/lib/libjni_gallery_filters.so", "/system/priv-app/Gallery2/lib/arm/libjni_gallery_filters.so");
+symlink("/system/lib/libjni_gallery_jpegstream.so", "/system/priv-app/Gallery2/lib/arm/libjni_gallery_jpegstream.so");
 symlink("/system/lib/libjni_jpegutil.so", "/system/app/Camera2/lib/arm/libjni_jpegutil.so");
 symlink("/system/lib/libjni_latinime.so", "/system/app/LatinIME/lib/arm/libjni_latinime.so");
 symlink("/system/lib/libjni_pacprocessor.so", "/system/app/PacProcessor/lib/arm/libjni_pacprocessor.so");
