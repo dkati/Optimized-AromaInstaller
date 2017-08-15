@@ -2,7 +2,7 @@
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable5</#></b>
 ---------------------------------------------------
 <*>Upstream merge until 15-August-2017</*>
-<*>Update stock kernel to 6-August-2017</*>
+<*>Update stock kernel to 15-August-2017</*>
 <*>Stable 6 wallpaper</*>
 <*>Update to _r29</*>
 <*>PhoneToggler: Update preferred network mode setting</*>
@@ -11,7 +11,7 @@
 <*>Build Alucard with 7.1.1 Linaro TC</*>
 <*>device:capacitive keys: light up only when pressed</*>
 <*>device:animate screen lights</*>
-<*>Doze: do not build SamsungDoze for the moment</*>
+<*>Doze: Use pure Samsungs app</*>
 <*>Pin camera app in memory for faster executions</*>
 <*>Allow GMS power saving</*>
 <*>Hack to make YouTube 4K videos work</*>
@@ -31,3 +31,5 @@
 <*>debug.hwui.use_buffer_age=false Affects display updates</*>
 <*>Fix a Sprint connections property overwrite</*>
 <*>Speed up PlayStore installations</*>
+<*>Enable GLONASS (?) </*>
+<*>Add some stock system prop flags</*>
