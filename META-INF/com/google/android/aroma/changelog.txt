@@ -1,7 +1,7 @@
 
 <b><#selectbg_g>Changes since Optimized LineageOS14.1-Stable5</#></b>
 ---------------------------------------------------
-<*>Upstream merge until 6-August-2017</*>
+<*>Upstream merge until 15-August-2017</*>
 <*>Update stock kernel to 6-August-2017</*>
 <*>Stable 6 wallpaper</*>
 <*>Update to _r29</*>
