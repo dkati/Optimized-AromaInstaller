@@ -13,7 +13,6 @@
 <*>system.prop:set ro.build.shutdown_timeout=3 </*>
 <*>bacon:Hack to make YouTube 4K videos work </*>
 <*>try allow GMS saving </*>
-<*>Overlays: capacitive keys: light up only when pressed </*>
 <*>Pump dex2oat operation </*>
 <*>system.prop:Add dex2oat limits </*>
 <*>CameraWrapper:Increase camera open retries </*>
