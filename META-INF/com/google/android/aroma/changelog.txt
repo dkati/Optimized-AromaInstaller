@@ -33,3 +33,5 @@
 <*>Speed up PlayStore installations</*>
 <*>Enable GLONASS (?) </*>
 <*>Add some stock system prop flags</*>
+<*>HDR workaround.Works?i see no difference</*>
+<*>Modify 480p profile</*>
