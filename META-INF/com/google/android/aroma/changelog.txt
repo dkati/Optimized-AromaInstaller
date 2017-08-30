@@ -12,3 +12,9 @@
 <*>Revert "Overlays: capacitive keys: light up only when pressed."</*>
 <*>Update Pixel Launcher to rootless 2.1</*>
 <*>Allow to ignore presentation indicator of outgoing calls</*>
+<*>GPS:Set XTRA version check to AUTO</*>
+<*>Update mixplorer.apk 24/08/2017</*>
+<*>Revert "system.prop:debug.hwui.use_buffer_age=false"</*>
+<*>prop:Boost dex2oat process</*>
+<*>Build bionic with O3 flags</*>
+<*>Updated webview</*>
