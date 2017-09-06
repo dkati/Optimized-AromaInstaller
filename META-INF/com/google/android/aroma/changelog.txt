@@ -7,8 +7,7 @@
 <*>Updated Alucard kernel</*>
 <*>Updated Linaro ToolChain for Alucard</*>
 <*>init:Sprint edits from LineageOS</*>
-<*>Fix BT audio stream for car sets</*></*>
-<*>Overlay:Set config_deviceHardwareKeys to 83
+<*>Fix BT audio stream for car sets</*>
 <*>Revert "Overlays: capacitive keys: light up only when pressed."</*>
 <*>Update Pixel Launcher to rootless 2.1</*>
 <*>Allow to ignore presentation indicator of outgoing calls</*>
