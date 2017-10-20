@@ -241,7 +241,11 @@ if prop("menu.prop","selected")=="1" then
 	
 	"Font Corner",				       ""						   ,2,   #-- Group 4. key = "selected.4"
 	"Use SamsungOne fonts",			       "" 						   ,1,   #-- selected.4 = 1
-	"Use AOSP ones",			       ""						   ,0    #-- selected.4 = 2
+	"Use AOSP ones",			       ""						   ,0,   #-- selected.4 = 2
+
+	"Google Corner",			       ""						   ,2,   #-- Group 5. key = "selected.5"
+	"Use Pixel2 Apps",   "Set Phone App as default (Settings > Apps > Phone > Phone App > Phone App > select Phone)" ,1,   #-- selected.5 = 1
+	"Use AOSP ones",			       ""						   ,0    #-- selected.5 = 2
 	
 	);
 
