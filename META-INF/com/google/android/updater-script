@@ -565,9 +565,6 @@ delete_recursive("/system/priv-app/Dialer");
 delete_recursive("/system/app/messaging");
 set_perm(0, 0, 0644, "/system/priv-app/GoogleContacts/GoogleContacts.apk");
 set_perm(0, 0, 0644, "/system/priv-app/GoogleDialer/GoogleDialer.apk");
-set_perm(0, 0, 0644, "/system/priv-app/GoogleDialer/lib/arm64/libdreamstream_video.so");
-set_perm(0, 0, 0644, "/system/priv-app/GoogleDialer/lib/arm64/libortp.so");
-set_perm(0, 0, 0644, "/system/priv-app/GoogleDialer/lib/arm64/libsrtp.so");
 set_perm(0, 0, 0644, "/system/priv-app/GoogleMessages/GoogleMessages.apk");
 endif;
 #################################################################
