@@ -543,6 +543,17 @@ set_perm(0, 0, 0644, "/system/priv-app/Provision/oat/arm/Provision.odex");
 endif;
 
 #################################################################
+# Samsung fonts
+
+if
+file_getprop("/tmp/aroma-data/mods2.prop","selected.4") == "1"
+then
+ui_print("  ");
+ui_print("-- Installing SamsungOne Font...");
+ui_print("  ");
+package_extract_dir("palm/samsungone", "/system/fonts");
+endif;
+#################################################################
 # SuperSU
 
 if
