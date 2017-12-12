@@ -4,10 +4,10 @@
 # Initializing Rom Information
 #
 ini_set("rom_name",             "Optimized LineageOS 14.1");
-ini_set("rom_version",          "Version8");
+ini_set("rom_version",          "Version9");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragons");
-ini_set("rom_date",             "October 2017");
+ini_set("rom_date",             "December 2017");
 
 ###################################################################################################################
 #
