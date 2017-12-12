@@ -6,5 +6,6 @@
 <*>Updated kernel</*>
 <*>Update to _r36 revision</*>
 <*>Minor edits here and there and some clean up</*>
+<*>Update mixplorer app</*>
 
 
