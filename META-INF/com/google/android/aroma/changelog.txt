@@ -3,7 +3,7 @@
 ---------------------------------------------------
 <*>Upstream merge until 12-Dec-2017</*>
 <*>Update stock kernel to 12-Dec-2017</*>
-<*>Updated kernel</*>
+<*>Updated Alucard kernel and Ramdisk</*>
 <*>Update to _r36 revision</*>
 <*>Minor edits here and there and some clean up</*>
 <*>Update mixplorer app</*>
