@@ -8,5 +8,9 @@
 <*>Minor edits here and there and some clean up</*>
 <*>Update mixplorer app</*>
 <*>Add runtime themer (Settings->Display->Theme)</*>
-
+<*>Version9 wallpaper</*>
+<*>prop:Push the dex even more</*>
+<*>Add 4G/LTE switch at tweaks section</*>
+<*>SystemUI:Set recents taskbar delay to 0</*>
+<*>config:Enable lockscreen rotation(Display/Rotation)</*>
 
