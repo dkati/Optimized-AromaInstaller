@@ -158,6 +158,7 @@ if prop("menu.prop","selected")=="1" then
 	"Kernel Corner",                                ""                                                      ,2,   #-- Group 1. key = "selected.1"
 	"Alucard Kernel",                               "Offers additional features and optimizations"          ,1,   #-- selected.1 = 1
 	"Stock Kernel",                                 "Use this if you have touch screen bugs"                ,0,   #-- selected.1 = 2
+        "SideCore Kernel",                              "Latest SideCore kernel"                                ,0,   #-- selected.1 = 3
 	
 	"Stweaks Corner",                               ""                                                      ,2,   #-- Group 2. key = "selected.2"
 	"Clear my Alucard profile edits",               ""                                                      ,1,   #-- selected.2 = 1

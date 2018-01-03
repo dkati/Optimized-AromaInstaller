@@ -418,6 +418,21 @@ set_perm(0, 0, 0777, "/tmp/loki_flash");
 run_program("/tmp/flash_kernel.sh");
 endif;
 
+#################################################################
+# KERNEL SELECTION SideCore
+
+if
+file_getprop("/tmp/aroma-data/kernel.prop","selected.1") == "3"
+then
+ui_print("SideCore is installing");
+package_extract_dir("jdc/kernel/sidecore", "/tmp/kernel/sidecore");
+run_program("/sbin/busybox", "unzip", "/tmp/kernel/sidecore/sidecore.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/kernel/sidecore");
+run_program("/sbin/busybox", "sh", "/tmp/kernel/sidecore/META-INF/com/google/android/update-binary", "null", "1", "/tmp/kernel/sidecore/sidecore.zip");
+
+delete_recursive("/tmp/kernel");
+ui_print("SideCore installed successfully");
+endif;
+
 set_progress(0.7);
 #################################################################
 # KERNEL PREFERENCES
