@@ -8,4 +8,6 @@
 <*> Version 10 wallpaper</*>
 <*> Speed up some things around, like animations </*>
 <*> Implement SideCore kernel to aroma</*>
+<*> Update Stock camera </*>
+<*> Update our flashables</*>
 
