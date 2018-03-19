@@ -575,9 +575,6 @@ file_getprop("/tmp/aroma-data/mods2.prop","selected.5") == "1"
 then
 ui_print("Updating Google Dialer/Contacts/Messages...");
 package_extract_dir("jdc/google/dialer/system", "/system");
-delete_recursive("/system/priv-app/Contacts");
-delete_recursive("/system/priv-app/Dialer");
-delete_recursive("/system/app/messaging");
 set_perm(0, 0, 0644, "/system/priv-app/GoogleContacts/GoogleContacts.apk");
 set_perm(0, 0, 0644, "/system/priv-app/GoogleDialer/GoogleDialer.apk");
 set_perm(0, 0, 0644, "/system/priv-app/GoogleMessages/GoogleMessages.apk");
