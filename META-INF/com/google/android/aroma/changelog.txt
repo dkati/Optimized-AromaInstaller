@@ -3,6 +3,7 @@
 <*>Update stock kernel to 25-March-2018</*>
 <*>Upstream merge until 25-March-2018</*>
 <*>Ramdisk and kernel updates</*>
+<*>Update to r81</*>
 <*>Security patches</*>
 <*>Final wallpaper</*>
 <*>Mark as EOL</*>
