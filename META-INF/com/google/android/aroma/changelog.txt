@@ -8,6 +8,7 @@
 <*>Security patches</*>
 <*>Final wallpaper</*>
 <*>Mark as EOL</*>
+<*>Device tree edits on odex speedup</*>
 <*>Spectrum support</*>
 <*>Update Snap camera</*>
 
