@@ -4,6 +4,7 @@
 <*>Upstream merge until 25-March-2018</*>
 <*>Ramdisk and kernel updates</*>
 <*>Update to r81</*>
+<*>Hack the Nougat kernel into Marshmallow</*>
 <*>Security patches</*>
 <*>Final wallpaper</*>
 <*>Mark as EOL</*>
