@@ -1,4 +1,4 @@
-<b><#selectbg_g>Changes since 02/11 update</#></b>
+<b><#selectbg_g>Changes since 15 Aug update</#></b>
 -----------------------------
 <*>Update stock kernel to 25-March-2018</*>
 <*>Upstream merge until 25-March-2018</*>
