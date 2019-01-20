@@ -1,20 +1,5 @@
 
-<b><#selectbg_g>Changes since Optimized LineageOS14.1-Version10</#></b>
+<b><#selectbg_g>Changes since Optimized LineageOS14.1-Version11</#></b>
 ---------------------------------------------------
-<*> Upstream merge until 19-March-2018</*>
-<*> Update stock kernel to 19-March-2018</*>
-<*> Updated Alucard kernel and Ramdisk</*>
-<*> Reset Alucard kernel to version 8 source </*>
-<*> Update security patch to March </*>
-<*> BT edits </*> 
-<*> Google Apps related edit from upstream </*>
-<*> Aroma:Do not delete Stock Dialer if Google Dialer is selected </*>
-<*> Update magisk</*>
-<*> Update mixplorer</*>
-<*> Introduce Spectrum implementation</*>
-<*> Fix the proximity sensor (That time for real)</*>
-<*> Resize user data partition to allow crypto work</*>
-<*> Update our wallpaper</*>
-<*> Update stock kernel </*>
-<*> Update aosp and Snap camera</*>
-<*> Update our flashables</*>
+<*> Happy birthday!</*>
+
